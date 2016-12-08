@@ -2,7 +2,16 @@
 <html>
 <head>
 
+
+<meta charset="utf-8">
+                    <title>1+1=3</title>
+                    <meta name="description" content="omschrijving" />
+                    <meta property="og:title" content="De hybride ontwerper" />
+                    <meta property="og:image" content="..." />
+                    <meta property="dc:creator" content="Laura de Rijk" />
+
 <meta charset="utf-8"/>
+
 <style>
 
 /* LAYOUT */
@@ -10,48 +19,136 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans');
 
 
+/* Columns */
+
+
 body {
     background-color: white;
 }
 
+---
 
-header { 
-    display: block;
-    border-style: solid;
-    border-color: white;
-    margin: 0px 0px 0px 0px;
+.wrapper{
+   width: 98%;
+   margin: 0 auto;
+}
+.header{
+   float: left;
+   width: 100%;
+   background-color: white;
+}
+.wrapmiddle{
+   float: left;
+   width: 100%;
+   background-color: #fff
+}
+.middle{
+   margin-right:307px;
+   margin-left:307px;
+   background-color: #F5F5F5;
+   height: 550px;
+   overflow: scroll;
+   
+   padding: 20px 200px 30px 70px; /* Top, Right, Bottom, Left */
+   
+}
+.left{
+   float: left;
+   width: 300px;
+   margin-left: -100%;
+   background-color: #FFFFFF;
+   height: 550px;
+   overflow: scroll;
 }
 
-  .left{float:left; width:30%;
-  font-family: verdana;
-    font-size: 7px;
+.left figure {
+	left: 12px;
+}
+
+.right{
+   float: left;
+   width: 300px;
+   margin-left: -300px;
+   background-color: #FFFFFF;
+   height: 550px;
+   overflow: scroll;
+  
+}
+.footer{
+   float: left;
+   width: 100%;
+   background-color: #ffffff;
+   text-align: center;
+   padding-top: 5px;
+}
+body {
+   padding: 0px;
+   margin: 0px;
+}
+
+
+/* INHOUD VORMGEVING */
+
+{
+img position: center;
+}
+
+figcaption {
+	font-family: verdana;
+    font-size: 8px;
     letter-spacing: 2px;
-    text-align: center;
-   /* border-style: solid;
-    border-color: blue; */
-  
-  }
-  
-  .middle{float:left; width:45%;
-  /* border-style: solid;
-    border-color: blue; */
-  }
-  
-  .right{float:left; width:15%;
-  font-family: verdana;
-    font-size: 7px;
-    letter-spacing: 2px;
-    text-align: center;
-   /* border-style: solid;
-    border-color: blue; */
-    }
+}
+
+div.koptitel {
+	font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+    letter-spacing: 0px;
+    color: blue;
+    padding-bottom: 5px;
+    padding-top: 10px;
+}
+
+div.inleiding {
+    border: 0px solid white;
+    color: black;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+
+}
+
+div.hoofdstuk1 {
+    border: 0px solid white;
+    color: black;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+}
+
+div.hoofdstuk2 {
+    border: 0px solid white;
+    color: black;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+}
+
+div. figuur {
+	color: blue;
+	font-family: 'Open Sans', sans-serif;
+    font-size: 12px;
+}
+
 
 h1 {
     color: blue;
     text-align: center;
     font-family: verdana;
-    font-size: 300px;
-    margin: 150px 0px 0px 0px;
+    font-size: 100px;
+    margin: 0px 0px 0px 0px;
 }
 
 p {
@@ -59,7 +156,7 @@ p {
     font-family: verdana;
     font-size: 20px;
     text-align: center;
-    margin: 0px 0px 400px 0px;
+    margin: 0px 0px 0px 0px;
 
 }
 
@@ -80,8 +177,8 @@ color: blue;
     font-family: verdana;
     font-size: 10px;
     letter-spacing: 2px;
-    margin: 20px 90px 100px 40px; /* Top, Right, Bottom, Left */
-    position: fixed;
+    text-align: center;
+    padding-top:15px;
 
 }
 
@@ -93,6 +190,8 @@ div.titels {
     margin: 50px 0px 0px 0px;
 }
 
+/* MENU */
+
 ul {
     list-style-type: none;
     text-decoration: none;
@@ -103,58 +202,7 @@ ul {
     font-size: 10px;
     font-family: verdana;
     letter-spacing: 2px;
-}
-
-div.inleiding {
-    border: 0px solid white;
-    background-color: white;
     
-    
-    color: blue;
-    font-family: 'Arvo', serif;
-    font-size: 20px;
-
-}
-
-div.hoofdstuk1 {
-    border: 0px solid white;
-    color: black;
-    font-family: 'Open Sans', sans-serif;
-    font-size: 15px;
-
-}
-
-div.hoofdstuk2 {
-    border: 0px solid white;
-    color: black;
-    font-family: 'Open Sans', sans-serif;
-    font-size: 15px;
-
-}
-
-/* Alle afbeeldingen uit tekst naar links */
-
-.middle figure {
-	position: absolute;
-	left: 30px;
-}
-
-/* in een blok zetten, en dan de positie in z'n geheel op absolute, of voor de tekst/caption */
-
-.middle figcaption {
-	font-family: verdana;
-    font-size: 8px;
-    letter-spacing: 2px;
-}
-
-
-.middle div.bron {
-	position: absolute;
-	right: 80px;
-	font-family: verdana;
-    font-size: 8px;
-    letter-spacing: 2px;
-}
 
 
 </style>
@@ -162,6 +210,8 @@ div.hoofdstuk2 {
 <!-- START HTML CODE --!>
 
 </head>
+                
+
 <body>
 
 <!-- TITEL / START --!>
@@ -172,325 +222,296 @@ div.hoofdstuk2 {
 
 <header>
 <h1>1+1=3</h1>
-<p> DE HYBRIDE ONTWERPER </p>
+<!-- <p> DE HYBRIDE ONTWERPER </p> --!>
 </header>
 
 <!-- MENU --!>
 
-<ul>
+
+
+<div class="wrapper">
+    <div class="header">
+	       
+	       <ul>
   <li><a href="#inleiding">INLEIDING</a></li>
-  <li><a href="#hoofdstuk1">EEN MENGVORM VAN DISCIPLINES</a></li>
-  <li><a href="#hoofdstuk2">INVLOED OP HET WERK</a></li>
-  <li><a href="..">VERWACHTINGEN</a></li>
-  <li><a href="..">DE MANIER VAN KIJKEN</a></li>
+  <li><a href="#hoofdstuk1">MENGVORM VAN DISCIPLINES</a></li>
+  <li><a href="#hoofdstuk2">HET HYBRIDE VERLEDEN</a></li>
+  <li><a href="..">HEDENDAAGS HYBRIDE</a></li>
   <li><a href="..">CONCLUSIE</a></li>
   <li><a href="..">BRONNEN</a></li>
-  <li><a href="..">ABSTRACT</a></li>
 </ul>
+	       
+    </div> 
+    
+    
+    <div class="wrapmiddle"> 	  
+	    <div class="middle">
 
-<!-- AFBEELDINGEN --!>
+<a name="inleiding"></a>
 
-<div class="left"> 
-<img 	src="../go-theses-17-Laura-de-Rijk/afbeeldingen/witblok.jpg" 
-		alt="Schuitema_1" style="width:200px;height:200px;">	
-</div>
+<div class= "koptitel"> Inleiding </div>    
+<div class= "inleiding"> Als ik straks afstudeer als grafisch ontwerper beheers ik twee disciplines
+die constant met elkaar verbonden zijn en invloed hebben op elkaar,
+Fotografie en Grafisch ontwerp. Het zijn van een hybride ontwerper
+is het startpunt voor mijn scriptie. Ik wil op de witte lijn staan op
+een voetbalveld tussen twee vakken en op de ijsbaan de middenlijn
+wegschaatsen. Maar ik wil ook ervan af durven stappen en aan beide
+kanten er 100% voor gaan om deze tussenlijn constant te vervormen
+en samen te laten voegen tot iets nieuws en speels. Deze tussenlijn
+kan een scheiding zijn, een limitatie of laat je ‘out of the box denken’
+en geeft je nieuwe inzichten. Ik wil in de wereld stappen van enkele
+hybride ontwerpers van het verleden die mij en andere ontwerpers
+kunnen inspireren om buiten je grenzen te treden en balans te vinden
+in de disciplines die je beoefend. Wat zijn termen voor mensen die meerdere disciplines beheersen en
+wat houdt de term hybride nu eigenlijk in? In mijn scriptie zal ik enkele
+kunstenaars bestuderen die hybride zijn waarbij de technieken invloed
+hebben op elkaar, en het werk versterkt. Maar ook werk dat in eerste
+instantie geen gevoel oproept dat het grafisch ontwerp is maar toch
+van mensen afkomstig is die grafisch ontwerp hebben gestudeerd of
+meerdere creatieve disciplines beheersen. Is het mogelijk om te zien
+dat het ene het ander beïnvloed in hun werk? Zijn er regels voor een
+hybride ontwerper? Of zijn het juist de personen die regels verbreken
+en spelen met de grenzen van de disciplines. En als je een fotocamera
+koopt, ben je dan een fotograaf? Maar ben je dan ook een grafisch
+ontwerper als je indesign beheerst? Als je een keer een postzegel
+ontwerpt wordt je dan al een ontwerper genoemd? Is het goed om
+juist hybride te zijn in plaats van vast te houden aan èèn discipline?
+En wie zijn de hedendaagse hybride ontwerpers? Wat is de relatie
+tussen fotografie en grafisch ontwerp tegenwoordig? Met als doel
+om mijn eigen positie te kunnen bepalen als ontwerper waarbij twee
+krachtbronnen altijd invloed op elkaar hebben in de manier van kijken
+en het maken van mijn fotografische werken. De hoofdvraag waar ik op het einde van mijn scriptie een antwoord
+op wil geven is: Wat is mijn positie als hybride ontwerper? De positie
+waarbij fotografie en grafisch ontwerp de twee krachtbronnen zijn die
+mij aandrijven als persoon. </div>
 
-<!-- CONTENT EN TEKST --!>
+<a name="hoofdstuk1"></a>
 
-
-<a href="LauradeRijk_031216_2_Thesisdraft.pdf">Download Text </a> + <a href="LauradeRijk_031216_2_Thesisdraft.pdf" target="_top">Download Images</a> 
-
-<A NAME="inleiding">
+<div class= "koptitel"> Mengvorm van disciplines </div>  	    
+<div class= "hoofdstuk1"> Hoe kan je iemand noemen die meerdere disciplines
+beheerst? Je bent een grafisch ontwerper, fotograaf of een
+beeldend kunstenaar. Maar je kunt ook in allemaal goed
+werk maken. Dit hoofdstuk richt zich op diverse termen
+die een relatie hebben met het beheersen van diverse
+disciplines of ‘skills’ en de verschillen en overeenkomsten
+hiertussen.
 <br><br>
-
-<div class="middle">
-<div class= "titels"> INLEIDING </div>
-<div class= "inleiding"> Als ik straks afstudeer als grafisch ontwerper beheers ik twee
-disciplines die constant met elkaar verbonden zijn, Grafisch ontwerp
-en Fotografie. Het zijn van een hybride ontwerper is het startpunt
-voor mijn scriptie. Ik wil op de witte lijn staan op een voetbalveld
-tussen twee vakken en op de ijsbaan de middenlijn wegschaatsen.
-Maar ik wil ook ervan af durven stappen en aan beide kanten er 100 procent
-voor gaan om deze tussenlijn constant te vervormen en samen
-te laten voegen tot iets nieuws en speels. Deze tussenlijn kan een
-scheiding zijn, een limitatie of laat je out of the box denken en geeft
-je nieuwe inzichten.
-<br>
-<br>
-
-<div class= "bron"> Test voor een bron [url] </div>
-
-Ik wil in de wereld stappen van enkele hybride ontwerpers van het
-verleden die mij en andere ontwerpers kunnen inspireren om buiten
-je grenzen te treden en balans te vinden in de disciplines die je
-beoefend. Ik wil zien of de manier van kijken bij hun terug te zien is
-in verschillende werken en invloed heeft op elkaar, en of dit te zien
-is door het werk te omschrijven. Ik wil dieper ingaan op uitspraken
-van deze ontwerpers waar zij praten over deze mengvorm en het
-samenvoegen van verschillende disciplines.
-<br>
-<br>
-In mijn scriptie zal ik enkele kunstenaars bestuderen die hybride
-zijn waarbij de technieken invloed hebben op elkaar, en het werk
-versterkt. Maar ook werk dat in eerste instantie geen gevoel oproept
-dat het grafisch ontwerp is maar toch van mensen afkomstig is
-die grafisch ontwerp hebben gestudeerd of meerdere creatieve
-disciplines beheersen. Is het mogelijk om te zien dat het ene het
-ander beinvloed in hun werk? Zijn er regels voor een hybride
-ontwerper? Of zijn het juist de personen die regels verbreken en
-spelen met de grenzen van de disciplines.
-<br>
-<br>
-En als je een fotocamera koopt, ben je dan een fotograaf? Maar
-ben je dan ook een grafisch ontwerper als je indesign beheerst? Als
-je een keer een postzegel ontwerpt wordt je dan al een ontwerper
-genoemd? Is het goed om juist hybride te zijn in plaats van vast te
-houden aan 1 discipline?</div>
-
-<A NAME="hoofdstuk1">
+De term hybride is een combinatie van twee technieken zoals analoog
+en digitaal. Het wordt ook wel een mengvorm of kruising genoemd.
+Hybride doet denken aan de hybride auto die aangedreven wordt door
+twee krachtbronnen. Hybride is altijd een combinatie van twee die
+samenwerken of samensmelten. Een voorbeeld van hybride bij dieren
+is een kruising van een schaap en geit, je krijgt dan een gaap. Wat zal
+je dan krijgen als je een fotograaf kruist met een grafisch ontwerper?
+Wat ik in mijn thesis wil uitlichten van deze term is het feit dat twee
+disciplines, twee krachtbronnen samen een persoon aandrijven om
+het werk te kunnen maken. Ook moderne kunst uit de 21e eeuw wordt
+steeds vaker hybride kunst genoemd. Hybride kunstvormen breiden
+de mogelijkheden uit voor experiment en innovatie. Een nieuwe
+benadering naar disciplines en mogelijkheden.
 <br><br>
-
-
-<div class= "titels"> EEN MENGVORM VAN DISCIPLINES </div>
-<div class= "hoofdstuk1">
-Hoe kan je iemand noemen die meerdere disciplines
-beheerst? Je bent een grafisch ontwerper, fotograaf of
-een beeldend kunstenaar. Maar je kunt ook in allemaal
-goed werk maken. Dit hoofdstuk richt zich op diverse
-termen die een relatie hebben met het beheersen
-van diverse disciplines of ‘skills’ en de verschillen en
-overeenkomsten hiertussen. De term hybride is een combinatie van twee technieken zoals
-analoog en ditigaal. Het wordt ook wel een mengvorm of
-kruising genoemd. Hybride doet denken aan de hybride auto die
-aangedreven wordt door twee krachtbronnen. Hybride is altijd een
-combinatie van twee die samenwerken of samensmelten. Een
-voorbeeld van hybride bij dieren is een kruising van een schaap en
-geit, je krijgt dan een gaap. Wat zal je dan krijgen als je een fotograaf
-kruist met een grafisch ontwerper? Wat ik in mijn thesis wil uitlichten
-van deze term is het feit dat twee disciplines, twee krachtbronnen
-samen een persoon aandrijven om het werk te kunnen maken. Ook
-moderne kunst uit de 21e eeuw wordt steeds vaker hybride kunst
-genoemd. Hybride kunstvormen breiden de mogelijkheden uit voor
-experiment en innovatie. Een nieuwe benadering naar disciplines en
-mogelijkheden.
+Een discipline is een bepaalde richting in bijvoorbeeld de kunst.
+Maar het is ook een rollenspel. Een rollenspel tussen een juf en en
+een leerling, of een rollenspel tussen een fotograaf en een grafisch
+ontwerper. Discipline houdt ook in dat je jezelf aan het werk kunt
+zetten om een scriptie te schrijven of op te staan om naar school
+te gaan. Bij kunstdisciplines vervangen de grenzen steeds meer.
+Interdisciplinair is een samenwerking tussen verschillende disciplines.
+Het begrip interdisciplinariteit betekent letterlijk ‘tussen de disciplines’.
+Je beperkt je niet alleen tot je eigen discipline of vakgebied maar er
+wordt een tussenpositie gecreëerd. Interessant is dat na een langere
+periode die combinatie van disciplines zelf ook weer een nieuwe
+discipline kan worden. Ook het woord ‘Multidisciplinair’ mag niet
+ontbreken. Hierbij is het noodzakelijk om kennis te combineren van
+verschillende disciplines. Maar het grootste verschil met interdisciplinair
+is dat het een samenwerking is van kunstenaars uit verschillende
+stromingen zoals een grafisch ontwerper met een architect. Zodra
+kunstenaars van verschillende disciplines met elkaar gaan werken
+ontstaat er multidisciplinaire kunst.
 <br><br>
-Een discipine is een bepaalde richting in bijvoorbeeld de kunst.
-Maar het is ook een rollenspel. Een rollenspel tussen een juf en
-en een leerling, of een rollenspel tussen een fotograaf en een
-grafisch ontwerper. Discipline houdt ook in dat je jezelf aan het
-werk kunt zetten om een sciptie te schrijven of op te staan om naar
-school te gaan. Bij kunstdisciplines vervangen de grenzen steeds
-meer. Interdisciplinair is een samenwerking tussen verschillende
-disciplines. Het begrip interdisciplinariteit beteket letterlijk ‘tussen
-de disciplines’. Je beperkt je niet alleen tot je eigen discipline of
-vakgebied maar er wordt een tussenpositie geceeerd. Interessant
-is dat na een langere periode die combinatie van disciplines zelf
-ook weer een nieuwe discipline kan worden. Ook het woord
-‘Multidisciplinair’ mag niet ontbreken. Hierbij is het noodzakelijk
-om kennis te combineren van verschillende disciplines. Maar het
-grootste verschil met interdisciplinair is dat het een samenwerking
-is van kunstenaars uit verschillende stromingen zoals een grafisch
-ontwerper met een architect. Zodra kunstenaars van verschillende
-disciplines met elkaar gaan werken ontstaat er multidisciplinaire
-kunst.
-<br><br>
-Het verschil tussen hybride en interdisciplinariteit is de combinatie
-van krachtbronnen die samen tot een werk komen tegenover de
-samenwerking van verschillende disciplines en mensen die tot een
-werk komen. De term hybride is dus eigenlijk weer een volgende
-stap. Maar ook de term ‘Grafisch ontwerper’ is een steeds breder
-begrip geworden in deze tijd. Het is niet meer enkel boekdrukkunst
-en letters, het is nu ook een verzamelnaam voor verschillende
-disciplines bij elkaar. Grafisch ontwerp wordt een mengvorm van
-verschillende vakgebieden. De grafisch ontwerper is steeds meer
-de Polymath van de kunst en de Man van alles. Hij of zij bouwt
-websites, heeft kennis van beeld en werkt zowel analoog als digitaal
-en beschikt zelf over een printer of verschillende soorten papier.
 Een Polymath is een persoon bij wie zijn deskundigheid overspant
-over een groot aantal verschillende vakgebieden. Het werd
-gebruikt om grote denkers te omschrijven. In een statement van
-Leon Battista Alberti staat: ‘A man can do all things if he will’’.
-Een basisprincipe waarbij het gaat over dat mensen alle kennis
-moeten omarmen en hun capaciteiten zo volledig mogelijk moeten
-ontwikelen. Een andere optie is “Jack of all trades, master of none”,
-In het Nederlands: ‘‘Man van alles, meester van niks’’. Een stijlfiguur
-dat verwijst naar een persoon die bekend is met veel vaardigheden,
-maar geen een in het bijzonder. Maar in het Nederlands heet het ook
-‘‘Manusje-van-alles”, wat eigenlijk meer een klusjesman is die allerlei
-vaardigheden beheerst zoals het verven van een muur.
-Een andere nieuwe term die steeds meer past bij deze tijd is
-Postmedium. Postmedium is een tijd waarin de keuze van het
-medium er niet meer toe doet.
+over een groot aantal verschillende vakgebieden. Het werd gebruikt
+om grote denkers te omschrijven. In een statement van Leon Battista
+Alberti staat: ‘A man can do all things if he will’. Een basisprincipe
+waarbij het gaat over dat mensen alle kennis moeten omarmen en
+hun capaciteiten zo volledig mogelijk moeten ontwikkelen. Een
+andere optie is “Jack of all trades, master of none”, In het Nederlands:
+‘‘Man van alles, meester van niks’’. Een stijlfiguur dat verwijst naar
+een persoon die bekend is met veel vaardigheden, maar geen een in
+het bijzonder. Maar in het Nederlands heet het ook ‘‘Manusje-vanalles”,
+wat eigenlijk meer een klusjesman is die allerlei vaardigheden
+beheerst zoals het verven van een muur. Het verschil tussen hybride
+en interdisciplinariteit is de combinatie van krachtbronnen die samen
+tot een werk komen tegenover de samenwerking van verschillende
+disciplines en mensen die tot een werk komen. De term hybride is
+dus eigenlijk weer een volgende stap. Maar ook de term ‘Grafisch
+ontwerper’ is een steeds breder begrip geworden in deze tijd. Het
+is niet meer enkel boekdrukkunst en letters, het is nu ook een
+verzamelnaam voor verschillende disciplines bij elkaar. Grafisch
+ontwerp wordt een mengvorm van verschillende vakgebieden. De
+grafisch ontwerper is steeds meer de Polymath van de kunst en de
+Man van alles. Hij of zij bouwt websites, heeft kennis van beeld en
+werkt zowel analoog als digitaal en beschikt zelf over een printer of
+verschillende soorten papier.
 <br><br>
-Mijn interesses liggen bij fotografie en grafisch ontwerp. Even terug
-naar de term ‘discipline. De discipline fotografie wordt vooral
+Een andere nieuwe term die steeds meer past bij deze tijd is
+Postmedium. Postmedium is een tijd waarin de keuze van het medium
+er niet meer toe doet. Medium wil zeggen de manier waarmee
+informatie wordt overgebracht zoals boeken, tijdschriften radio,
+televisie, film maar ook steeds meer het internet en social media.
+Post betekent letterlijk na, dus eigenlijk in de toekomst. Zoals het bij
+stromingen vaak gebruikt werd om een volgende fase van een stroming
+aan te duiden zoals het postmodernisme wordt er nu bedoeld dat het
+medium er in de toekomst niet meer toe doet en de grenzen flexibel
+zijn bij de keuze hiervan. De fotograaf en grafisch ontwerper van nu
+werken in diverse media.
+<br><br>
+Mijn interesses liggen bij fotografie en grafisch ontwerp. Even
+terug naar de term discipline. De discipline fotografie wordt vooral
 omschreven met subthema’s zoals portret, landschap, architectuur
 fotografie enzovoort. Maar het kan ook de verschillende vormen
 van lichttoepassing zijn. Wat is nu de discipline grafisch ontwerp?
 Grafisch ontwerp draait om het ontwikkelen van concepten voor de
-communicatie. Hierbij worden veel verschillende media gebruikt.
-De link met drukwerk is iets van het verleden en het pre-digitale
-tijdperk. Zij oefenen hun beroep op allerlei manieren uit. De
-discipline grafisch ontwerpen omvat, kortom, alles wat er in het
-grafisch ontwerpen gebeurt en iedereen die daar een rol in speelt.
-Beide disciplines zijn toegepast, en hebben dezelfde houding en
-effecten, maar zijn ze vergelijkbaar als we kijken naar de ‘hybride’
-ontwikkeling?
-<br><br>
-Zowel grafisch ontwerp als fotografie behoren tot toegepaste kunst.
-Toegepaste kunst is de esthetische vormgeving van funcionele
+communicatie. Hierbij worden veel verschillende media gebruikt. De
+link met drukwerk is iets van het verleden en het pre-digitale tijdperk.
+Zij oefenen hun beroep op allerlei manieren uit. De discipline grafisch
+ontwerpen omvat, kortom, alles wat er in het grafisch ontwerpen
+gebeurt en iedereen die daar een rol in speelt. Beide disciplines zijn
+toegepast, en hebben dezelfde houding en effecten, maar zijn ze
+vergelijkbaar als we kijken naar de hybride ontwikkeling?
+Zowel grafisch ontwerp als fotografie behoren tot de toegepaste
+kunst. Toegepaste kunst is de esthetische vormgeving van functionele
 voorwerpen en maken beide gebruik van alledaagse voorwerpen.
 Beide disciplines hebben dezelfde houding en hetzelfde doel. Maar
 toch verschillen ze van elkaar. Is de artistieke vrijheid bijvoorbeeld
 in verhouding als het gaat om toegepaste kunst? De fotograaf moet
 zich houden aan het beeld wat er verwacht wordt, terwijl de grafisch
 ontwerper misschien iets meer vrijheid heeft om de elementen voor
-die poster in balans te brengen.
+die poster in balans te brengen. Wat het verschil in autonome en
+toegepaste fotografie? Autonoom wil zeggen dat je de vrijheid hebt en
+eigen keuzes kunt maken in je fotografie. Maar als een opdrachtgever
+jou die vrijheid geeft, wordt je autonome fotografie pas toegepast als
+het daadwerkelijk op de cover van een blad terecht komt. Als hybride
+ontwerper die zelf fotografeert ben ik dus eigenlijk zowel autonoom
+als toegepast in mijn werk. Het wordt toegepast op een poster,
+ansichtkaart of op een papier wat ontworpen wordt als een object
+voor het publiek. Maar in dit geval bepaal ik zelf of dat gebeurd of niet
+met mijn eigen beeld. Ik heb de vrijheid om te bepalen of het wordt
+toegepast of niet. Natuurlijk niet in elk geval maar ik heb wel de kracht
+om van mijn eigen foto’s een boek te maken. Zonder de grafisch
+ontwerper komt de foto niet in een tijdschrift terecht. De fotograaf past
+wel zijn werk aan zodat het passend is bij het verhaal of concept wat
+vertelt moet worden. De fotograaf is hybride door zich aan te passen
+aan de eisen van de andere disciplines waar het bij wordt toegepast.
+Ook de fotograaf is constant aan het spelen met de grenzen van de
+disciplines.
 <br><br>
-Is toegepaste fotografie niet automatisch een deel van grafisch
-ontwerp? Het wordt toegepast op een poster of op een papier wat
-ontworpen wordt als een object voor het publiek. Een foto komt op
-een ansicht kaart terecht en verkocht. De toegepaste fotograaf staat
-dan toch altijd onder de grafisch ontwerper? Zonder de grafisch
-ontwerper komt de foto niet in een tijdschrift terecht. De fotograaf
-past wel zijn werk aan zodat het passend is bij het verhaal wat vertelt
-moet worden.
-<br><br>
-De fotograaf is hybride door zich aan te passen aan de eisen van de
-andere disciplines waar het bij wordt toegepast. Ook de fotograaf
-is constant aan het spelen met de grenzen van de disciplines. Het
-wordt toegepast in allerlei andere disciplines zoals installaties. De
-fotograaf en grafisch ontwerper van nu werken in diverse media.
-In mijn thesis focus ik vooral op de term ‘hybride’. Het laten
+In mijn scriptie focus ik vooral op de term hybride. Het laten
 samenwerken van twee krachtbronnen. In dit geval de twee
-disciplines fotografie & grafisch ontwerp. De term ‘hybride’ voelt als
-de toekomstige term die past bij de ontwerpers van de 21e eeuw.
-Wat is de invloed van fotografie in grafisch ontwerp nu?
-* In het volgende hoofdstuk ga ik kijken naar enkele stromingen/
-periode waarin fotografie een belangrijke invloed heeft gehad
-op grafisch ontwerp. Hierbij worden deze twee disciplines
-gecombineerd om een bepaalde boodschap over te brengen
-of ‘vernieuwing’ te creeren. Van Dada/Constructivisme, Nieuwe
-fotografie & typografie tot de zwitserse school. Per stroming
-omschrijf ik kort over deze periode en omschrijf ik een persoon/
-kunstenaar en een werk. Om daarna vervolgens te kijken naar het hedendaagse en de invloed
-van fotografie nu in grafisch ontwerp en het zijn van een hybride
-ontwerper tegenwoordig.
+disciplines fotografie & grafisch ontwerp. De term ‘hybride’ voelt als de
+toekomstige term die past bij de ontwerpers van de 21e eeuw.  </div> 
+
+<a name="hoofdstuk2"></a>
+
+<div class= "koptitel"> Het hybride verleden </div>
+<div class= "hoofdstuk2"> Een beknopt onderzoek in het verleden. In welke
+stromingen werden fotografie en grafisch ontwerp op
+krachtige manieren samengebracht? Bij elke stroming
+komen enkele kunstenaars aan bod en hun werk.
+<br><br>
+2.1 | Tijdens de Dada periode (1916-1920) ontwikkelde enkele
+kunstenaars een nieuwe context om foto’s te gebruiken in de vorm van
+een fotomontage. Om krachtige politieke beelden te creëren kozen
+ze bekende persfoto’s en reorganiseerde ze zo dat hun betekenis
+radicaal veranderde en een sterke boodschap konden overbrengen.
+De werken werden samengesteld uit geknipte stukken pers, affiches,
+catalogi, kaartjes en ander gedrukt materiaal. Grafisch materiaal werd
+hergebruikt waarbij deze twee krachtbronnen samen de boodschap
+overbracht van de dadaïsten. Door de ontwikkeling in nieuwe print
+methodes werden de fotomontages wijdverspreid en vaak gebruikt in
+reclame en commerciële fotografie. Het proces van het maken van
+een compositie door het combineren van meerdere foto’s om de illusie
+te wekken van een nieuw beeld.
+<br><br>
+Raoul Hausmann, een van de oprichters van de Berlijnse Dada groep
+ontwikkelde fotomontage als een instrument van satire en politiek
+protest. Volgens de omschrijving wordt de ‘kunstcriticus’ in de collage
+aangeduid met een stempel als George Grosz, een ander lid van de
+groep, het is waarschijnlijk een anoniem figuur uitgesneden uit een
+magazine. Het Duitse bankbiljet achter de nek van de criticus doet
+vermoeden dat hij wordt gecontroleerd door kapitalistische krachten.
+De woorden op de achtergrond maken deel uit van een gedicht poster
+gemakt door Hausmann die worden opgeplakt op de muren van
+Berlijn. zijn fotomontage [fig. 1] is gemaakt met inkt en krijt op een
+poster met een gedicht. </div>
+	    
+	        
+	    </div>
+	</div>
+	
+	    <div class="left">
+	    
+	        <figure>
+  <img src="../go-theses-17-Laura-de-Rijk/afbeeldingen/fig1_hausmann.jpeg" alt="Schuitema_01" width="160" height="200">
+  <figcaption> Fig. 1 'the art critic' 1919-1920</figcaption>
+</figure>
+<br><br>
+<figure>
+  <img src="../go-theses-17-Laura-de-Rijk/afbeeldingen/fig2_stepanova.jpeg" alt="Schuitema_02" width="160" height="130">
+  <figcaption> The result of the First five-year plan, 1932 </figcaption>
+</figure>
+<br><br>
+<figure>
+  <img src="../go-theses-17-Laura-de-Rijk/afbeeldingen/fig3_schuitema.jpeg" alt="Schuitema_02" width="160" height="130">
+  <figcaption> Folder, voor en achterzijde. 1928 </figcaption>
+</figure>
+<br><br>
+<figure>
+  <img src="../go-theses-17-Laura-de-Rijk/afbeeldingen/fig4_schuitema.jpeg" alt="Schuitema_02" width="160" height="130">
+  <figcaption> De vries Robbe-Betondak. 1938 </figcaption>
+</figure>
+<br><br>
+
+	    </div>	    
+	    <div class="right">
+	    
+	          <figure>
+  <img src="../go-theses-17-Laura-de-Rijk/afbeeldingen/fig18_forentporza.jpeg" alt="Schuitema_01" width="160" height="100">
+  <figcaption> </figcaption>
+</figure>
+<figure>
+  <img src="../go-theses-17-Laura-de-Rijk/afbeeldingen/fig19_forentporza.jpeg" alt="Schuitema_02" width="160" height="130">
+  <figcaption> Forent Porta, <br>
+‘expentations’, 2016</figcaption>
+</figure>
+<br><br>
+<figure>
+  <img src="../go-theses-17-Laura-de-Rijk/afbeeldingen/fig20_sarahillenberger.jpeg" alt="Schuitema_02" width="160" height="200">
+  <figcaption> </figcaption>
+</figure>
+<figure>
+  <img src="../go-theses-17-Laura-de-Rijk/afbeeldingen/fig21_sarahillenberger.jpeg" alt="Schuitema_02" width="160" height="200">
+  <figcaption>Fig. 20-21
+Flower Children, <br>
+Neon Magazine. 2010. </figcaption>
+</figure>
+<figure>
+  <img src="../go-theses-17-Laura-de-Rijk/afbeeldingen/fig22_sarahillenberger.jpeg" alt="Schuitema_02" width="160" height="200">
+  <figcaption> Fig. 22
+‘Wonderplants’, <br> 2015,
+Neon Magazine </figcaption>
+</figure>
+<figure>
+  <img src="../go-theses-17-Laura-de-Rijk/afbeeldingen/fig23_sarahillenberger.jpeg" alt="Schuitema_02" width="160" height="120">
+  <figcaption> Fig. 23
+Cut art, 2005 </figcaption>
+</figure>
+	    </div> 
+	    
+	    <div class="footer">
+	        <a href="LauradeRijk_031216_2_Thesisdraft.pdf">Download Text </a> + <a href="LauradeRijk_031216_2_Thesisdraft.pdf" target="_top">Download Images</a> 
+	    </div>     
 </div>
-
-<A NAME="hoofdstuk2">
-<br><br>
-
-<div class= "titels"> INVLOED OP HET WERK </div>
-<div class= "hoofdstuk2">In dit hoofdstuk ga ik enkele ‘hybride’ grafische
-ontwerpers bespreken die werkte in verschillende
-disciplines. Door hun uitspraken te bespreken en hun
-eigen werk te vergelijken.
-<br><br>
-Er zijn vele hybride kunstenaars uit het verleden te noemen die
-in meerdere disciplines goed waren en beroemd zijn geworden.
-Daarom ga ik mij richten op enkele namen die iniedergeval grafisch
-ontwerp en fotografie als disciplines hebben uitgevoerd en hier een
-goede balans in hebben gevonden. Als reden het feit dat ik zelf ook
-deze 2 disciplines beoefen. De selectie is ontstaan uit mijn eigen
-insteresse in deze ontwerpers. Ik wil dieper in hun uitspraken duiken
-en proberen te begrijpen wat voor ontwepers zij waren en hoe zij
-omgingen met het beheersen van verschillende disciplines. Hebben
-hun disciplines invloed op elkaar in het werk? Wat kan ik of andere
-ontwerpers van hun leren om onze eigen disciplines in balans met
-elkaar te gebruiken? Zij zijn de inspiratiebronnen in mijn thesis.
-de ontwerpers die aan bod komen zijn: Paul Schuitema, Klaus
-Baumgarner, Piet Zwart, El Lissitsky en Lex Reitsma. Een hoopje
-namen die samen ruim 20 disciplines telt bij elkaar.
-<br><br>
-2.1 | Paul Schuitema (1897-1973) was een grafisch
-ontwerper bedreven in typografie, maken van meubels,
-architectuur, fotografie, schilderen, lithografie en
-film. Paul heeft met zijn experimentele gebruik van
-fotografie een belangrijke bijdrage geleverd aan de
-Nieuwe Fotografie beweging. Hij staat bekend om zijn
-innovatieve gebruik van fotomontage en gebruik van
-kleur. Hij is 1 van de eerste docenten geweest op de
-Koninklijke academie voor beeld kunsten in Den-Haag.
-Hier leerde hij zowel fotografie als design.
-Paul is de eerste hybride ontwerper die een diversiteit aan
-disciplines beheerst en op alle vlakken indruk heeft gemaakt of
-iets heeft achtergelaten. Zijn kennis met beeld, typografie en
-kleur vallen samen in het voorbeeld hierboven: Folder, ca. 1928,
-voor en achterzijde. Door dit werk van Paul te vergelijken met
-een fotografisch werk valt op dat dezelfde dynamische lijnen
-terugkomen in beide werken. Neem bijvoorbeeld de foto: toevallig
-ook met een krant/tekst op de ondergrond waarbij de titel schuin
-oversteekt net zoals de dynamische lijnen in het grafische voorbeeld.
-<br><br>
-
-<figure>
-  <img src="../go-theses-17-Laura-de-Rijk/afbeeldingen/schuitema_01.jpg" alt="Schuitema_01" width="260" height="200">
-  <figcaption>Folder, ca. 1928, voor en achterzijde</figcaption>
-</figure>
-
-In zijn fotomontages komen allerlei elementen bij elkaar samen.
-Maar het belangrijkste is naar mijn mening dat daarbij de balans
-behouden blijft en het niet een ‘mengelmoes’ wordt van allerlei
-elemenenten. Het is belangrijk om als hybride persoon die balans
-te behouden en elk element het ander te versterken. Ik vraag mij af
-of iemand bij het zien van enkel de foto zich zal kunnen afvragen
-of deze persoon ook grafisch werk maakt. Als je de definitie van
-‘grafisch’ erbij zou betrekken word er wel degelijk gespeeld met
-de lijnen en elementen. En in het geval van deze foto word er ook
-nog eens duidelijk tekst gebruikt en hiermee gespeeld met de krant.
-Zou Paul door zijn grafische kennis de krant zo hebben geplaatst?
-Ik vraag mij af of een fotograaf zonder grafische achtergrond zich
-bezig zou houden met de tekst en de krant.
-<br><br>
-
-<figure>
-  <img src="../go-theses-17-Laura-de-Rijk/afbeeldingen/schuitema_02.jpg" alt="Schuitema_02" width="260" height="360">
-  <figcaption> Gloeilamp op krant, 1928-1930 </figcaption>
-</figure>
-
-‘Omdat ik een hekel aan tekeningetjes had greep ik naar de foto’.
-Een quote van Piet Schuitema rond 1927. Bij hem werd de foto
-gelijkwaardig aan de tekst. Vernieuwing van de fotografie en
-typografie was noodzakelijk. Bij deze foto: Monotyperol, 1929 vraag ik mij af of de kennis van
-grafisch ontwerp invloed heeft op de keuze van de compositie en
-het maken van deze foto. Het is een prachtige foto met dynamische
-lijnen, spannende schaduwen en een grid van stippen. Paul zijn
-fotovisie heeft invloed op zijn andere werk, en andersom. De
-behoefte van Paul om zelf te gaan fotograferen, zonder echte
-vakopleiding. En toch heeft hij zich snel ontwikkelt tot een bekende
-fotograaf. Is dit omdat zijn visie bij typografie en fotografie op
-hetzelfde level stond? Beide disciplines waren toe aan ‘vernieuwing’.
-
-<br><br>
-Een andere foto van Paul Schuitema die ik graag wil uitlichten is
-de foto: Russische landschappen, 1930. Je ziet een compositie
-van organische bomen met fraaie vormen die onstaan zijn bij de
-jarenlange groei van deze bomen. De dynamiek en beweging
-van de bomen trekt de aandacht. Ze staan ergens in een Russisch
-landschap waar Paul Schuitema voorbij liep en deze compositie
-heeft vastgelegd. Er onstaat een nieuwe kijk op de alledaagse
-werkelijkheid. Naar mijn mening is dit een foto die gemaakt kan
-worden door een grafisch ontwerper, of iemand die door zijn
-creatieve achtergrond anders naar de wereld kijkt. De manier
-van kijken naar het alledaagse en altijd opzoek naar een balans
-of compositie of het nu in fotografie is of met typografie op een
-poster. Om praktische redenen is Schuitema begonnen zelf te
-gaan fotograferen en al experimenterend moest hij de technische
-vaardigheden onder de knie zien te krijgen. Door dit soort
-experimenten en het trainen van zijn ‘fotografisch oog’ ontwikkelde
-hij zich uiteindelijk zo snel dat hij al gauw werd uitgenodigd voor
-tentoonstellingen.
-<br><br>
-Meer tekst volgt nog
-
-
-</div></div>
-
-
-<!-- BRONNEN / RECHTS --!>
-
-<div class="right"></div>
 
 
 </body>
