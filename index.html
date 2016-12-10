@@ -225,17 +225,19 @@ div.hoofdstuk4 {
 
 /*  Alle afbeeldingen uit tekst naar links */
 
-.middle figure {
+/* .middle figure {
 	position: absolute;
 	left: 60px;
 }
 
 /* in een blok zetten, en dan de positie in z'n geheel op absolute, of voor de tekst/caption */
 
-.middle figcaption {
+ .middle figcaption {
 	font-family: verdana;
     font-size: 8px;
     letter-spacing: 2px;
+    position: absolute;
+    left: 1000px;
 }
 
 
@@ -250,15 +252,40 @@ div.hoofdstuk4 {
 
 /* Foto's plaatsen op allerlei diverse plekken */
 
+#figuur1 {
+	left: 60px;
+	width: 300px;
+	height: 400px;
+	padding-left: 500px;
+	position: absolute;
+}
+
+#figuur1:hover{
+    width:180px;
+    height:230px;
+    left: 600px;
+    position: absolute;  
+}
+
+#figuur2 {
+	left: 60px;
+	width: 190px;
+	height: 130px;
+	padding-left: 0px;
+	position: absolute;
+}
+
+
+/* Figuur 4 */ 
 #imagetest{
-    width:300px;
+    width:600px;
     height:400px;
     left: 700px;
     position: absolute;
 }
 
 #imagetest:hover{
-    width:150px;
+    width:300px;
     height:200px;
     left: 1100px;
     position: absolute;
@@ -301,8 +328,8 @@ div.hoofdstuk4 {
 <div class="left"> 
 
  <figure>
-  <img src="../go-theses-17-Laura-de-Rijk/afbeeldingen/fig1_hausmann.jpeg" alt="hausmann" width="160" height="200">
-  <figcaption> Fig. 1 'the art critic' 1919-1920</figcaption>
+  <img src="../go-theses-17-Laura-de-Rijk/afbeeldingen/witblok.jpg" alt="hausmann" width="160" height="200">
+  <figcaption> </figcaption>
 </figure>
 
 	
@@ -427,8 +454,6 @@ Man van alles. Hij of zij bouwt websites, heeft kennis van beeld en
 werkt zowel analoog als digitaal en beschikt zelf over een printer of
 verschillende soorten papier.
 
-<img id="imagetest" src="../go-theses-17-Laura-de-Rijk/afbeeldingen/fig1_hausmann.jpeg" alt="Img1"/>
-
 <br><br>
 Een andere nieuwe term die steeds meer past bij deze tijd is
 Postmedium. Postmedium is een tijd waarin de keuze van het medium
@@ -496,15 +521,6 @@ krachtige manieren samengebracht? Bij elke stroming
 komen enkele kunstenaars aan bod en hun werk.
 <br><br>
 
-
- <figure>
-  <img src="../go-theses-17-Laura-de-Rijk/afbeeldingen/fig1_hausmann.jpeg" onmouseover="this.src='../go-theses-17-Laura-de-Rijk/afbeeldingen/fig1.1_hausmann.psd'"
-  onmouseout="this.src='../go-theses-17-Laura-de-Rijk/afbeeldingen/fig1.1_hausmann.psd'" width="300" height="380" />
-  <figcaption> Fig 1.
-Raoul Hausmann,‘the art critic’ <br>
-(1919-1920) </figcaption>
-</figure>
-
 <div class= "hoofdstuk2-1"> 2.1 | Tijdens de Dada periode (1916-1920) ontwikkelde enkele
 kunstenaars een nieuwe context om foto’s te gebruiken in de vorm van
 een fotomontage. Om krachtige politieke beelden te creëren kozen
@@ -531,6 +547,24 @@ De woorden op de achtergrond maken deel uit van een gedicht poster
 gemakt door Hausmann die worden opgeplakt op de muren van
 Berlijn. Zijn fotomontage <FONT COLOR="blue" >[fig. 1]</FONT> is gemaakt met inkt en krijt op een
 poster met een gedicht.  </div>
+
+<figure>
+<img id="figuur1" src=" ../go-theses-17-Laura-de-Rijk/afbeeldingen/fig1.1_hausmann.psd" onmouseover="this.src='../go-theses-17-Laura-de-Rijk/afbeeldingen/fig1_hausmann.jpeg'"
+  onmouseout="this.src='../go-theses-17-Laura-de-Rijk/afbeeldingen/fig1.1_hausmann.psd'"/>
+  <figcaption> Fig 1.
+Raoul Hausmann,‘the art critic’ <br>
+(1919-1920) </figcaption>
+</figure>
+<br>
+<figure>
+  <img id="figuur2" src="../go-theses-17-Laura-de-Rijk/afbeeldingen/fig2_stepanova.jpeg" onmouseover="this.src='../go-theses-17-Laura-de-Rijk/afbeeldingen/fig2_stepanova.jpeg'"
+  onmouseout="this.src='../go-theses-17-Laura-de-Rijk/afbeeldingen/fig2_stepanova.jpeg'" width="300" height="200" />
+  <figcaption> Fig 2.
+Varvara Stepanova
+The Results of the First <br>
+Five-Year Plan, 1932 </figcaption>
+</figure>
+
 <br><br>
 Er ontstaat een sterk statement door de combinatie van
 druktechnieken en goede bekende nieuwsfoto’s. Door deze op een
@@ -556,15 +590,6 @@ In Nederland worden deze fotomontage technieken toegepast door
 vormgevers van de Nieuwe Zakelijkheid, zoals Piet Zwart en Paul
 Schuitema. Zij komen aan bod bij de volgende stroming. De nieuwe
 typografie en nieuwe fotografie.
-
-<figure>
-  <img src="../go-theses-17-Laura-de-Rijk/afbeeldingen/fig2_stepanova.jpeg" onmouseover="this.src='../go-theses-17-Laura-de-Rijk/afbeeldingen/fig2_stepanova.jpeg'"
-  onmouseout="this.src='../go-theses-17-Laura-de-Rijk/afbeeldingen/fig2_stepanova.jpeg'" width="300" height="200" />
-  <figcaption> Fig 2.
-Varvara Stepanova
-The Results of the First <br>
-Five-Year Plan, 1932 </figcaption>
-</figure>
 
 <br><br>
 
@@ -606,6 +631,7 @@ de beeldende mogelijkheden van de fotografie en de druktechniek.
 Volgens Schuitema ontstonden er sterk ruimtelijke beelden door
 de combinatie van zwart/wit, steunkleuren en de veel gebruik van
 fotografische close-ups.
+
 <br><br>
 Een foto van Schuitema om uit te lichten is Monotyperol <FONT COLOR="blue" >[fig. 5]</FONT>. Een
 foto gemaakt door een grafisch ontwerper. Zal zijn kennis van grafisch
@@ -661,6 +687,15 @@ elementen ligt het actieve element in de compositie Volgens piet leert
 fotografie ons de wereld op een geheel nieuwe manier te bekijken. Hij
 spreekt liever van een fotovisie.
 <br><br>
+
+<figure>
+  <img src="../go-theses-17-Laura-de-Rijk/afbeeldingen/fig1_hausmann.jpeg" onmouseover="this.src='../go-theses-17-Laura-de-Rijk/afbeeldingen/fig1.1_hausmann.psd'"
+  onmouseout="this.src='../go-theses-17-Laura-de-Rijk/afbeeldingen/fig1.1_hausmann.psd'" width="300" height="380" />
+  <figcaption> Fig 1.
+Raoul Hausmann,‘the art critic’ <br>
+(1919-1920) </figcaption>
+</figure>
+
 Piet heeft tijdens opdrachten voor o.a. de NFK eerst foto’s van
 andere gebruikt en even later is hij ook zelf gaan fotograferen om
 zijn opdrachtgever te overtuigen, wat ook lukte en werd uitgebreid.
