@@ -2,8 +2,8 @@
 <html>
 <head>
 
-
 <meta charset="utf-8">
+
                     <title>1+1=3</title>
                     <meta name="description" content="De relatie tussen fotografie & grafisch ontwerp" />
                     <meta property="og:title" content="1+1=3" />
@@ -12,95 +12,101 @@
 
 <meta charset="utf-8"/>
 
+
 <style>
 
 /* LAYOUT */
 @import url('https://fonts.googleapis.com/css?family=Arvo');
 @import url('https://fonts.googleapis.com/css?family=Open+Sans');
+@import url('https://fonts.googleapis.com/css?family=Roboto:300');
+@import url('https://fonts.googleapis.com/css?family=Merriweather:300');
 
 
-/* Columns */
+/* PRINTOPTIES */
+
+@media print {
+
+  img {
+    display: none !important;
+  }
+  * {
+    background-image: none !important;
+  }
+ figcaption {
+    display: none !important;
+  }
+  
+  ul {
+    display: none !important;
+  }
+  
+      .left {
+    display: none !important;
+  }
+  
+     a {
+    display: none !important;
+  }
+  
+      .middle {
+    float: none !important;
+    width: none !important;
+    margin-left: 60px;
+  }
+  
+  
+}
+
+@page { size: auto;  margin: 0mm; }
 
 
 body {
     background-color: white;
 }
 
----
 
-.wrapper{
-   width: 98%;
-   margin: 0 auto;
-}
-.header{
-   float: left;
-   width: 100%;
-   background-color: white;
-}
-.wrapmiddle{
-   float: left;
-   width: 100%;
-   background-color: #fff
-}
-.middle{
-   margin-right:307px;
-   margin-left:307px;
-   background-color: #FFFFFF;
-   height: 550px;
-   overflow: scroll;
-   
-   padding: 20px 200px 30px 70px; /* Top, Right, Bottom, Left */
-   
-}
-.left{
-   float: left;
-   width: 300px;
-   margin-left: -100%;
-   background-color: #FFFFFF;
-   height: 550px;
-   overflow: scroll;
+header { 
+    display: block;
+    border-style: solid;
+    border-color: white;
+    margin: 0px 0px 0px 0px;
 }
 
-.left figure {
-	left: 12px;
-}
-
-.right{
-   float: left;
-   width: 300px;
-   margin-left: -300px;
-   background-color: #FFFFFF;
-   height: 550px;
-   overflow: scroll;
-  
-}
-.footer{
-   float: left;
-   width: 100%;
-   background-color: #ffffff;
-   text-align: center;
-   padding-top: 5px;
-}
-body {
-   padding: 0px;
-   margin: 0px;
-}
-
-
-/* INHOUD VORMGEVING */
-
-{
-img position: center;
-}
-
-figcaption {
-	font-family: verdana;
-    font-size: 8px;
+  .left{float:left; width:20%;
+  font-family: verdana;
+    font-size: 7px;
     letter-spacing: 2px;
+    height: 100%;
+    text-align: center;
+  
+  }
+  
+  .middle{float:left; width:55%;
+  height: 100%;
+  /* border-style: solid;
+    border-color: blue; */
+  }
+  
+
+  .right{float:left; width:15%;
+  font-family: verdana;
+    font-size: 7px;
+    letter-spacing: 2px;
+    text-align: center;
+   /* border-style: solid;
+    border-color: blue; */
+    }
+
+h1 {
+    color: blue;
+    text-align: center;
+    font-family: verdana;
+    font-size: 200px;
+    margin: 50px 0px 0px 0px; /* Top, Right, Bottom, Left */
 }
 
 div.koptitel {
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'Merriweather', serif;
     font-size: 20px;
     letter-spacing: 0px;
     color: blue;
@@ -108,60 +114,17 @@ div.koptitel {
     padding-top: 10px;
 }
 
-div.inleiding {
-    border: 0px solid white;
-    color: black;
-    font-family: 'Open Sans', sans-serif;
-    font-size: 14px;
-
-}
-
-div.hoofdstuk1 {
-    border: 0px solid white;
-    color: black;
-    font-family: 'Open Sans', sans-serif;
-    font-size: 14px;
-    padding-top: 20px;
-    padding-bottom: 20px;
-
-}
-
-div.hoofdstuk2 {
-    border: 0px solid white;
-    color: black;
-    font-family: 'Open Sans', sans-serif;
-    font-size: 14px;
-    padding-top: 20px;
-    padding-bottom: 20px;
-
-}
-
-div. figuur {
-	color: blue;
-	font-family: 'Open Sans', sans-serif;
-    font-size: 12px;
-}
-
-
-h1 {
-    color: blue;
-    text-align: center;
-    font-family: verdana;
-    font-size: 100px;
-    margin: 0px 0px 0px 0px;
-}
-
 p {
     color: blue;
-    font-family: verdana;
+    font-family: 'Open Sans', sans-serif;
     font-size: 20px;
     text-align: center;
-    margin: 0px 0px 0px 0px;
+    margin: 0px 0px 100px 500px;
 
 }
 
 a {
-    color: hotpink;
+    color: blue;
     text-decoration: none;
     font-family: verdana;
     font-size: 10px;
@@ -169,7 +132,7 @@ a {
 }
 
 a:hover {
-    color: blue;
+    color: hotpink;
 }
 
 div.gegevens {
@@ -177,9 +140,15 @@ color: blue;
     font-family: verdana;
     font-size: 10px;
     letter-spacing: 2px;
-    text-align: center;
-    padding-top:15px;
+    margin: 20px 90px 100px 40px; /* Top, Right, Bottom, Left */
+    position: fixed;
 
+}
+
+div.figuur {
+	color: blue;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
 }
 
 div.titels {
@@ -189,8 +158,6 @@ div.titels {
     text-align: left;
     margin: 50px 0px 0px 0px;
 }
-
-/* MENU */
 
 ul {
     list-style-type: none;
@@ -202,7 +169,102 @@ ul {
     font-size: 10px;
     font-family: verdana;
     letter-spacing: 2px;
+}
+
+div.inleiding {
+    border: 0px solid white;
+    color: black;
+    font-family: 'Roboto', sans-serif;
+    font-size: 17px;
+    padding-left: 50px;
+
+}
+
+div.hoofdstuk1 {
+    border: 0px solid white;
+    color: black;
+    font-family: 'Roboto', sans-serif;
+    font-size: 17px;
+    padding-left: -70px;
+
+}
+
+div.hoofdstuk2 {
+    border: 0px solid white;
+    color: black;
+    font-family: 'Roboto', sans-serif;
+    font-size: 17px;
+
+}
+
+div.hoofdstuk2-1 {
+    border: 0px solid white;
+    color: black;
+    font-family: 'Roboto', sans-serif;
+    font-size: 17px;
+    padding-left: 50px;
+
+}
+
+div.hoofdstuk3 {
+    border: 0px solid white;
+    color: black;
+    font-family: 'Roboto', sans-serif;
+    font-size: 17px;
+
+}
+
+div.hoofdstuk4 {
+    border: 0px solid white;
+    color: black;
+    font-family: 'Roboto', sans-serif;;
+    font-size: 17px;
+
+}
+
+
+/*  Alle afbeeldingen uit tekst naar links */
+
+.middle figure {
+	position: absolute;
+	left: 60px;
+}
+
+/* in een blok zetten, en dan de positie in z'n geheel op absolute, of voor de tekst/caption */
+
+.middle figcaption {
+	font-family: verdana;
+    font-size: 8px;
+    letter-spacing: 2px;
+}
+
+
+.middle div.voetnoot {
+	position: absolute;
+	left: 1100px;
+	font-family: verdana;
+    font-size: 6px;
+    letter-spacing: 1px;
+}
+
+
+/* Foto's plaatsen op allerlei diverse plekken */
+
+#imagetest{
+    width:300px;
+    height:400px;
+    left: 700px;
+    position: absolute;
+}
+
+#imagetest:hover{
+    width:150px;
+    height:200px;
+    left: 1100px;
+    position: absolute;
     
+}
+
 
 
 </style>
@@ -210,26 +272,21 @@ ul {
 <!-- START HTML CODE --!>
 
 </head>
-                
-
 <body>
 
 <!-- TITEL / START --!>
+
+<title> 1+1=3, De hybride ontwerper </title>
 
 <div class="gegevens"> Laura de Rijk - Grafisch ontwerp - KABK </div>
 
 <header>
 <h1>1+1=3</h1>
-<!-- <p> DE HYBRIDE ONTWERPER </p> --!>
+<p> DE HYBRIDE ONTWERPER </p>
 </header>
 
 <!-- MENU --!>
 
-
-
-<div class="wrapper">
-    <div class="header">
-	       
 	       <ul>
   <li><a href="#inleiding">INLEIDING</a></li>
   <li><a href="#hoofdstuk1">MENGVORM VAN DISCIPLINES</a></li>
@@ -238,12 +295,28 @@ ul {
   <li><a href="..">CONCLUSIE</a></li>
   <li><a href="..">BRONNEN</a></li>
 </ul>
-	       
-    </div> 
-    
-    
-    <div class="wrapmiddle"> 	  
-	    <div class="middle">
+
+<!-- AFBEELDINGEN --!>
+
+<div class="left"> 
+
+ <figure>
+  <img src="../go-theses-17-Laura-de-Rijk/afbeeldingen/fig1_hausmann.jpeg" alt="hausmann" width="160" height="200">
+  <figcaption> Fig. 1 'the art critic' 1919-1920</figcaption>
+</figure>
+
+	
+</div>
+
+<!-- CONTENT EN TEKST --!>
+
+
+<a href="#" onclick="window.print();return false;"> Print text </a> + <a href="LauradeRijk_031216_2_Thesisdraft.pdf" target="_top">Download Images</a> 
+
+<A NAME="inleiding">
+<br><br>
+
+<div class="middle">
 
 <a name="inleiding"></a>
 
@@ -306,9 +379,7 @@ disciplines, twee krachtbronnen samen een persoon aandrijven om
 het werk te kunnen maken. Ook moderne kunst uit de 21e eeuw wordt
 steeds vaker hybride kunst genoemd. Hybride kunstvormen breiden
 de mogelijkheden uit voor experiment en innovatie. Een nieuwe
-benadering naar disciplines en mogelijkheden.
-<br><br>
-Een discipline is een bepaalde richting in bijvoorbeeld de kunst.
+benadering naar disciplines en mogelijkheden. Een discipline is een bepaalde richting in bijvoorbeeld de kunst.
 Maar het is ook een rollenspel. Een rollenspel tussen een juf en en
 een leerling, of een rollenspel tussen een fotograaf en een grafisch
 ontwerper. Discipline houdt ook in dat je jezelf aan het werk kunt
@@ -327,10 +398,14 @@ stromingen zoals een grafisch ontwerper met een architect. Zodra
 kunstenaars van verschillende disciplines met elkaar gaan werken
 ontstaat er multidisciplinaire kunst.
 <br><br>
+
+<div class= "voetnoot"><FONT style= "bold" >1.</FONT> Een Italiaanse schilder, dichter, <br> taalkundige, filosoof, cryptograaf, musicus <br> en architect uit de  Italiaanse <br> renaissance.
+<br><br> 2. Een afwijking van het<br> normale taalgebruik om een speciaal <br> effect te bereiken. </div>
+
 Een Polymath is een persoon bij wie zijn deskundigheid overspant
 over een groot aantal verschillende vakgebieden. Het werd gebruikt
 om grote denkers te omschrijven. In een statement van Leon Battista
-Alberti staat: ‘A man can do all things if he will’. Een basisprincipe
+Alberti staat: <FONT font-style: "italic" ;> ‘A man can do all things if he will’</FONT>. Een basisprincipe
 waarbij het gaat over dat mensen alle kennis moeten omarmen en
 hun capaciteiten zo volledig mogelijk moeten ontwikkelen. Een
 andere optie is “Jack of all trades, master of none”, In het Nederlands:
@@ -351,6 +426,9 @@ grafisch ontwerper is steeds meer de Polymath van de kunst en de
 Man van alles. Hij of zij bouwt websites, heeft kennis van beeld en
 werkt zowel analoog als digitaal en beschikt zelf over een printer of
 verschillende soorten papier.
+
+<img id="imagetest" src="../go-theses-17-Laura-de-Rijk/afbeeldingen/fig1_hausmann.jpeg" alt="Img1"/>
+
 <br><br>
 Een andere nieuwe term die steeds meer past bij deze tijd is
 Postmedium. Postmedium is een tijd waarin de keuze van het medium
@@ -417,7 +495,17 @@ stromingen werden fotografie en grafisch ontwerp op
 krachtige manieren samengebracht? Bij elke stroming
 komen enkele kunstenaars aan bod en hun werk.
 <br><br>
-2.1 | Tijdens de Dada periode (1916-1920) ontwikkelde enkele
+
+
+ <figure>
+  <img src="../go-theses-17-Laura-de-Rijk/afbeeldingen/fig1_hausmann.jpeg" onmouseover="this.src='../go-theses-17-Laura-de-Rijk/afbeeldingen/fig1.1_hausmann.psd'"
+  onmouseout="this.src='../go-theses-17-Laura-de-Rijk/afbeeldingen/fig1.1_hausmann.psd'" width="300" height="380" />
+  <figcaption> Fig 1.
+Raoul Hausmann,‘the art critic’ <br>
+(1919-1920) </figcaption>
+</figure>
+
+<div class= "hoofdstuk2-1"> 2.1 | Tijdens de Dada periode (1916-1920) ontwikkelde enkele
 kunstenaars een nieuwe context om foto’s te gebruiken in de vorm van
 een fotomontage. Om krachtige politieke beelden te creëren kozen
 ze bekende persfoto’s en reorganiseerde ze zo dat hun betekenis
@@ -431,85 +519,643 @@ reclame en commerciële fotografie. Het proces van het maken van
 een compositie door het combineren van meerdere foto’s om de illusie
 te wekken van een nieuw beeld.
 <br><br>
+
 Raoul Hausmann, een van de oprichters van de Berlijnse Dada groep
 ontwikkelde fotomontage als een instrument van satire en politiek
-protest. Volgens de omschrijving wordt de ‘kunstcriticus’ in de collage
+protest. Volgens de omschrijving wordt de kunstcriticus in de collage
 aangeduid met een stempel als George Grosz, een ander lid van de
 groep, het is waarschijnlijk een anoniem figuur uitgesneden uit een
 magazine. Het Duitse bankbiljet achter de nek van de criticus doet
 vermoeden dat hij wordt gecontroleerd door kapitalistische krachten.
 De woorden op de achtergrond maken deel uit van een gedicht poster
 gemakt door Hausmann die worden opgeplakt op de muren van
-Berlijn. zijn fotomontage [fig. 1] is gemaakt met inkt en krijt op een
-poster met een gedicht. </div>
-	    
-	        
-	    </div>
-	</div>
-	
-	    <div class="left">
-	    
-	        <figure>
-  <img src="../go-theses-17-Laura-de-Rijk/afbeeldingen/fig1_hausmann.jpeg" alt="Schuitema_01" width="160" height="200">
-  <figcaption> Fig. 1 'the art critic' 1919-1920</figcaption>
-</figure>
+Berlijn. Zijn fotomontage <FONT COLOR="blue" >[fig. 1]</FONT> is gemaakt met inkt en krijt op een
+poster met een gedicht.  </div>
 <br><br>
+Er ontstaat een sterk statement door de combinatie van
+druktechnieken en goede bekende nieuwsfoto’s. Door deze op een
+nieuwe manier te combineren. Er ontstaat een hybride werk met een
+duidelijke boodschap. Fotomontage werd ook voor het eerst toegepast
+in het constructivisme. De constructivistische kunstenaars waren nauw
+betrokken bij de socialistische revolutie in Rusland, en vroege Sovjetpropaganda
+behoort tot de eerste ontwerpen die de radicale vormtaal
+van de avant-garde gebruiken in massacommunicatie.
+Vervara Stepanova, een Russische constructivist, was een schilder,
+designer en fotograaf. In haar fotomontages is alles zorgvuldig
+opgebouwd. Vervare gebruikte enkel drie kleurtonen. Ze combineert
+zwart en wit met sepia foto’s en integreert rode geometrische vormen
+om een structuur te vormen in de compositie. In zijn fotomontage
+<FONT COLOR="blue" >[fig. 2]</FONT> wordt een complete boodschap vertelt rondom een groot
+issue in Rusland. Om een deel uit te lichten kijken we naar het grote
+portret van de leider Lenin, hij is gecropt en vergroot, zijn ogen kijken
+naar links alsof hij de toekomst in kijkt. Hij is gelinkt door de draden
+met de mensen massa om hem heen. Een mooi voorbeeld waarbij elk
+detail een rol speelt en de krachten van elke individuele foto worden
+toegepast om dit verhaal te vertellen door Vervara Stepanova.
+In Nederland worden deze fotomontage technieken toegepast door
+vormgevers van de Nieuwe Zakelijkheid, zoals Piet Zwart en Paul
+Schuitema. Zij komen aan bod bij de volgende stroming. De nieuwe
+typografie en nieuwe fotografie.
+
 <figure>
-  <img src="../go-theses-17-Laura-de-Rijk/afbeeldingen/fig2_stepanova.jpeg" alt="Schuitema_02" width="160" height="130">
-  <figcaption> The result of the First five-year plan, 1932 </figcaption>
+  <img src="../go-theses-17-Laura-de-Rijk/afbeeldingen/fig2_stepanova.jpeg" onmouseover="this.src='../go-theses-17-Laura-de-Rijk/afbeeldingen/fig2_stepanova.jpeg'"
+  onmouseout="this.src='../go-theses-17-Laura-de-Rijk/afbeeldingen/fig2_stepanova.jpeg'" width="300" height="200" />
+  <figcaption> Fig 2.
+Varvara Stepanova
+The Results of the First <br>
+Five-Year Plan, 1932 </figcaption>
 </figure>
-<br><br>
-<figure>
-  <img src="../go-theses-17-Laura-de-Rijk/afbeeldingen/fig3_schuitema.jpeg" alt="Schuitema_02" width="160" height="130">
-  <figcaption> Folder, voor en achterzijde. 1928 </figcaption>
-</figure>
-<br><br>
-<figure>
-  <img src="../go-theses-17-Laura-de-Rijk/afbeeldingen/fig4_schuitema.jpeg" alt="Schuitema_02" width="160" height="130">
-  <figcaption> De vries Robbe-Betondak. 1938 </figcaption>
-</figure>
+
 <br><br>
 
-	    </div>	    
-	    <div class="right">
-	    
-	          <figure>
-  <img src="../go-theses-17-Laura-de-Rijk/afbeeldingen/fig18_forentporza.jpeg" alt="Schuitema_01" width="160" height="100">
-  <figcaption> </figcaption>
-</figure>
-<figure>
-  <img src="../go-theses-17-Laura-de-Rijk/afbeeldingen/fig19_forentporza.jpeg" alt="Schuitema_02" width="160" height="130">
-  <figcaption> Forent Porta, <br>
+2.2 | De periode 1920 tot 1940 is een belangrijke tijd voor zowel
+typografie als fotografie. De nieuwe typografie en de nieuwe fotografie
+ontwikkelde zich. Hybride ontwerpers uit deze tijd zijn Piet Zwart en
+Paul Schuitema. Zij hebben zich ingezet om zowel op fotografisch
+gebied als op het gebied van grafisch ontwerp vernieuwing te brengen.
+Paul Schuitema (1897-1973) was een grafisch ontwerper maar ook
+actief in typografie, fotografie, het maken van meubels, architectuur,
+schilderen, lithografie en film. Paul heeft met zijn experimentele
+gebruik van fotografie een belangrijke bijdrage geleverd aan de Nieuwe
+Fotografie beweging. Hij staat bekend om zijn innovatieve gebruik van
+fotomontage en gebruik van kleur. Paul was een hybride ontwerper die
+een diversiteit aan disciplines beheerste en op alle vlakken indruk heeft
+gemaakt of iets heeft achtergelaten. Hij is èèn van de eerste docenten
+geweest op de Koninklijke academie voor beeld kunsten in Den-Haag.
+Hier leerde hij zowel fotografie als grafisch ontwerp. Zijn kennis met
+beeld, typografie en kleur vallen samen in zijn werk <FONT COLOR="blue" >[fig. 3]</FONT> Het werk
+van Paul Schuitema laten zien hoe diverse disciplines samenkomen.
+Paul zei rond 1927: ‘Omdat ik een hekel aan tekeningetjes had greep
+ik naar de foto’. Bij hem werd de foto gelijkwaardig aan de tekst.
+Vernieuwing van de fotografie en typografie was noodzakelijk. Hij
+maakt ook een vergelijking die de verandering van toen helder in
+beeld brengt. Gisteren ging het om artistiek, symbolisch, fantastisch,
+onmaatschappelijk, lyrisch, passief, romantisch, esthetisch, theoretisch,
+ambachtelijk, met andere woorden: kunst. En vandaag de dag gaat
+het meer om de werkelijkheid: Reëel, direct, fotografisch, zakelijk,
+concurrerend, argumenterend, actief, actueel, doelmatig, praktisch en
+technisch. Maar ook twijfel speelt af en toe een rol in zijn processen.
+Er zijn momenten dat zij terugvallen naar de getekende illustratie.
+Maar als Paul meeging met en de twijfel toesloeg was hij degene
+die terugkeerde naar zijn eigen ideeën. Met succes, waarbij het werk
+van andere teleurstellend was. Het is goed om te lezen hoe hij is omgegaan met deze twijfels, de neiging om mee te gaan met de rest
+blijft altijd aanwezig maar door zijn eigen pad te kiezen en weer terug
+te gaan naar zijn eigen visie blijft hij erbovenuit steken. Bij zijn werk
+voor beeldboeken <FONT COLOR="blue" >[fig. 4]</FONT> Het werk, maakt Schuitema optimaal gebruik van
+de beeldende mogelijkheden van de fotografie en de druktechniek.
+Volgens Schuitema ontstonden er sterk ruimtelijke beelden door
+de combinatie van zwart/wit, steunkleuren en de veel gebruik van
+fotografische close-ups.
+<br><br>
+Een foto van Schuitema om uit te lichten is Monotyperol <FONT COLOR="blue" >[fig. 5]</FONT>. Een
+foto gemaakt door een grafisch ontwerper. Zal zijn kennis van grafisch
+ontwerp invloed hebben gehad op de keuze van zijn compositie en
+lijnenspel? Spannende schaduwen en een ritme van stippen. Paul zijn
+fotovisie heeft invloed op zijn andere werk, en andersom. De behoefte
+van Paul om zelf te gaan fotograferen, zonder echte vakopleiding. En
+toch heeft hij zich snel ontwikkelt tot een bekende fotograaf. Is dit
+omdat zijn visie bij typografie en fotografie op hetzelfde level stond?
+Beide disciplines waren toe aan ‘vernieuwing’. Een andere foto van
+Paul Schuitema is de foto: Russische landschappen <FONT COLOR="blue" >[fig. 6]</FONT>. Je ziet een
+compositie van organische bomen met fraaie vormen die ontstaan zijn
+bij de jarenlange groei van deze bomen. De dynamiek en beweging
+van de bomen trekt de aandacht. Ze staan ergens in een Russisch
+landschap waar Paul Schuitema voorbij liep en deze compositie heeft
+vastgelegd. Er onstaat een nieuwe kijk op de alledaagse werkelijkheid.
+Naar mijn mening is dit een foto die gemaakt kan worden door een
+grafisch ontwerper, of iemand die door zijn creatieve achtergrond
+anders naar de wereld kijkt. De manier van kijken naar het alledaagse
+en altijd opzoek naar een balans of compositie of het nu in fotografie is
+of met typografie op een poster. Om praktische redenen is Schuitema
+begonnen zelf te gaan fotograferen en al experimenterend moest hij de
+technische vaardigheden onder de knie zien te krijgen. Door dit soort
+experimenten en het trainen van zijn ‘fotografisch oog’ ontwikkelde
+hij zich uiteindelijk zo snel dat hij al gauw werd uitgenodigd voor
+tentoonstellingen.
+<br><br>
+De collega van Schuitema, Piet zwart (1885-1977) was een Nederlandse
+fotograaf, boekband ontwerper, typograaf en industrieel ontwerper.
+Piet word vaak benoemd als pionier van de moderne typografie
+binnen Nederland. Zijn werk is herkenbaar door de primaire kleuren,
+geometrische vormen, strakke diagonaal geplaatste letters en een
+vroeg gebruik van fotomontage. In navolging van Laszlo Moholy-Nagy
+en Jan Tschichold schreef Piet zwart een principiële tekst over de
+actuele typografie en de rol die de fotografie daarin moest spelen. Niet
+langer was een foto einddoel, voortaan zou zij onderdeel zijn van een
+grafisch massaproduct.
+<br><br>
+De tekst van Zwart zou verschijnen in een door hem ‘foto-grafisch’
+verzorgd reclameboek. Helaas durfde de directie de uitgave op het
+laatste moment niet aan. De drukkerij schrok erg van de extreme
+vormgeving. De achtergrondfoto <FONT COLOR="blue" >[fig. 7]</FONT> was een lichtblauwe
+afbeelding van een boek waarbij de bladzijdes omgebogen zijn.
+Blijkbaar was dit voor de drukkerij te extreem. Dit is een mooi
+voorbeeld Piet zwart waarbij hij meerdere disciplines wil laten
+samenkomen. Ook het feit dat hij zelf het boek had willen vormgeven
+en uitbrengen. Volgens Piet werkte de oude typografie vlak en statisch. Het gebruik
+van houtsnede of illustraties was alleen maar als bijkomstigheid en
+niet als vormend deel van het geheel. De toepassing van fotografie
+als nieuw element in de compositie maakte de nieuwe typografie
+dynamisch en ruimtelijk. Juist in het contrast tussen deze twee
+elementen ligt het actieve element in de compositie Volgens piet leert
+fotografie ons de wereld op een geheel nieuwe manier te bekijken. Hij
+spreekt liever van een fotovisie.
+<br><br>
+Piet heeft tijdens opdrachten voor o.a. de NFK eerst foto’s van
+andere gebruikt en even later is hij ook zelf gaan fotograferen om
+zijn opdrachtgever te overtuigen, wat ook lukte en werd uitgebreid.
+Vervolgens kon hij de PTT ook overtuigen om foto’s te gebruiken op
+postzegels. Een gewaagde gedachte, want de postzegel verkeerde toen
+nog in de wat verheven sfeer van de grafisch kunsten. Een voorbeeld
+van Piet zijn werk waarbij hij een nieuwe techniek heeft aangeleerd
+is een fotogram voor een poster en affiche voor Scheveningen Radio
+<FONT COLOR="blue" >[fig. 8]</FONT>. Bizar is te lezen dat dit affiche niet werd uitgevoerd. Vanwege
+de nieuwe techniek of combinatie? Dit voorbeeld geeft een beeld van
+een ontwerper die buiten zijn grenzen treed en daar ook regelmatig de
+consequenties van voelt, dat het ontwerp te extreem wordt gezien of
+‘te nieuw’ waardoor het niet wordt gepubliceerd. Toch is het een mooi
+voorbeeld van de lef om met dit soort nieuwe combinaties te komen,
+zoals Piet Zwart doet.
+<br><br>
+Een ander werk is Sigaret en as in lichtcirkel <FONT COLOR="blue" >[fig. 9]</FONT>, Deze foto vind ik
+een mooi voorbeeld van een ‘grafische foto’ zonder tekst. De invloed
+van Piet zijn grafische kennis is naar mijn mening duidelijk terug te zien
+in deze foto. De dynamische lijnen en de compositie van de objecten
+in balans met wit en zwart. Net nog even een paar objecten buiten
+de cirkel laten vallen. Hier is het oog van een grafisch ontwerper en
+fotograaf aan de slag met het totaalplaatje. In dezelfde setting als de
+foto met de sigaret en as heeft Piet deze foto geschoten van een paar
+loden letters uit 1931. Deze foto hoort bij eens serie geschoten in de
+letterzetterij, bedoeld voor het nooit verschenen reclameboek. Bij deze
+foto wordt een link gemaakt met Paul Schuitema, hij heeft in 1929 twee
+foto’s gemaakt van zetletters <FONT COLOR="blue" >[fig. 10]</FONT>. Wat mooi is om te zien is de foto
+en het eindontwerp naast elkaar. Diverse disciplines door dezelfde man
+uitgevoerd. De tekst van de drukker als een diagonaal die de diagonaal
+van de foto kruist. Het spelen met contrast zowel in de foto als in de
+typografie. De ene discipline vult de andere aan in dit werk van Piet
+Zwart.
+<br><br>
+Nog even terug naar de fotomontage. Want het is belangrijk om te
+realiseren dat het allemaal analoog wordt gemaakt. Zo zie je Piet zwart
+aan het werk <FONT COLOR="blue" >[fig. 11]</FONT> met een tafel vol prints van foto’s om een grote
+collage in elkaar te plakken voor Bruynzeel. Het toont aan hoe intensief
+het kan zijn en het werk achter zulke werken. Zijn eigen manier van
+kijken is bepalend voor de eindcompositie van het werk.
+
+2.3 | De Zwitserse stijl, ook wel de internationale typografische stijl
+genoemd, beïnvloedde grafisch ontwerp extreem in de jaren 60 en
+70. De fotografie werd gebruikt met hoog contrast en vaak in zwart en
+wit. De fotografie was objectief, dat wil zeggen dat het gebaseerd is op
+feiten en niet op meningen, heldere fotografie. Visuele kenmerken van
+deze stijl zijn een asymmetrische organisatie en elementen zijn via een
+grid geplaatst.
+<br><br>
+Joseph Müller-Brockmann was een Zwitserse grafisch ontwerper. Hij
+studeerde architectuur, grafisch ontwerp, kunstgeschiedenis maar
+is ook gespecialiseerd in fotografie. Zijn werk is herkenbaar aan de
+simpele ontwerpen en zijn ‘schone’ gebruik van typografie, vormen en
+kleuren. Zijn werk <FONT COLOR="blue" >[fig. 12-13]</FONT> laat zijn gebruik van fotografie zien in
+combinatie met de simpele typografie.
+<br><br>
+2.4 | De Meester van alle disciplines. Klaus Baumgärtner was een
+beeldend kunstenaar, grafisch ontwerper en schrijver. Hij was een
+gedreven, gerespecteerd en geliefd docent bij vele afdelingen op
+de kunstacademie in Den-Haag. Zoals bij de afdelingen grafisch
+ontwerpen en beeldende kunst.
+<br><br>
+Baumgärtner creëerde veelzijdig en divers werk, grote sculpturen,
+foto’s, collages en schilderijen, en hij wilde niet worden ingedeeld bij
+een bepaalde kunststroming. Zijn creaties zijn niet conceptueel, maar
+gebaseerd op dingen die echt bestaan. Baumgärtner observeerde
+en keek op een unieke manier naar de wereld om hem heen. Zo
+had hij een voorliefde voor alledaagse dingen, en het gevoel en de
+geschiedenis hierin en -van. In gebruiksvoorwerpen zag hij bijvoorbeeld
+sporen van menselijke aanwezigheid, zoals krassen en reparaties, en
+riepen objecten en materialen herinneringen en associaties bij hem op.
+Voorwerpen uit zijn omringende wereld isoleerde en bewerkte hij; hij
+ontdeed ze van hun functie en maakte ze los uit hun oorspronkelijke
+context, waardoor alledaagse objecten tot iets nieuws worden
+gemaakt. Meester zijn in alle disciplines die je beoefend is natuurlijk het
+uiteindelijke doel waar je naar streeft. Successen op diverse gebieden
+en geen scheidingslijn die je tegenhoudt om de dingen die je het liefst
+doet te combineren. Het is fascinerend om over Klaus te lezen. Ik voel
+gelijkenissen met mijn eigen interesses en had deze man eigenlijk
+graag willen ontmoeten. Het is het gedeelte over zijn foto’s waar geen
+mensen op staan maar voornamelijk objecten blijft bij mij het meest
+hangen. Zelf fotografeer ook liever objecten dan mensen/portretten.
+Objecten kunnen zoveel vertellen. En daar kan ik mij helemaal in
+vinden. Het alledaagse als inspiratie voor een hybride ontwerper, daar
+kan je alle kanten mee op.
+<br><br>
+Tijdens een trip naar Berlijn heeft Klaus een fotoserie gemaakt <FONT COLOR="blue" >[fig. 14]</FONT>.
+Je ziet een weerspiegeling van een stuk van een huis in een plas water
+op de Grond. Om de plas heen zie je een zebrapad, stuk asfalt en een
+stoep. Een diversiteit aan texturen. De lijn van het huis loopt parallel
+met het asfalt en de andere stenen. Het laat de manier van kijken zien
+van Klaus als hij rondloopt en kijkt naar de alledaagse dingen. Ook
+al is het een foto zijn manier van kijken naar objecten als beeldende
+kunstenaar heeft naar mijn mening invloed op het zien van deze
+situatie op straat. In zijn fotografie [Fig. 15] heeft Klaus met alledaagse objecten een
+sculptuur gemaakt. Het oogt ook grafisch door de grote R en de
+compositie. Daarnaast heeft hij hoogstwaarschijnlijk zelf de foto
+geschoten en door het effect met de schaduw ontstaat er een extra
+laag in het werk. Al deze disciplines hebben invloed op elkaar in het
+werk. Het is interessant om naar dit werk te kijken wetende dat deze
+persoon ook geïnteresseerd is in fotografie en grafisch ontwerp. Je
+probeert te zien wat voor invloed dat heeft op het eindresultaat.
+Interessant bij Klaus is het feit dat hij zijn foto’s eigenlijk autonoom uit vrije wil schiet en vervolgens besluit om ze te exposeren of
+er een publicatie van te maken. Zelf als grafisch ontwerper of als
+samenwerking met een andere ontwerper. Hij deelt zijn manier van
+kijken. Dit kunnen hele simpele onderwerpen zijn uit het dagelijks
+leven waar een ritme in te vinden is. Zo heeft Klaus een langwerpig
+boekje gemaakt met enkel foto’s van waslijnen [Fig. 16]. De vormgeving
+van het boekje past perfect bij deze serie en er staat maar weinig
+tekst bij om het uit te leggen. Je kunt je afvragen of je zo wel erg snel
+allerlei themaboekjes kunt maken maar de uitvoering is helder en sterk.
+De meeste mensen zullen hier voorbij lopen, maar Klaus ziet er iets
+speciaals in en besluit het vast te leggen. Even terug naar het verhaal
+over autonoom en toegepast, Klaus is een mooi voorbeeld waarbij dit straalt naar mijn mening prachtig die hybride kracht uit. Al die losse
+boekjes hebben elk een eigen karakter en verhaal. Van fotoboekjes
+tot sculpturen en geschreven stukken tekst. Het is een feest om door
+die stapel boekjes te bladeren en kijken en zijn manier van kijken te
+begrijpen. Een laatste werk om uit te lichten is een een bord vol met
+letters waarmee Klaus een compositie heeft gemaakt [Fig. 17] . Ik kan
+hier uren naar kijken en alleen maar gefascineerd zijn door deze man
+en zijn kijk op de gewone objecten. Helaas is Klaus in 2009 overleden,
+maar gelukkig kunnen we ook vooruitkijken naar de hybride ontwerpers
+van deze tijd in het volgende hoofdstuk van mijn scriptie. Wie zijn
+de hybride ontwerpers van nu? En wat is de relatie van Fotografie in
+Grafisch ontwerp?
+
+<a name="hoofdstuk3"></a>
+
+<div class= "koptitel"> Hedendaags hybride </div>
+<div class= "hoofdstuk3"> Hoe worden deze twee krachtbronnen tegenwoordig
+aangedreven door de ontwerper? Wie zijn de hybride
+ontwerpers van nu? Eigenlijk kan je deze vraag anders
+stellen. Wie zijn er niet hybride tegenwoordig? De grenzen
+van de disciplines zijn allang niet meer hetzelfde als in
+het verleden. Het postmedium denken is steeds meer de
+realiteit. Het medium doet er niet meer toe.
+<br><br>
+3.1 | De opleidingen, zoals op de KABK, zijn gericht op het opzoeken
+van je grenzen en werken op de grenzen van andere disciplines.
+Die raakvlakken blijven zich ontwikkelen. De studenten van nu zijn
+de hybride ontwerpers van de toekomst. En zij kunnen meerdere
+disciplines samen gebruiken als een grote krachtbron voor hun werk.
+Maar het heeft ook kanttekeningen. De grafisch ontwerper van nu komt
+daardoor meer onder druk te staan en er wordt steeds meer van hem
+of haar verwacht. Zij moeten constant reageren op de veranderingen
+en behoefte voor visuele communicatie. Zijn er nog meer valkuilen te
+benoemen voor de hedendaagse hybride ontwerper, en waar moet je
+je bewust van zijn als hybride ontwerper van nu? Je moet wel regels
+blijven stellen. Persoonlijk heb ik altijd momenten gehad dat je het
+gevoel hebt een keuze te moeten maken tussen de twee disciplines.
+Die frustratie kan een valkuil zijn waardoor je een krachtbron gaat
+blokkeren. Want wie is er tegenwoordig niet hybride? Het kan goed zijn
+om daardoor toch een specialisme op te zoeken of duidelijk voor jezelf
+een balans te vinden hoe jij die twee disciplines met elkaar wil laten
+samenwerken om iets unieks te maken.
+<br><br>
+Een hybride ontwerper is een persoon die twee krachtbronnen
+beheerst, zo simpel is het. Maar het is de kunst om deze twee
+krachtbronnen zo te combineren dat er iets unieks ontstaat, een
+verassende combinatie. Het heeft tijd nodig om die balans voor jezelf
+te vinden als ontwerper, het kan een valkuil zijn om constant die twee
+krachtbronnen te gebruiken zonder duidelijk focuspunt. Het bepaald
+jou manier van werken als ontwerper. Je bent niet verplicht om beide
+disciplines evenveel te gebruiken bij al het werk dat je maakt, het is de
+kunst om daarin te variëren en te weten wanneer je jou krachten kan
+gebruiken en meer op 1 krachtbron kan focussen. Je bent niet al een
+hybride ontwerper als je twee diploma’s op zak hebt. Het is een manier
+van leven waar je mee moet leren omgaan en weet waar jij jezelf
+positioneert als hybride ontwerper. De hybride fotograaf groeit mee
+met de ontwikkelingen. Hij of zij past zich aan voor de veranderingen
+in andere disciplines zoals het internet/digitale media. Iedereen kan nu
+een fotocamera kopen, en de mooiste foto’s maken met zijn mobiele
+telefoon. Een video van Forent Porta (Motion & graphic designer) [Fig.
+18-19]
+
+ <figure>
+  <img src="../go-theses-17-Laura-de-Rijk/afbeeldingen/Fig18_forentporza.jpeg" alt="forentporza" width="160" height="200">
+  <figcaption>Fig. 18-19 Forent Porta, <br> 
 ‘expentations’, 2016</figcaption>
 </figure>
+ 
+ over verwachtingen waarbij objecten zich anders gedragen
+dat je zou verwachten, is een interessant punt om te vergelijken
+met de verwachtingen van mensen bij verschillende disciplines. Bij
+een fotograaf verwacht ik een prachtig portret, en bij een grafisch
+ontwerper een boek wat tot de details van elke punt en komma is
+ontworpen tot een meesterwerk. Maar zoals in het filmpje van Florent
+Porta, dat is wat je verwacht. De fotograaf kan ook een grafisch
+ontwerper zijn en andersom. Maar kan iemand aan mijn fotografie
+zien dat ik ook een grafisch ontwerper ben? En kan iemand aan mijn
+typografische werk zien dat ik ook een fotograaf ben?
+Hoe gaat de professionele fotograaf daar in deze tijd mee om?
+Digitale fotografie is de grootste verandering geweest. Vanaf het
+onstaan was men al opzoek naar manieren om technisch kleur in een
+beeld toe te voegen. Fotografie is een samenkomst van techniek en
+artistiek vermogen. Door een eigen specialisme te ontwikkelen blijft
+je als fotograaf boven de rest uitsteken. Een eigen beeldtaal creëren
+is belangrijk. Digitaal monnikenwerk hoort daar ook steeds meer
+bij. Photoshop is een tool die zich steeds meer ontwikkelt en een
+essentieel gedeelte is van fotografie. Het is niet meer het schieten
+van een plaatje, maar de nabewerking waar de maker vele kanten
+op kan gaan en helemaal los gaan. Maar toch is er voor de fotograaf
+nog veel te winnen richting andere analoge of grafische technieken.
+Sarah Illenberger is illustrator en fotograaf. Haar werk oogt grafisch.
+Zij knipt,plakt en maakt haar eigen composities en gebruikt andere
+materialen om haar idee te visualiseren. Ik vind haar een inspirerend
+voorbeeld van een hybride fotograaf van nu. Er is geen limiet in het
+combineren van diverse media. In haar werk ‘Flower children’ [Fig.
+20-21] voor in het Neon Magazine werkt zij samen met fotograaf
+Sabrina Theissen om deze modeserie foto’s te maken. Een combinatie
+van foto’s met bloemen als tweede laag. Twee krachtbronnen
+samenvoegen om iets unieks te maken kan ook het combineren van
+verschillende technieken zijn. Een ander werk is de serie Wonderplants
+[Fig. 22] waarbij ze een serie exotische planten heeft gefotografeerd
+met patronen geïnspireerd op textiel, gemaakt met simpel tape. In haar
+serie Cut art [Fig. 23] voor het Neon Magazine schets zij op bekende
+schilderijen wat er gedaan moet worden aan chirurgische aanpassingen
+voor een perfect lichaam, vervolgens heeft zij met de technologie van
+tegenwoordig zoals photoshop de schilderijen aangepast. Zij laat zien
+dat het juist combineren van verschillende media tot iets unieks kan
+leiden. Fotografen gebruiken nu grafische technieken en vica versa. De
+lijn is flexibel.
 <br><br>
-<figure>
-  <img src="../go-theses-17-Laura-de-Rijk/afbeeldingen/fig20_sarahillenberger.jpeg" alt="Schuitema_02" width="160" height="200">
-  <figcaption> </figcaption>
-</figure>
-<figure>
-  <img src="../go-theses-17-Laura-de-Rijk/afbeeldingen/fig21_sarahillenberger.jpeg" alt="Schuitema_02" width="160" height="200">
-  <figcaption>Fig. 20-21
-Flower Children, <br>
-Neon Magazine. 2010. </figcaption>
-</figure>
-<figure>
-  <img src="../go-theses-17-Laura-de-Rijk/afbeeldingen/fig22_sarahillenberger.jpeg" alt="Schuitema_02" width="160" height="200">
-  <figcaption> Fig. 22
-‘Wonderplants’, <br> 2015,
-Neon Magazine </figcaption>
-</figure>
-<figure>
-  <img src="../go-theses-17-Laura-de-Rijk/afbeeldingen/fig23_sarahillenberger.jpeg" alt="Schuitema_02" width="160" height="120">
-  <figcaption> Fig. 23
-Cut art, 2005 </figcaption>
-</figure>
-	    </div> 
-	    
-	    <div class="footer">
-	        <a href="LauradeRijk_031216_2_Thesisdraft.pdf">Download Text </a> + <a href="LauradeRijk_031216_2_Thesisdraft.pdf" target="_top">Download Images</a> 
-	    </div>     
-</div>
+
+
+Eva-Fiore Kovacovsky heeft fotografie gestudeerd aan de Gerrit
+Rietveld academie in Amsterdam. Haar studio ligt vol met natuurlijke
+objecten en stapels prints. Ze is vooral bezig in de de donkere kamer,
+camera loze fotografie, maakt experimentele expositie en speelt met
+formaten. Eva maakt gebruik van de fotogram, het maken van een
+directe afdruk op papier in de donkere kamer. Zij probeert altijd om
+een expositie tot leven te brengen. Als er alleen maar foto’s hangen
+wordt alles zo plat. Dat is waarom ze objecten creëert die passen bij
+de omgeving van de foto’s. Bijvoorbeeld bij de ‘Blattkiste serie [Fig.
+23]. Hierbij worden op sokkels de bladeren geëxposeerd die gebruikt
+zijn bij het maken van de negatieven. Het is werk maar ook props voor
+de expositieruimte die meespelen in de beleving van de kijker in de
+ruimte. Het boek is eigenlijk als een container voor de foto’s waar ze
+in vastzitten. Door meer objecten erbij te betrekken en de foto’s los te
+halen uit zijn container ontstaat er iets unieks wat gaat leven. Een foto als een platte print op de muur is niet meer hoe de foto tegenwoordig
+alleen wordt gepresenteerd. De foto wordt samengevoegd in allerlei
+nieuwe containers [Fig. 25-26] zowel digitaal als in exposities en
+installaties. Er word meer gespeeld met formaten en de foto komt los
+uit zijn container of papier als cliché drager van een foto.
+Ook Jaap Scheeren is een fotograaf die in enkele projecten fotografie
+heeft gebundeld met grafische technieken. Hij gebruik de media
+als inspiratiebron. Alledaagse voorwerpen worden door hem in
+simpele stappen aangepast waardoor er nieuwe beelden ontstaan.
+Hij loopt door de stad, de alledaagse realiteit en maakt notities van
+ongebruikelijke of vreemde dingen. Vervolgens gaat hij daarmee
+aan de slag, meestal met fotografisch beeld als eindproduct. In het
+project Fake flowers in Full colour [Fig. 27] onderzocht Jaap samen
+met ontwerper Hand Gremmen of het mogelijk was om zelf fysieke
+kleurscheidingen te maken. Een vertaling van fotografie naar full
+colour drukwerk. Er werden vier stillevens gebouwd: een Cyaan-,
+een Magenta-, een Yellow- en een Black-stilleven. Deze werden los
+van elkaar gefotografeerd en vervolgens over elkaar heen gedrukt
+wat het beeld ‘Fake Flowers in Full Colour’ heeft opgeleverd. Een
+project waarbij ontwerp en fotografie heel dicht bij elkaar komt.
+Het boek is ook het uiteindelijke eindwerk in dit project. Fotografie
+en grafisch ontwerp gaan hier hand in hand. Zijn website bestaat
+ook uit hoofdstukken die je kunt downloaden als delen van zijn
+publicatie met werk. Zijn prints van het project zijn te koop als
+krant formaat publicaties. Scheeren kiest er soms bewust voor om
+kunstenaarsboeken te maken. Daarmee neemt hij heel bewust dus het
+besluit dat het werk niet aan een muur in een museum komt te hangen
+maar een grafische oplossing nodig heeft als extra laag [Fig. 28].
+De hybride fotograaf is dus ook in staat om steeds meer zijn eigen
+werk te publiceren in een eigen ontworpen publicatie of boek.
+Ik heb de kennis om mijn eigen beeldmateriaal te vertalen in een
+grafisch interessant boek. Erik van der Weijde is zo’n fotograaf die zijn
+eigen boeken publiceert en verkoopt [Fig. 29-30]. Hij werkt samen
+met diverse editors en heeft al heel wat boeken en tijdschriften
+gepubliceerd. Door het werken met verschillende editors ontstaan er
+allemaal verschillende boeken met zijn werk. Zijn fotografie is ook op
+geen andere manier te krijgen dan het kopen van zijn boeken. Ook Erik
+Kessels, creatief directeur van het communicatiebureau Kesselskramer
+verzameld fotografie om het vervolgens in verschillende fotoboeken
+en tentoonstellingen weer aan het publiek te tonen. Hij is dan niet de
+fotograaf van het werk maar gebruikt zijn manier van kijken om een
+nieuwe selectie te maken en via het printmedia het te publiceren. De
+fotograaf van nu is steeds meer in staat om verder te gaan dan enkel
+het uitprinten van de foto’s als losse prints. Het is fascinerend te zien
+hoe fotografie en grafisch ontwerp samensmelten in print. Print of de
+drager papier wordt tegenwoordig ook als element gebruikt in het werk
+zelf. Hide&Seek [Fig 31] is zo’n werk waarbij je een vrouw ziet met een
+in repen gesneden print voor haar gezicht.
+<br><br>
+Een studie fotografie is niet enkel het leren van het drukken op een
+knopje op je camera, en het licht goed zetten. Het creëert een manier
+van kijken en de kennis om de camera te gebruiken als je 2e oog en
+om je concepten en ideeën te visualiseren. Je leert hoe je verhalen
+moet vertellen met enkel beeld in allerlei vormen. Het kijken naar
+composities en de alledaagse dingen om je heen. Je leert je camera te
+gebruiken als je 3e oog die jou manier van kijken kan vastleggen. Een
+grafisch ontwerper gebruikt geregeld beeld van fotograferen in hun
+werk alsof het niets is. Maar elke foto is door een ‘fotografisch’ oog
+gemaakt en met kennis. Het is een perspectief van een fotograaf die
+gebruikt wordt door een grafisch ontwerper in bijvoorbeeld een poster
+of collage. De grafisch ontwerper is daar niet altijd erg bewust van,
+maar met een fotografische achtergrond ben je bewuster als je omgaat
+met beeld van een ander. Je kiest beeld uit met je ‘fotografisch’ oog
+wat past bij jou concept, compositie of typografie. Het zal steken als je
+verplicht bent om stock materiaal te gebruiken in je grafisch beeld als je
+weet dat er veel betere kwaliteit te behalen is als fotograaf.
+3.2| Tijdens mijn onderzoek naar hybride kunstenaars kwam ik ook
+langs enkele namen waarbij je vraagtekens kunt zetten of het wel
+terecht is dat er verschillende disciplines bij hun naam vermeld
+staan. Anton Corbijn is een naam om mee te beginnen. Hij is
+natuurlijk bekend voor zijn fotografie, maar heeft ook een keer een
+postzegel ontworpen [Fig. 32]. Volgens wikipedia is hij dus een
+grafisch ontwerper. Ja, hij heeft zijn grenzen opgezocht en is er mee
+gaan spelen. Maar ik vind dit wel een discussie waard. Een grafisch
+ontwerper zou zich hier behoorlijk aan kunnen ergeren. Maar als je
+zou vragen waarom hij dan niet een grafisch ontwerper is, word het
+al lastiger. Het is hetzelfde als de discussie als je een fotocamera hebt
+ben je fotograaf, en als je indesign beheerst ben je grafisch ontwerper.
+Ook die grenzen zijn flexibel en vervaagd. Maar het blijft de kunst
+om beide disciplines die je beheerst met elkaar in balans te brengen
+en evenveel aandacht te geven zodat het niet met elkaar botst. Een
+andere naam die voorbij komt is Picasso. Picasso? Grafisch ontwerper?
+Ja, volgens wikipedia. En dat niet alleen, hij wordt omschreven als
+kunstschilder, tekenaar, beeldhouwer, grafisch kunstenaar, keramist en
+sieraadontwerper. Absoluut een hybride persoon. Maar ook hij heeft
+een paar posters gemaakt in zijn leven [Fig. 33]. Picasso is dan niet een
+bekende grafisch ontwerper maar hij laat wel zien dat hij zijn disciplines
+goed kan toepassen op een ander vlak.
+<br><br>
+3.3 | Na mijn studie fotografie op de fotovakschool in Amsterdam kreeg
+ik een rugzakje vol met kennis mee, maar ik wist nog niet zo goed hoe
+ik dat kon toepassen tijdens mijn studie grafisch ontwerp. In het begin
+lag die rugzak in een hoek en lag de focus vooral op grafisch ontwerp
+en het onderzoeken wat grafisch inhoudt en hoe ik er controle over
+kon krijgen. Al gauw kwam ik erachter dat die rugzak sterk invloed
+heeft op mijn manier van studeren. Mijn fotografische kennis kon ik
+toepassen tijdens de opdrachten om het werk omhoog te krikken en
+mijn slechte beginners kennis over typografie te verbergen. Ik gebruik
+mijn fotografie om via een omweg toch met een goed resultaat te
+komen wat er grafisch uitzag. Als afgestudeerd fotograaf kreeg ik
+steeds meer grip op grafische technieken die ik weer kan toepassen bij mijn fotografisch beeld. Het ‘fotografisch oog’ is een belangrijk element
+wat meereist in mijn rugzak aan kennis van een vorige studie. Je eigen
+fotovisie en manier van kijken. Als ik naar mijn boekenplank kijk hebben
+veel fotoboeken een grafisch tintje. Composities, objecten of een
+combinatie van technieken.
+<br><br>
+Een boek op die plank is het werk van Lex Reitsma. Zijn 196 posters
+voor de Nederlandse opera is een belangrijk oeuvre van zijn werk
+als grafisch ontwerper. Voor vierentwintig jaar lang heeft hij deze
+posters gemaakt. Naast zijn posters maakte hij ook de onder andere
+de operaboeken en programmafolders. Opera is een kunst van
+samenwerking, en ook Lex heeft in zijn posters samengewerkt met
+zijn eigen fotografie en grafische kennis. Hij had de ruimte om zijn
+eigen ideeën te realiseren. Zij hadden vertrouwen in zijn expertise en
+artistieke ideeën. Reitsma was een fanatiek fotograaf en hij las alles
+over fotografie en film. Dit was een stimulans om te gaan studeren
+op de Gerrit Rietveld Academie waar hij zich vervolgens verdiepte
+in typografie. Hij wilde de techniek tot in de details beheersen. Toen
+een opdrachtgever tegen hem zei: ‘Er mag gerust iets misgaan’. Koos
+hij bewust voor drukfouten, scheef gezette kantlijnen en andere
+grappen. Daarmee werd hij gezien als iemand die wilde afwijken van
+de regels. Dynamiek is belangrijk in zijn werk. Zijn affiches zitten vol
+met typografie en beeld, als een collage met lagen over elkaar heen.
+het zijn visuele puzzels. Lex speelt met verschillende ontwerp vormen
+in de loop van de jaren dat hij de posters ontwerpt maar toch bleef het
+geheel constant, dynamisch en levendig. Soms maakte Reitsma enkel
+een symbolisch beeld voor een poster. Zoals de sleutel voor Capriccio
+[Fig. 34]. Maar meestal bewerkt hij zijn beelden en zorgt hij voor
+meerdere lagen en voegt elementen toe voor dynamiek. Zoals vlakken,
+typografie en licht. Heel soms maakt hij een puur grafisch affiche maar
+er zit altijd beweging in. Ook in zijn operaboeken gaat hij helemaal los.
+Waar de voorkant simpel is gaat hij in de binnenkant helemaal los met
+kleuren, papiersoorten, bewerkte foto’s en grafische symbolen. Zijn
+beelden voor de posters werden overigens analoog opgebouwd uit
+lagen met plastic sheets uitgeknipte letters en ander materiaal zette
+Reitsma zijn werk in elkaar. Met simpele middelen en een bureaulamp
+maakte hij bijvoorbeeld het beeld voor de poster van het stuk ‘Die
+Meistersinger von Nurnberg’ [Fig 35-36].
+<br><br>
+Grafisch ontwerper Stefan Sagmeister is een bekende naam in de
+Grafische wereld die veel samenwerkt met fotograferen en het
+combineren van typografie in beeld. In zijn serie voor Jessica Walsh
+[Fig 37-38] heeft hij samengewerkt met fotograaf Henry Hargreaves
+en lichaamsschilder Anastasia Durasova. Door deze samenwerking
+ontstaat er een werk waarbij verschillende media samenwerken voor
+een krachtig beeld.
+<br><br>
+3.4 | Een ander punt wat ik wil uitlichten bij de hedendaagse hybride
+ontwerper zijn grafische foto’s. Dit zijn foto’s waarbij ik het zelf altijd
+moeilijk vind te plaatsen bij een discipline. Het wordt fotografie
+genoemd, of is door een fotograaf uitgevoerd maar het oogt grafisch.
+Het werk van Geometric homocide [Fig. 39] toont een portret van een
+persoon opgebouwd uit geometrische papieren vormen. Zeg het maar,
+Fotografie of grafisch ontwerp?
+<br><br>
+Ik heb tot aan het schrijven van mijn scriptie nooit kunnen omschrijven
+waarom ik dit soort foto’s grafisch vind, maar nu wordt het duidelijk.
+De scheidingslijn tussen deze twee disciplines is door mijn vorige studie
+en de kennis van deze studie zo flexibel geworden dat hij is vervaagd
+en het voor mij niet los is te zien van elkaar. Door die invloeden kan ik
+zeggen dat het het zelfde is. Mijn ‘fotografisch oog’ dat is ontwikkelt
+en in mijn rugzak is terechtgekomen vanuit mijn oude studie wordt
+toegepast bij visueel grafisch werk en is een krachtbron om dit soort
+werk op een andere manier te bekijken. Het is altijd fascinerend om
+naar te kijken.Het werk van Carl Kleiner [Fig. 40] is heldere conceptuele
+fotografie gemaakt voor bedrijven zoals Ikea. Of bij het werk van Simon
+Wald-Lasowski voor de Hema.volkskrant of NRC NEXT [Fig. 41], je
+voelt dat er zowel fotografische als grafische kennis achterzit. Als ik
+naar hun werk kijk zeg ik gelijk: Dit is grafisch werk. Toegepaste foto’s
+met een doel voor een reclamecampagne of cover, maar helemaal
+uitgedacht tot de details in compositie, medium en materiaal. Je ziet
+een foto met hele bewuste keuzes en een duidelijke communicatie.
+Het is een samensmelting van fotografie en grafisch ontwerp samen.
+Deze personen zijn ook grafisch ontwerper door het uitdenken van
+concepten en gebruiken fotografie als krachtbron om het visueel over
+te brengen.
+<br><br>
+Juist doordat de grens tussen deze twee krachtige disciplines
+zo flexibel zijn in deze tijd kunnen we nog wel even doorpraten
+en voorbeelden benoemen die allemaal even inspirerend zijn en
+fascinerend om naar te kijken. Het is enkel een klein stukje van die
+enorme massa wat zich hybride beweegt in deze tijd. Eigenlijk kan je
+het tegenwoordig beter omdraaien. De specialisten die zich focussen
+op een bepaalde disciplines zullen nu meer eruit springen. Maar wat is
+nu mijn eigen positie als hybride fotograaf en grafisch ontwerper?  </div>
+
+<a name="hoofdstuk4"></a>
+
+<div class= "koptitel"> Conclusie </div>
+<div class= "hoofdstuk4"> Waar op de lijn tussen fotografie en grafisch ontwerp sta ik
+als hybride ontwerper?
+De hybride ontwerper is een vakman en heeft de kunst om te kunnen
+switchen tussen diverse disciplines of deze in balans te brengen in
+een uniek werk. De grenslijn van een hybride ontwerper zal altijd
+flexibel zijn en zich aanpassen. De grafisch ontwerper groeit uit tot een
+hybride alleskunner. Hij kan steeds meer zelf produceren, maar ook
+de fotograaf is in staat om zijn eigen publicaties te maken en verder te
+denken dan de platte foto aan de muur. Toch wordt fotografie steeds
+meer toegepast als hybride kunstobject en als onderdeel van een
+geheel. Fotografen gebruiken nu grafische technieken en vica versa.
+De hybride ontwerpers die mij voor waren en de ontwerpers van nu
+zijn inspiratiebronnen en mooie voorbeelden van deze samensmelting
+van disciplines.
+<br><br>
+Een valkuil voor een hybride ontwerper is de balans kwijtraken tussen je
+twee krachtbronnen. Een krachtbron kan blokkeren maar op dat soort
+momenten moet je in staat zijn om hiermee om te kunnen gaan. Speel
+met deze disciplines en ontdek wanneer je welke krachtbron het beste
+kan inzetten in je werk. Een hybride ontwerper zijn is niet simpel, het is
+niet enkel twee disciplines samenvoegen. Zoals Paul Schuitema al zei:
+‘Omdat ik een hekel aan tekeningetjes had greep ik naar de foto’. Er is
+de mogelijkheid om te switchen naar een andere krachtbron waar je
+inspiratie en kennis uit kan putten.
+<br><br>
+De kennis van een vorige studie heeft veel invloed op de manier
+waarop je kijkt naar nieuwe disciplines. Het is belangrijk om als
+hedendaagse hybride ontwerper je eigen positie in te nemen en je
+twee krachtbronnen op jou eigen manier te combineren tot een uniek
+werk. Het alledaagse, voor iedereen zichtbaar maar door niemand
+gezien is een belangrijke inspiratiebron voor mij als hybride ontwerper.
+Doodgewone objecten of situaties zijn het startpunt om krachtbronnen
+te combineren voor een uniek werk.
+<br><br>
+Ik ben een hybride ontwerper met twee krachtbronnen die samen mij
+als persoon aandrijven om uniek werk te maken. Fotografie en Grafisch
+ontwerp zullen nooit van elkaar losstaan en gaan altijd hand in hand
+voor mij als fotografisch ontwerper. Na het schrijven van mijn thesis is
+mijn positie in de grafische wereld helder. De ‘frustraties’ of het gevoel
+om verplicht een disciplines te kiezen zijn verleden tijd. De rugzak die
+ik meenam uit de vorige studie is bijgevuld met nieuwe kennis. Als
+iemand nu aan mij zal vragen welke richting ik op ga, fotografie of
+grafisch ontwerp? Zal ik antwoorden dat fotografie en grafisch ontwerp
+niet te scheiden zijn in mijn positie als ontwerper, zij drijven mij aan als
+persoon. Als er 1 wegvalt, valt er een deel weg uit mijn persoonlijkheid
+en manier van kijken. Zij hebben mij samen gebracht naar het punt
+waar ik nu sta.
+<br><br>
+Uiteindelijk is het ook de persoon zelf die bepaald om de tussenpaaltjes
+van de schaatsbaan weg te schaatsen, om van die witte lijn af te
+stappen in het midden van het veld. Maar ze weten waarom ze er af
+stappen en wat ze ermee kunnen bereiken. Deze tussenlijn is geen
+limitatie maar geeft je nieuwe inzichten en een kans om op een speelse
+manier uniek werk te maken. Dat zijn de hybride ontwerpers van nu,
+dat is mijn eigen positie.
+<br><br>
+*Speels, dynamiek, levendig, veel gebruik van diverse media.
+Ik heb een krachtige combinatie in handen waarmee ik uniek werk kan
+maken. Het is in elkaar samengesmolten. </div>
+
+
+</div></div>
+
+
+<!-- BRONNEN / RECHTS --!>
+
+<div class="right"></div>
 
 
 </body>
