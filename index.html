@@ -122,6 +122,31 @@ h1 {
         transform: rotate(10deg);
 }
 
+/* FUN MET INSLIDE TITEL */
+
+div.slide-up {
+  height:420px;
+  overflow:hidden;
+}
+div.slide-up h1 {
+  animation: 5s slide-up;
+  margin-top:0%;
+}
+
+@keyframes slide-up {
+  from {
+    margin-top: 100%;
+    height: 300%; 
+  }
+
+  to {
+    margin-top: 0%;
+    height: 100%;
+  }
+}
+
+/* EIND FUN */
+
 div.koptitel {
 	font-family: 'Vollkorn', serif;
 	font-weight: 300;
@@ -581,10 +606,15 @@ div.dankwoord {
 
 <title> 1+1=3, De hybride ontwerper </title>
 
-<div class="gegevens"> LAURA DE RIJK - GRAFISCH ONTWERP - KABK </div>
 
 <header>
-<h1>1+1=3</h1>
+
+
+<div class="gegevens"> LAURA DE RIJK - GRAFISCH ONTWERP - KABK </div>
+
+
+<div class="slide-up">
+<h1>1+1=3</h1></div>
 
 </header>
 
