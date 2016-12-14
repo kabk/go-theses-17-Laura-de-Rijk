@@ -12,7 +12,10 @@
 
 <meta charset="utf-8"/>
 
-<script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
+<script src="scroll.min.js"></script>
+
+<!-- SMOOTH SCROLL --!>
+
 
 <style>
 
@@ -176,17 +179,76 @@ div.titels {
     margin: 200px 0px 0px 0px; /* Top, Right, Bottom, Left */
 }
 
-ul {
-    list-style-type: none;
-    text-decoration: none;
-    position: fixed;
+/* MENU */
+
+html, body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* define a fixed width for the entire menu */
+.navigation {
+  width: 400px;
+  position: fixed;
     top: 50px;
     left: 30px;
-    color: blue;
-    font-size: 10px;
-    font-family: verdana;
-    letter-spacing: 2px;
 }
+
+
+/* reset our lists to remove bullet points and padding */
+.mainmenu, .submenu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* make ALL links (main and submenu) have padding and background color */
+.mainmenu a {
+  display: block;
+  text-decoration: none;
+  padding: 5px;
+  color: #blue;
+}
+
+/* add hover behaviour */
+.mainmenu a:hover {
+   
+}
+
+
+/* when hovering over a .mainmenu item,
+  display the submenu inside it.
+  we're changing the submenu's max-height from 0 to 200px;
+*/
+
+.mainmenu li:hover .submenu {
+  display: block;
+  max-height: 100px;
+}
+
+/*
+  we now overwrite the background-color for .submenu links only.
+  CSS reads down the page, so code at the bottom will overwrite the code at the top.
+*/
+
+.submenu a {
+}
+
+/* hover behaviour for links inside .submenu */
+.submenu a:hover {
+  text-decoration: underline;
+}
+
+/* this is the initial state of all submenus.
+  we set it to max-height: 0, and hide the overflowed content.
+*/
+.submenu {
+  overflow: hidden;
+  max-height: 0;
+  -webkit-transition: all 0.5s ease-out;
+}
+
+/* MENU EIND */
+
 
 div.inleiding {
     border: 1px solid blue;
@@ -239,6 +301,33 @@ div.hoofdstuk4 {
     font-size: 19px;
 
 }
+
+div.bronnen {
+   background-color: #FFFFFF;
+   height: 300px;
+   overflow: scroll;
+    color: black;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    font-size: 12px;
+    border: 1px solid blue;
+    margin-bottom: 40px;
+    padding-left: 40px;
+    padding-top: 20px
+    
+
+}
+
+
+/*
+div.dankwoord {
+	position: absolute;
+	font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    font-size: 12px;
+    border: 1px solid blue;
+}
+
 
 
 /*  Alle afbeeldingen uit tekst naar links */
@@ -339,11 +428,15 @@ div.hoofdstuk4 {
 
 
 
+
+
 </style>
 
 <!-- START HTML CODE --!>
 
 </head>
+
+
 <body>
 
 <!-- TITEL / START --!>
@@ -359,14 +452,31 @@ div.hoofdstuk4 {
 
 <!-- MENU --!>
 
-	       <ul>
-  <li><a href="#inleiding">INLEIDING</a></li>
-  <li><a href="#hoofdstuk1">MENGVORM VAN DISCIPLINES</a></li>
-  <li><a href="#hoofdstuk2">HET HYBRIDE VERLEDEN</a></li>
-  <li><a href="..">HEDENDAAGS HYBRIDE</a></li>
-  <li><a href="..">CONCLUSIE</a></li>
-  <li><a href="..">BRONNEN</a></li>
-</ul>
+<nav class="navigation">
+  <ul class="mainmenu">
+    <li><a class="scroll"	href="#inleiding">INLEIDING</a></li>
+    <li><a class="scroll"	href="#hoofdstuk1">MENGVORM VAN DISCIPLINES</a></li>
+    <li><a class="scroll"	href="#hoofdstuk2">HET HYBRIDE VERLEDEN</a>
+      <ul class="submenu">
+        <li><a class="scroll"	href="#hoofdstuk 2.1">2.1 Dada & Constructivisme</a></li>
+        <li><a class="scroll"	href="#hoofdstuk 2.2">2.2 Nieuwe fotografie & typografie</a></li>
+        <li><a class="scroll"	href="#hoofdstuk 2.3">2.3 Zwitserse school</a></li>
+        <li><a class="scroll"	href="#hoofdstuk 2.4">2.4 De Meester</a></li>
+      </ul>
+    </li>
+    <li><a class="scroll" href="#hoofdstuk3">HEDENDAAGS HYBRIDE</a>
+      <ul class="submenu">
+        <li><a class="scroll"	href="#hoofdstuk 3.1">3.1 Valkuilen & samensmeltingen</a></li>
+        <li><a class="scroll"	href="#hoofdstuk 3.2">3.2 Wikipedia ontwerpers</a></li>
+        <li><a class="scroll"	href="#hoofdstuk 3.3">3.3 Invloed 'fotografisch oog'</a></li>
+        <li><a class="scroll"	href="#hoofdstuk 3.4">3.4 Grafische fotografie</a></li>
+      </ul>
+    </li>
+    <li><a class="scroll"	href="#conclusie">CONCLUSIE</a></li>
+    <li><a class="scroll"	href="#bronnen">BRONNEN</a></li>
+  </ul>
+</nav>
+
 
 <!-- AFBEELDINGEN --!>
 
@@ -389,9 +499,7 @@ div.hoofdstuk4 {
 
 <a name="inleiding"></a>
 
-
-
-<div class= "koptitel"> 1+1=3 / De hybride ontwerper </div>    
+<div class= "koptitel"> De hybride ontwerper </div>    
 <div class= "inleiding">Als ik straks afstudeer als grafisch ontwerper beheers ik twee disciplines
 die constant met elkaar verbonden zijn en invloed hebben op elkaar:
 Fotografie en Grafisch ontwerp. Het zijn van een hybride ontwerper
@@ -425,7 +533,7 @@ over de positie van de hybride ontwerper?
 <center> <a href="#" onclick="window.print();return false;"> Print text </a> + <a href="LauradeRijk_031216_2_Thesisdraft.pdf" target="_top">Download Images</a> </center> 
 <br><br>
 
-<a name="hoofdstuk1"></a>
+<section id=hoofdstuk1>
 
 <div class= "koptitel"> Mengvorm van disciplines </div>  	    
 <div class= "subtekst"> Je bent een grafisch ontwerper, fotograaf of een beeldend
@@ -550,6 +658,8 @@ kunst? Het zijn twee termen die ook meegroeien met de tijd en de
 vervormingen van de disciplines.
 
   </div> 
+  
+  </section>
 
 <a name="hoofdstuk2"></a>
 
@@ -558,6 +668,8 @@ vervormingen van de disciplines.
 stromingen werden fotografie en grafisch ontwerp op
 krachtige manieren samengebracht? Bij elke stroming
 komen enkele kunstenaars aan bod en hun werk. </div>
+
+<a name="hoofdstuk2.1"></a>
 
 <div class= "hoofdstuk2-1"> 2.1 | Tijdens de Dada periode (1916-1920) ontwikkelde enkele
 kunstenaars een nieuwe context om foto’s te gebruiken in de vorm
@@ -622,6 +734,8 @@ Five-Year Plan, 1932 </figcaption>
 </figure>
 
 <br><br>
+
+<a name="hoofdstuk2.2"></a>
 
 <div class= "hoofdstuk2"> 2.2 |De nieuwe typografie en de nieuwe fotografie ontwikkelde zich in
 1920 tot 1940. Hybride ontwerpers uit deze tijd zijn Piet Zwart en Paul
@@ -768,6 +882,8 @@ plakken voor Bruynzeel19. Het toont aan hoe intensief het kan zijn en
 het werk achter zulke werken. Zijn eigen manier van kijken is bepalend
 voor de eindcompositie van het werk.
 
+<a name="hoofdstuk2.3"></a>
+
 2.3 | De Zwitserse stijl, ook wel de internationale typografische stijl
 genoemd, beïnvloedde grafisch ontwerp extreem in de jaren 60 en 70.
 De fotografie werd gebruikt met hoog contrast en vaak in zwart en wit.
@@ -783,6 +899,9 @@ is herkenbaar aan de simpele ontwerpen en zijn schone gebruik van
 typografie, vormen en kleuren. Zijn werken <FONT COLOR="blue" >[fig. 12-13]</FONT>laat het gebruik
 van fotografie zien in combinatie met de simpele typografie in deze tijd21.
 <br><br>
+
+<a name="hoofdstuk2.4"></a>
+
 2.4 | De Meester van alle disciplines. Klaus Baumgärtner (1948-2013)
 was een beeldend kunstenaar, grafisch ontwerper en schrijver. Hij was
 een gedreven, gerespecteerd en geliefd docent bij vele afdelingen op de
@@ -849,6 +968,9 @@ wat is de relatie van Fotografie in Grafisch ontwerp?
 
 <a name="hoofdstuk3"></a>
 
+
+<a name="hoofdstuk3"></a>
+
 <div class= "koptitel"> Hedendaags hybride </div>
 <div class= "hoofdstuk3"> Hoe worden deze twee krachtbronnen tegenwoordig
 aangedreven door de ontwerper? Wie zijn de hybride
@@ -858,6 +980,9 @@ van de disciplines zijn allang niet meer hetzelfde als in
 het verleden. Het postmedium denken is steeds meer de
 realiteit, het medium doet er niet meer toe.
 <br><br>
+
+<a name="hoofdstuk3.1"></a>
+
 3.1 Valkuilen & verwachtingen | De opleidingen van nu, zoals op
 de KABK, zijn gericht op het opzoeken van je grenzen en werken
 op grenzen van andere disciplines. Die raakvlakken blijven zich
@@ -1006,7 +1131,6 @@ prints. Het is fascinerend te zien hoe fotografie en grafisch ontwerp
 samensmelten in print. Print of de drager papier kan ook als element
 gebruikt worden in het werk zelf. Hide&Seek [Fig 31] is zo’n werk
 waarbij je een vrouw ziet met een in repen gesneden print voor haar
-<br><br>
 gezicht wat een apart en vernieuwend effect geeft.
 Een studie fotografie is niet alleen het leren drukken op een knopje
 op je camera, en het licht goed zetten. Het creëert een manier van
@@ -1027,6 +1151,9 @@ om stock materiaal te gebruiken in je grafisch beeld als je weet dat er
 veel betere kwaliteit te behalen is als fotograaf. De foto komt wel los uit
 zijn container door het gebruik in andere media, maar het is belangrijk
 dat het op de juiste manier gebruikt wordt en met respect.
+
+<a name="hoofdstuk3.2"></a>
+<br><br>
 3.2 Wikipedia ontwerpers | Tijdens mijn zoektocht naar hybride
 kunstenaars kwam ik langs enkele namen waarbij je vraagtekens kunt
 zetten of het wel terecht is dat er verschillende disciplines bij hun naam
@@ -1050,6 +1177,9 @@ leven voor zijn eigen tentoonstellingen. [Fig. 33]. Picasso is dan niet een
 bekende grafisch ontwerper maar laat wel zien dat hij zijn manier van
 kijken goed kan toepassen op andere vlakken. Hoe zou bijvoorbeeld
 een gebouw of een film eruit hebben gezien ontworpen door Picasso?
+
+<a name="hoofdstuk3.3"></a>
+<br><br>
 3.3 Invloed 'fotografisch oog' | Na mijn studie fotografie op de
 fotovakschool in Amsterdam kreeg ik een rugzakje vol met kennis
 mee, maar ik wist nog niet zo goed hoe ik dat kon toepassen tijdens
@@ -1111,6 +1241,9 @@ en lichaamsschilder Anastasia Durasova. Door deze samenwerking
 ontstond er een werk waarbij verschillende media samenwerken voor
 een krachtig beeld 30.
 <br><br>
+
+<a name="hoofdstuk3.4"></a>
+
 3.4 Grafische fotografie | Een ander punt wat ik wil uitlichten bij de
 hedendaagse hybride ontwerper zijn grafische foto’s. Dit zijn foto’s
 waarbij ik het zelf altijd moeilijk vind te plaatsen bij een discipline. Het
@@ -1188,6 +1321,164 @@ kan combineren. De beleving van de kijker staat nog altijd centraal.
 Het werk moet kunnen prikkelen en vernieuwend zijn om aandacht te
 trekken in diverse media. </div>
 
+
+
+<a name="bronnen"></a>
+
+<div class= "koptitel"> Bronnen & Dankwoord </div>
+<div class= "bronnen"> 
+<FONT COLOR="blue" > BOEKEN </FONT>
+<br><br>
+Baumgärtner, Klaus. Klaus Baumgärtner, photographs: die waslijnen in de Outer Hebrides.
+<br><br>
+Den Haag: Klaus Baumgärtner, 2009. Tentoonstellingscatologie.
+<br><br>
+Broos, C.H.A. Piet Zwart en PTT. Den Haag: Gemeentemuseum, 1968. Monografie.
+<br><br>
+Broos, Kees and Piet Zwart. Piet Zwart. ‘s-Gravenhage: Haags Gemeentemuseum,
+1973. Monografie.
+<br><br>
+Broos, Kees. Piet Zwart, 1885-1977. Amsterdam: Van Gennep, 1982. Monografie.
+<br><br>
+Clignett, Robine and Eric De Vries. Klaus Baumgärtner. Den Haag:
+Galerie Ramakers, 2000. Monografie.
+<br><br>
+De Rijke, Theo and Klaus Baumgärtner. Klaus Baumgärtner. Zürich:
+Galerie Esther Hufschmid, 1995. Monografie.
+<br><br>
+Frederike Huygen, Lex Reitsma: 196 Affiches voor De Nederlandse opera. nai010
+uitgevers/publishers, 2014. Monografie
+<br><br>
+Galerie Ramakers. Klaus Baumgärtner. Den Haag:
+Galerie Ramakers, 2001. Monografie.
+<br><br>
+Griffioen, Tineke and Michael Latchem. Gerard Kiljan + Paul Schuitema : Graphic
+designers, Photographers/filmmakers, industrial designers, teachers.
+<br><br>
+The Hague: Royal Academy of Art, 1996 Tentoonstellingscatalogie.
+<br><br>
+Locher, Hans and Susanne Karau. Klaus Baumgärtner : Photos Berlin.
+Freiburg im Breisgau: Morat Institut Für Kunst und Kunstwissenschaft, 2007.
+Tentoonstellingscatalogie.
+<br><br>
+Locher, Hans. Object zonder titel. 2009.
+Maan, Dick and Piet Gispen. Paul Schuitema. Rotterdam: Uitgeverij 010, 2006.
+Monografie.
+<br><br>
+Oosterbaan, Warna. Een leesbare scriptie, Prometheus, 2014.
+<br><br>
+Philip B Meggs and Alston W. Purvis. Meggs’ History of Graphic Design. John Wiley &
+Sons 1998.
+<br><br>
+Robert Klanten, Anna Sinofzik. High Touch, Tactile design and visual exporations.
+Gestalten 2012.
+<br><br>
+Sarah Illenberger, Sarah Illenberger. Gestalten 2011. Monografie
+<br><br>
+Treumann, Otto, Wim Crouwel and Piet Zwart. Piet Zwart : Typotekt. Amsterdam: Stedelijk
+Museum, 1961. Monografie.
+<br><br>
+Willems, Gerrit and Eddy Wenting. Klaus Baumgärtner. Zürich: Galerie Esther Hufschmid,
+1998. Monografie, Tentoonstellingscatalogie. 
+<br><br>
+<FONT COLOR="blue" >WEBSITES </FONT>
+<br><br>
+<FONT COLOR="blue" >Hoofdstuk 1 </FONT><br>
+http://www.encyclo.nl/begrip/Hybride<br>
+http://kunstvannu.blogspot.nl/p/kenmerken.html<br>
+http://www.etymologiebank.nl/trefwoord/grafiek<br>
+http://www.etymologiebank.nl/trefwoord/fotografie<br>
+http://www.vandale.nl/gratis-woordenboek/betekenis/nederlands/grafisch<br>
+http://www.kunstbus.nl/kunst/postmoderne-kunst.html<br>
+http://www.egbg.nl/artikelen/Nederlands/Tegenscript/2008-01_scriptie_MarkvandenHeuvel.pdf<br>
+http://www.harryhilders-fotografie.com/2015/07/autonoom-fotograferen/<br>
+http://begrippenlijst.frankzweegersart.com/2015/03/verschil-tussen-autonome-en-toegepaste-kunst/<br>
+http://www.kunstbus.nl/kunst/grafische-vormgeving.html http://kunst-en-cultuur.infonu.nl/diversen/102210-vanschilderkunst-
+naar-fotografiekunst.html<br>
+http://www.kunstbus.nl/kunst/grafische-vormgeving.html<br>
+http://kunstvannu.blogspot.nl/p/kenmerken.html<br>
+http://www.kabk.nl/pagewideNL.php?id=0055<br>
+<br><br>
+<FONT COLOR="blue" >Hoofdstuk 2 </FONT><br>
+http://guity-novin.blogspot.nl/2011/08/chapter-44-dadaism-meeting-point-of-all.html<br>
+http://www.tate.org.uk/art/artworks/hausmann-the-art-critic-t01918<br>
+https://smarthistory.org/stepanova-the-results-of-the-first-five-year-plan/<br>
+http://www.kunstbus.nl/design/zwitserse-school.html<br>
+http://kunst-en-cultuur.infonu.nl/geschiedenis/130150-grafisch-ontwerpen-in-nederland-1900-1985.html<br>
+https://nl.wikipedia.org/wiki/Piet_Zwart<br>
+http://kabk.ericschrijver.nl/imo/piet_zwart.html<br>
+https://nl.wikipedia.org/wiki/Paul_Schuitema<br>
+http://bouillabaiseworkinprogress.blogspot.nl/2010/08/paul-scuitema-berkels-patent-grafisch.html<br>
+http://www.kabk.nl/newsitemNL.php?newsid=0702&cat=04<br>
+https://www.linkartcompany.nl/kunstenaars/klaus-baumgartner.html<br>
+http://www.klausbaumgartner.com/m/sculpture/<br>
+<br><br>
+<FONT COLOR="blue" >Hoofdstuk 3 </FONT>
+<br>
+https://nl.wikipedia.org/wiki/Anton_Corbijn<br>
+https://nl.wikipedia.org/wiki/Pablo_Picasso<br>
+http://www.mondayartproject.com/eva-fiore-kovakovsky/<br>
+http://kunstenaarsboek.blogspot.nl/2012/10/de-vrije-geest-van-jaap-scheeren.html<br>
+http://www.hansgremmen.nl/demo-item/show-full/id/541<br>
+http://www.jaapscheeren.nl/about/<br>
+http://www.itsnicethat.com/articles/sarah-illenberger-wonderplants-1<br>
+http://www.itsnicethat.com/articles/bartholot<br>
+http://www.jaapscheeren.nl/chapter/flowers/<br>
+https://www.nrc.nl/nieuws/2012/08/02/erik-kessels-ik-houd-van-doodgewone-fotos-a1468749<br>
+http://simonwaldlasowski.com/work<br>
+http://thefoxisblack.com/2010/09/27/ikeas-homemade-is-best-cookbook-shot-by-carl-kleiner-2/<br>
+http://4478zine.com/2010publications.html<br>
+http://erikvanderweijde.com/publications.html
+<br><br>
+<FONT COLOR="blue" > MET DANK AAN: </FONT>
+<br><br>
+Dirk Vis,
+Marjan Brandsma,
+Merel Boers,
+Michel Hoogervorst,
+Maarten Cornel,
+Eric Schrijver,
+Matthias Kreutzer,
+Katrin Korffman,<br>
+Ewoud Traast, 
+Medestudenten,
+Alumni studenten,
+Bibliotheek KABK en
+Johan van Ogten
+<br><br>
+Voor de begeleiding, goede
+gesprekken en vele handige tips
+en advies die uiteindelijk verwerkt
+zijn in mijn scriptie.
+<br><br>
+
+</div>
+
+<!-- <div class= "dankwoord">
+Met dank aan:
+<br><br>
+Dirk Vis,
+Marjan Brandsma,
+Merel Boers,
+Michel Hoogervorst,
+Maarten Cornel,
+Eric Schrijver,
+Matthias Kreutzer,
+Katrin Korffman,
+Ewoud Traast,<br>
+Medestudenten,
+Alumni studenten,
+Bibliotheek KABK,
+Johan van Ogten,
+<br><br>
+Voor de begeleiding, goede
+gesprekken en vele handige tips
+en advies die uiteindelijk verwerkt
+zijn in mijn scriptie.
+<br><br>
+</div>
+
+--!>
 
 </div></div>
 
