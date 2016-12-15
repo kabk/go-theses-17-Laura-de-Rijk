@@ -1,0 +1,1396 @@
+<style>
+
+/* LAYOUT */
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i');
+@import url('https://fonts.googleapis.com/css?family=Vollkorn:400,400i,700,700i');
+
+/* PRINTOPTIES */
+
+@media print {
+
+  img {
+    display: none !important;
+  }
+  * {
+    background-image: none !important;
+  }
+ figcaption {
+    display: none !important;
+  }
+  
+  ul {
+    display: none !important;
+  }
+  
+      .left {
+    display: none !important;
+  }
+  
+     a {
+    display: none !important;
+  }
+  
+      .middle {
+    float: none !important;
+    width: none !important;
+    margin-left: 60px;
+  }
+  
+  
+}
+
+@media print {
+  body {
+    /* IE4-8 and 9 (deprecated). */
+    filter: Gray();
+    /* SVG version for IE10, Chrome 17, FF3.5, 
+       Safari 5.2 and Opera 11.6 */
+    filter: url('#grayscale'); 
+    /* CSS3 filter, at the moment Webkit only. Prefix it for
+       future implementations */
+    -webkit-filter: grayscale(100%); 
+    filter: grayscale(100%); /* future-proof */
+  }
+}
+
+@page { size: auto;  margin: 100mm; }
+
+
+/* FORCEREN OM EEN PAGINA AF TE BREKEN BIJ KOPTITELS */
+
+@media print {
+    @media print {
+    .koptitel {page-break-before: always;}  
+}
+
+}
+
+/* CURSOR TRY-OUT */
+
+.noIbar {
+cursor:default;
+}
+
+
+body {
+    background-color: white;
+    cursor: hand; /* Changing what 'hand' is equal to*/
+}
+
+
+header { 
+    display: block;
+    border-style: solid;
+    border-color: white;
+    margin: 0px 0px 0px 0px;
+}
+
+  .left{float:left; width:20%;
+  font-family: verdana;
+    font-size: 7px;
+    letter-spacing: 2px;
+    height: 100%;
+    text-align: center;
+  
+  }
+  
+  .middle{float:left; width:55%;
+  height: 100%;
+  /* border-style: solid;
+    border-color: blue; */
+  }
+  
+
+  .right{float:left; width:15%;
+  font-family: verdana;
+    font-size: 7px;
+    letter-spacing: 2px;
+    text-align: center;
+   /* border-style: solid;
+    border-color: blue; */
+    }
+
+h1 {
+    color: blue;
+    text-align: center;
+    font-family: 'Vollkorn', serif;
+    font-size: 320px;
+    margin: 50px 0px 0px 0px; /* Top, Right, Bottom, Left */
+    -webkit-transform:rotate(10deg);
+        transform: rotate(10deg);
+}
+
+/* FUN MET INSLIDE TITEL */
+
+div.slide-up {
+  height:420px;
+  overflow:hidden;
+}
+div.slide-up h1 {
+  animation: 5s slide-up;
+  margin-top:0%;
+}
+
+@keyframes slide-up {
+  from {
+    margin-top: 100%;
+    height: 300%; 
+  }
+
+  to {
+    margin-top: 0%;
+    height: 100%;
+  }
+}
+
+/* EIND FUN */
+
+div.koptitel {
+	font-family: 'Vollkorn', serif;
+	font-weight: 300;
+    font-size: 34px;
+    letter-spacing: 0px;
+    color: blue;
+    padding-bottom: 15px;
+    padding-top: 80px;
+        -webkit-transform:rotate(-5deg);
+        transform: rotate(-5deg);
+    
+}
+
+div.subtekst {
+    color: black;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    padding-bottom: 35px;
+    
+}
+
+/* Link 1 - Voor Menu */
+
+a {
+    color: blue;
+    text-decoration: none;
+    font-family: verdana;
+    font-size: 10px;
+    letter-spacing: 2px
+}
+
+a:hover {
+    color: hotpink;
+    cursor: cell;
+ }
+}
+
+/* Link 2 - Voor Voetnoot URL's */
+
+a.one:link {
+	color:blue;
+	font-family: verdana;
+    font-size: 8px;
+	}
+	
+	
+a.one:visited {
+color:blue;
+}
+
+a.one:hover {
+color:blue;
+cursor: cell;
+}
+
+
+div.gegevens {
+color: blue;
+    font-family: verdana;
+    font-size: 10px;
+    letter-spacing: 2px;
+    margin: 20px 90px 100px 35px; /* Top, Right, Bottom, Left */
+    position: absolute;
+
+}
+
+
+div.figuur {
+	color: blue;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+}
+
+div.titels {
+	color: blue;
+    font-family: verdana;
+    font-size: 15px;
+    text-align: left;
+    margin: 200px 0px 0px 0px; /* Top, Right, Bottom, Left */
+}
+
+/* MENU */
+
+html, body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* define a fixed width for the entire menu */
+.navigation {
+  width: 400px;
+  position: fixed;
+    top: 50px;
+    left: 30px;
+}
+
+
+/* reset our lists to remove bullet points and padding */
+.mainmenu, .submenu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* make ALL links (main and submenu) have padding and background color */
+.mainmenu a {
+  display: block;
+  text-decoration: none;
+  padding: 5px;
+  color: #blue;
+}
+
+/* add hover behaviour */
+.mainmenu a:hover {
+   
+}
+
+
+/* when hovering over a .mainmenu item,
+  display the submenu inside it.
+  we're changing the submenu's max-height from 0 to 200px;
+*/
+
+.mainmenu li:hover .submenu {
+  display: block;
+  max-height: 100px;
+}
+
+/*
+  we now overwrite the background-color for .submenu links only.
+  CSS reads down the page, so code at the bottom will overwrite the code at the top.
+*/
+
+.submenu a {
+}
+
+/* hover behaviour for links inside .submenu */
+.submenu a:hover {
+  text-decoration: underline;
+}
+
+/* this is the initial state of all submenus.
+  we set it to max-height: 0, and hide the overflowed content.
+*/
+.submenu {
+  overflow: hidden;
+  max-height: 0;
+  -webkit-transition: all 0.5s ease-out;
+}
+
+/* MENU EIND */
+
+
+/* CONTENT TEKST */
+
+div.inleiding {
+    border: 1px solid blue;
+    color: black;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+    padding: 50px;
+
+}
+
+div.hoofdstuk1 {
+    color: black;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    font-size: 17px;
+    padding-left: 50px;
+
+}
+
+div.hoofdstuk2 {
+    color: black;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    font-size: 17px;
+    padding-left: 50px;
+
+}
+
+div.hoofdstuk2-1 {
+    color: black;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    font-size: 17px;
+    padding-left: 50px;
+
+}
+
+div.hoofdstuk2-2 {
+    color: black;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    font-size: 17px;
+    padding-left: 50px;
+
+}
+
+div.hoofdstuk2-3 {
+    color: black;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    font-size: 17px;
+    padding-left: 50px;
+
+
+}
+
+div.hoofdstuk2-4 {
+    color: black;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    font-size: 17px;
+    padding-left: 50px;
+
+}
+
+
+div.hoofdstuk3 {
+    color: black;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    font-size: 17px;
+    padding-left: 50px;
+
+}
+
+div.hoofdstuk3-1 {
+    color: black;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    font-size: 17px;
+    padding-left: 50px;
+   
+
+}
+
+div.hoofdstuk3-2 {
+    color: black;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    font-size: 17px;
+    padding-left: 50px;
+
+}
+
+div.hoofdstuk3-3 {
+    color: black;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    font-size: 17px;
+    padding-left: 50px;
+
+}
+
+div.hoofdstuk3-4 {
+    color: black;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    font-size: 17px;
+    padding-left: 50px;
+
+}
+
+
+div.conclusie {
+    color: black;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    font-size: 17px;
+    padding-left: 50px;
+
+}
+
+
+div.bronnen {
+   background-color: #FFFFFF;
+   height: 300px;
+   overflow: scroll;
+    color: black;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    font-size: 12px;
+    border: 1px solid blue;
+    margin-bottom: 40px;
+    padding-left: 40px;
+    padding-top: 20px
+    
+
+}
+
+
+/*
+div.dankwoord {
+	position: absolute;
+	font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    font-size: 12px;
+    border: 1px solid blue;
+}
+
+
+/*  Alle afbeeldingen uit tekst naar links */
+
+/* .middle figure {
+	position: absolute;
+	left: 60px;
+}
+
+/* in een blok zetten, en dan de positie in z'n geheel op absolute, of voor de tekst/caption */
+
+ .middle figcaption {
+	font-family: verdana;
+    font-size: 7px;
+    letter-spacing: 2px;
+    position: absolute;
+}
+
+.middle div.voetnoot {
+	position: absolute;
+	left: 1150px;
+	font-family: verdana;
+    font-size: 8px;
+    letter-spacing: 1px;
+    padding-right: 40px;
+}
+
+img {
+    -webkit-filter: grayscale(100%); 
+    filter: grayscale(100%);
+}
+
+img:hover {
+    -webkit-filter: grayscale(0%); 
+    filter: grayscale(0%);
+}
+
+/* img {
+    -webkit-filter: blur(2px);
+    filter: blur(2px);
+}
+
+img:hover {
+    -webkit-filter: blur(0px); 
+    filter: blur(0px);
+}
+
+*/
+
+/* Foto's plaatsen op allerlei diverse plekken */
+
+/* START AFBEELDINGEN HOOFDSTUK 3 */
+
+#figuur1 {
+	left: 1150px;
+	position: absolute;
+}
+
+#figuur1 img{
+	width: 140px;
+	height: 180px;
+
+}
+
+#figuur1:hover{
+    width:380px;
+    height:450px;
+    left: 400px;
+    position: absolute;  
+    opacity: 0.8;
+           -webkit-transform:rotate(50deg);
+        transform: rotate(50deg);
+}
+
+#figuur2 {
+	left: 60px;
+	position: absolute;
+}
+
+#figuur2 img {
+	width: 190px;
+	height: 130px;
+
+}
+
+#figuur2:hover{
+    left: 500px;
+	width: 360px;
+	height: 260px;
+	padding-left: 0px;
+	position: absolute;
+    opacity: 0.8;
+           -webkit-transform:rotate(20deg);
+        transform: rotate(20deg);
+
+}
+
+#figuur3 {
+	left: 60px;
+	position: absolute;
+}
+
+#figuur3 img {
+	width: 210px;
+	height: 150px;
+}
+
+#figuur3:hover {
+	left: 600px;
+	width: 490px;
+	height: 330px;
+	position: absolute;
+	opacity: 0.8;
+	 -webkit-transform:rotate(50deg);
+        transform: rotate(50deg);
+}
+
+#figuur4 {
+	left: 1100px;
+	position: absolute;
+}
+
+#figuur4 img{
+	width:230px;
+	height:180px;
+}
+
+#figuur4:hover{
+    width:360px;
+    height:260px;
+    left: 400px;
+    position: absolute;  
+    opacity: 1.0;
+           -webkit-transform:rotate(50deg);
+        transform: rotate(50deg);
+}
+
+
+#figuur5 {
+	left: 60px;
+	position: absolute
+}
+
+#figuur5 img{
+	width: 190px;
+	height: 250px;
+}
+
+#figuur5:hover{
+    left: 500px;
+	width: 390px;
+	height: 500px;
+	padding-left: 0px;
+	position: absolute;
+    opacity: 0.8;
+           -webkit-transform:rotate(20deg);
+        transform: rotate(20deg);
+}
+
+#figuur6 {
+	left: 1100px;
+	position: absolute
+}
+
+#figuur6 img {
+	width: 250px;
+	height: 170px;
+
+}
+
+#figuur6:hover{
+    left: 390px;
+	width: 390px;
+	height: 500px;
+	padding-left: 0px;
+	position: absolute;
+    opacity: 0.8;
+           -webkit-transform:rotate(20deg);
+        transform: rotate(20deg);
+
+}
+
+#figuur7 {
+	left: 100px;
+	position: absolute;
+}
+
+#figuur7 img {
+	width: 150px;
+	height: 190px;
+}
+
+#figuur7:hover{
+    left: 390px;
+	width: 390px;
+	height: 500px;
+	padding-left: 0px;
+	position: absolute;
+    opacity: 0.8;
+           -webkit-transform:rotate(-20deg);
+        transform: rotate(-20deg);
+}
+
+#figuur8 {
+	left: 1100px;
+	position: absolute;
+}
+
+#figuur8 img {
+	width: 150px;
+	height: 190px;
+}
+
+#figuur8:hover{
+    left: 390px;
+	width: 390px;
+	height: 500px;
+	padding-left: 0px;
+	position: absolute;
+    opacity: 0.8;
+           -webkit-transform:rotate(20deg);
+        transform: rotate(20deg);
+}
+
+#figuur9 {
+	left: 1100px;
+	position: absolute;
+}
+
+#figuur9 img{
+	width: 150px;
+	height: 190px;
+
+}
+
+#figuur9:hover{
+    left: 390px;
+	width: 390px;
+	height: 500px;
+	padding-left: 0px;
+	position: absolute;
+    opacity: 0.8;
+           -webkit-transform:rotate(20deg);
+        transform: rotate(20deg);
+}
+
+
+#figuur10 {
+	left: 1100px;
+	position: absolute;
+}
+
+#figuur10 img {
+	width: 150px;
+	height: 190px;
+}
+
+#figuur10:hover{
+    left: 390px;
+	width: 390px;
+	height: 500px;
+	padding-left: 0px;
+	position: absolute;
+    opacity: 0.8;
+           -webkit-transform:rotate(20deg);
+        transform: rotate(20deg);
+}
+
+#figuur11 {
+	left: 100px;
+	position: absolute;
+}
+
+#figuur11 img {
+	width: 135px;
+	height: 100px;
+}
+
+#figuur11:hover{
+    left: 390px;
+	width: 490px;
+	height: 500px;
+	padding-left: 0px;
+	position: absolute;
+    opacity: 0.8;
+           -webkit-transform:rotate(20deg);
+        transform: rotate(20deg);
+
+}
+
+#figuur12 {
+	left: 1100px;
+	position: absolute;
+}
+
+#figuur12 img {
+	width: 100px;
+	height: 170px;
+}
+
+#figuur12:hover{
+    left: 290px;
+	width: 390px;
+	height: 500px;
+	padding-left: 0px;
+	position: absolute;
+    opacity: 0.8;
+           -webkit-transform:rotate(20deg);
+        transform: rotate(20deg);
+}
+
+#figuur13 {
+	left: 1220px;
+	position: absolute;
+}
+
+#figuur13 img {
+	width: 100px;
+	height: 170px;
+}
+
+#figuur13:hover{
+    left: 290px;
+	width: 390px;
+	height: 500px;
+	padding-left: 0px;
+	position: absolute;
+    opacity: 0.8;
+           -webkit-transform:rotate(20deg);
+        transform: rotate(20deg);
+
+}
+
+#figuur14 {
+	left: 1100px;
+	position: absolute;
+}
+
+#figuur14 img {
+	width: 150px;
+	height: 100px;
+}
+
+#figuur14:hover{
+    left: 240px;
+	padding-left: 0px;
+	position: absolute;
+    opacity: 0.8;
+           -webkit-transform:rotate(20deg);
+        transform: rotate(20deg);
+}
+
+#figuur15 {
+	left: 1100px;
+	position: absolute;
+}
+
+#figuur15 img {
+	width: 220px;
+	height: 150px;
+
+}
+
+#figuur15:hover{
+    left: 240px;
+	width: 150px;
+	height: 500px;
+	padding-left: 0px;
+	position: absolute;
+    opacity: 0.8;
+           -webkit-transform:rotate(20deg);
+        transform: rotate(20deg);
+}
+
+#figuur16 {
+	left: 1100px;
+	width: 220px;
+	height: 150px;
+	padding-left: 0px;
+	position: absolute;
+}
+
+#figuur16 img {
+	width: 150px;
+	height: 100px;
+}
+
+#figuur16:hover{
+    left: 240px;
+	padding-left: 0px;
+    opacity: 0.8;
+           -webkit-transform:rotate(20deg);
+        transform: rotate(20deg);
+}
+
+#figuur17 {
+	left: 1150px;
+	position: absolute;
+}
+
+#figuur17 img {
+	width: 150px;
+	height: 220px;
+}
+
+#figuur17:hover{
+    left: 240px;
+	width: 150px;
+	height: 220px;
+	padding-left: 0px;
+	position: absolute;
+    opacity: 0.8;
+           -webkit-transform:rotate(20deg);
+        transform: rotate(20deg);
+}
+
+/* START AFBEELDINGEN HOOFDSTUK 3 */
+
+#figuur18 {
+	left: 1200px;
+	position: absolute;
+}
+
+#figuur18 img {
+	width: 100px;
+	height: 80px;
+}
+
+#figuur18:hover{
+    left: 240px;
+	width: 400px;
+	height: 480px;
+	padding-left: 0px;
+	position: absolute;
+    opacity: 0.8;
+           -webkit-transform:rotate(70deg);
+        transform: rotate(70deg);
+}
+
+#figuur19 {
+	left: 1200px;
+	position: absolute;
+}
+
+#figuur19 img {
+	width: 100px;
+	height: 80px;
+}
+
+#figuur19:hover{
+    left: 240px;
+	width: 100px;
+	height: 80px;
+	padding-left: 0px;
+	position: absolute;
+    opacity: 0.8;
+           -webkit-transform:rotate(20deg);
+        transform: rotate(20deg);
+}
+
+#figuur20 {
+	left: 1100px;
+	position: absolute;
+}
+
+#figuur20 img {
+	width: 100px;
+	height: 140px;
+}
+
+#figuur20:hover{
+    left: 240px;
+	width: 400px;
+	height: 490px;
+	padding-left: 0px;
+	position: absolute;
+    opacity: 0.8;
+           -webkit-transform:rotate(180deg);
+        transform: rotate(10deg);
+}
+
+#figuur21 {
+	left: 1300px;
+	position: absolute;
+}
+
+#figuur21 img {
+	width: 100px;
+	height:140px;
+}
+
+#figuur21:hover{
+    left: 240px;
+	width: 440px;
+	height: 500px;
+	padding-left: 0px;
+	position: absolute;
+    opacity: 0.8;
+           -webkit-transform:rotate(-80deg);
+        transform: rotate(-80deg);
+}
+
+#figuur22 {
+	left: 1150px;
+	position: absolute;
+}
+
+#figuur22 img {
+	width: 100px;
+	height:140px;
+}
+
+#figuur22:hover{
+    left: 240px;
+	width: 440px;
+	height: 500px;
+	padding-left: 0px;
+	position: absolute;
+    opacity: 0.8;
+           -webkit-transform:rotate(20deg);
+        transform: rotate(20deg);
+}
+
+#figuur23 {
+	left: 1100px;
+	position: absolute;
+}
+
+#figuur23 img {
+	width: 180px;
+	height:140px;
+
+}
+
+#figuur23:hover{
+    left: 240px;
+	width: 500px;
+	height: 340px;
+	padding-left: 0px;
+	position: absolute;
+    opacity: 0.8;
+           -webkit-transform:rotate(-20deg);
+        transform: rotate(-20deg);
+}
+
+#figuur24 {
+	left: 1100px;
+	position: absolute;
+}
+
+#figuur24 img {
+	width: 140px;
+	height:100px;
+}
+
+#figuur24:hover{
+    left: 240px;
+	width: 100px;
+	height: 140px;
+	padding-left: 0px;
+	position: absolute;
+    opacity: 0.8;
+           -webkit-transform:rotate(20deg);
+        transform: rotate(20deg);
+}
+
+#figuur25 {
+	left: 1250px;
+	position: absolute;
+}
+
+#figuur25 img{
+	width: 140px;
+	height:100px;
+}
+
+#figuur25:hover{
+    left: 240px;
+	width: 100px;
+	height: 140px;
+	padding-left: 0px;
+	position: absolute;
+    opacity: 0.8;
+           -webkit-transform:rotate(20deg);
+        transform: rotate(20deg);
+}
+
+#figuur26 {
+	left: 1200px;
+	position: absolute;
+}
+
+#figuur26 img {
+	width: 140px;
+	height:100px;
+}
+
+#figuur26:hover{
+    left: 240px;
+	width: 500px;
+	height: 540px;
+	padding-left: 0px;
+	position: absolute;
+    opacity: 0.8;
+           -webkit-transform:rotate(20deg);
+        transform: rotate(20deg);
+}
+
+#figuur27 {
+	left: 1100px;
+	position: absolute;
+}
+
+#figuur27 img{
+	width: 100px;
+	height:140px;
+}
+
+#figuur27:hover{
+    left: 240px;
+	width: 450px;
+	height: 540px;
+	padding-left: 0px;
+	position: absolute;
+    opacity: 0.8;
+           -webkit-transform:rotate(-20deg);
+        transform: rotate(-20deg);
+}
+
+#figuur28 {
+	left: 1200px;
+	position: absolute;
+}
+
+#figuur28 img {
+	width: 140px;
+	height:110px;
+}
+
+#figuur28:hover{
+    left: 240px;
+	width: 140px;
+	height: 100px;
+	padding-left: 0px;
+	position: absolute;
+    opacity: 0.8;
+           -webkit-transform:rotate(20deg);
+        transform: rotate(20deg);
+}
+
+#figuur29 {
+	left: 1200px;
+	position: absolute;
+}
+
+#figuur29 img {
+	width: 140px;
+	height:110px;
+}
+
+#figuur29:hover{
+    left: 240px;
+	width: 140px;
+	height: 100px;
+	padding-left: 0px;
+	position: absolute;
+    opacity: 0.8;
+           -webkit-transform:rotate(20deg);
+        transform: rotate(20deg);
+}
+
+#figuur30 {
+	left: 1200px;
+	position: absolute;
+}
+
+#figuur30 img{
+	width: 140px;
+	height:110px;
+}
+
+#figuur30:hover{
+    left: 240px;
+	width: 140px;
+	height: 100px;
+	padding-left: 0px;
+	position: absolute;
+    opacity: 0.8;
+           -webkit-transform:rotate(20deg);
+        transform: rotate(20deg);
+}
+
+#figuur31 {
+	left: 1200px;
+	position: absolute;
+}
+
+#figuur31 img {
+	width: 100px;
+	height:140px;
+}
+
+#figuur31:hover{
+    left: 240px;
+	width: 100px;
+	height: 140px;
+	padding-left: 0px;
+	position: absolute;
+    opacity: 0.8;
+           -webkit-transform:rotate(20deg);
+        transform: rotate(20deg);
+}
+
+#figuur32 {
+	left: 1200px;
+	position: absolute;
+}
+
+#figuur32 img {
+	width: 100px;
+	height:140px;
+}
+
+#figuur32:hover{
+    left: 240px;
+	width: 100px;
+	height: 140px;
+	padding-left: 0px;
+	position: absolute;
+    opacity: 0.8;
+           -webkit-transform:rotate(20deg);
+        transform: rotate(20deg);
+}
+
+#figuur33 {
+	left: 1200px;
+	position: absolute;
+}
+
+#figuur33 img {
+	width: 100px;
+	height:140px;
+}
+
+#figuur33:hover{
+    left: 240px;
+	width: 100px;
+	height: 140px;
+	padding-left: 0px;
+	position: absolute;
+    opacity: 0.8;
+           -webkit-transform:rotate(20deg);
+        transform: rotate(20deg);
+}
+
+#figuur34 {
+	left: 1200px;
+	position: absolute;
+}
+
+#figuur34 img {
+	width: 90px;
+	height:140px;
+}
+
+#figuur34:hover{
+    left: 240px;
+	width: 90px;
+	height: 140px;
+	padding-left: 0px;
+	position: absolute;
+    opacity: 0.8;
+           -webkit-transform:rotate(20deg);
+        transform: rotate(20deg);
+}
+
+#figuur35 {
+	left: 1200px;
+	position: absolute;
+}
+
+#figuur35 img {
+	width: 90px;
+	height:140px;
+}
+
+#figuur35:hover{
+    left: 240px;
+	width: 90px;
+	height: 140px;
+	padding-left: 0px;
+	position: absolute;
+    opacity: 0.8;
+           -webkit-transform:rotate(20deg);
+        transform: rotate(20deg);
+}
+
+#figuur36 {
+	left: 1200px;
+	position: absolute;
+}
+
+#figuur36 img {
+	width: 90px;
+	height:140px;
+}
+
+#figuur36:hover{
+    left: 240px;
+	width: 90px;
+	height: 140px;
+	padding-left: 0px;
+	position: absolute;
+    opacity: 0.8;
+           -webkit-transform:rotate(20deg);
+        transform: rotate(20deg);
+}
+
+#figuur37 {
+	left: 200px;
+	position: absolute;
+}
+
+#figuur37 img {
+	width: 140px;
+	height:90px;
+}
+
+#figuur37:hover{
+    left: 240px;
+	width: 140px;
+	height: 90px;
+	padding-left: 0px;
+	position: absolute;
+    opacity: 0.8;
+           -webkit-transform:rotate(20deg);
+        transform: rotate(20deg);
+}
+
+#figuur38 {
+	left: 100px;
+	position: absolute;
+}
+
+#figuur38 img {
+	width: 140px;
+	height:90px;
+}
+
+#figuur38:hover{
+    left: 240px;
+	width: 90px;
+	height: 140px;
+	padding-left: 0px;
+	position: absolute;
+    opacity: 0.8;
+           -webkit-transform:rotate(20deg);
+        transform: rotate(20deg);
+}
+
+#figuur39 {
+	left: 100px;
+	position: absolute;
+}
+
+#figuur39 img {
+	width: 140px;
+	height:90px;
+}
+
+#figuur39:hover{
+    left: 240px;
+	width: 90px;
+	height: 140px;
+	padding-left: 0px;
+	position: absolute;
+    opacity: 0.8;
+           -webkit-transform:rotate(20deg);
+        transform: rotate(20deg);
+}
+
+#figuur40 {
+	left: 100px;
+	position: absolute;
+}
+
+
+#figuur40 img {
+	width: 140px;
+	height:90px;
+}
+
+#figuur40:hover{
+    left: 240px;
+	width: 90px;
+	height: 140px;
+	padding-left: 0px;
+	position: absolute;
+    opacity: 0.8;
+           -webkit-transform:rotate(20deg);
+        transform: rotate(20deg);
+}
+
+#figuur41 {
+	left: 100px;
+	position: absolute;
+}
+
+#figuur41 img {
+	width: 90px;
+	height:140px;
+}
+
+#figuur41:hover{
+    left: 240px;
+	width: 90px;
+	height: 140px;
+	padding-left: 0px;
+	position: absolute;
+    opacity: 0.8;
+           -webkit-transform:rotate(20deg);
+        transform: rotate(20deg);
+}
+
+#figuur42 {
+	left: 1150px;
+	position: absolute;
+}
+
+#figuur42 img {
+	width: 130px;
+	height:90px;
+}
+
+#figuur42:hover{
+    left: 240px;
+	width: 90px;
+	height: 130px;
+	padding-left: 0px;
+	position: absolute;
+    opacity: 0.8;
+           -webkit-transform:rotate(20deg);
+        transform: rotate(20deg);
+}
+
+</style>
