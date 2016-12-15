@@ -24,6 +24,77 @@
 
 </head>
 
+<style>
+/* PRINTOPTIES */
+
+@media print {
+
+  img {
+    display: none !important;
+  }
+  * {
+    background-image: none !important;
+  }
+ figcaption {
+    display: none !important;
+  }
+  
+  ul {
+    display: none !important;
+  }
+  
+      .left {
+    display: none !important;
+  }
+  
+     a {
+    display: none !important;
+  }
+  
+      .middle {
+    float: none !important;
+    width: none !important;
+    margin-left: 60px;
+  }
+  
+  
+}
+
+@media print {
+  body {
+    /* IE4-8 and 9 (deprecated). */
+    filter: Gray();
+    /* SVG version for IE10, Chrome 17, FF3.5, 
+       Safari 5.2 and Opera 11.6 */
+    filter: url('#grayscale'); 
+    /* CSS3 filter, at the moment Webkit only. Prefix it for
+       future implementations */
+    -webkit-filter: grayscale(100%); 
+    filter: grayscale(100%); /* future-proof */
+  }
+}
+
+@page { size: auto;  margin: 100mm; }
+
+
+/* FORCEREN OM EEN PAGINA AF TE BREKEN BIJ KOPTITELS */
+
+@media print {
+    @media print {
+    .koptitel {page-break-before: always;}  
+}
+
+}
+
+/* HOOGTE AANPASSEN VAN BRONNENBLOK */
+
+@media print {
+
+	{div.bronnen height: auto;}
+}
+
+</style>
+
 
 <body>
 
@@ -317,7 +388,6 @@ verdienen,<br> op handel gericht<br><a class="one" href="http://www.woorden.org/
 commercieel">[URL]</a>
 </div> 
 
-
 Raoul Hausmann <i>(1886-1971)</i>, één van de oprichters van de Berlijnse
 Dada groep ontwikkelde fotomontage als een instrument van satire <sup><font size="2">6</font></sup>
 en politiek protest. Volgens de omschrijving <sup><font size="2">7</font></sup> wordt de kunstcriticus in
@@ -327,14 +397,15 @@ van de groep. Het is waarschijnlijk een anoniem figuur uitgesneden uit
 <div class= "voetnoot"><b>6</b> Spottende imitatie<br><a class="one" href="http://www.woorden.org/woord/
 satire">[URL]</a>
 </div> 
-<br><br>
+
+een magazine. Het Duitse bankbiljet achter de nek van de criticus doet
+vermoeden dat hij wordt gecontroleerd door kapitalistische krachten.
+
 <div class= "voetnoot"><b>7</b>Tate Modern, sept. 2006<br><a class="one" href="http://www.tate.org.uk/art/
 artworks/hausmann-the-artcritic-
 t01918">[URL]</a>
 </div> 
 
-een magazine. Het Duitse bankbiljet achter de nek van de criticus doet
-vermoeden dat hij wordt gecontroleerd door kapitalistische krachten.
 De woorden op de achtergrond maken deel uit van een gedicht
 poster gemaakt door Hausmann die worden opgeplakt op de muren
 van Berlijn. Zijn fotomontage <FONT COLOR="blue" >[fig. 1]</FONT> is gemaakt met inkt en krijt op een
@@ -1189,7 +1260,6 @@ een gebouw of een film eruit hebben gezien ontworpen door Picasso?
 fotovakschool in Amsterdam kreeg ik een rugzakje vol met kennis
 mee, maar ik wist nog niet zo goed hoe ik dat kon toepassen tijdens
 mijn studie grafisch ontwerp. In het begin lag die rugzak in een hoek
-<br><br>
 en lag de focus vooral op grafisch ontwerp en het onderzoeken wat
 grafisch inhoudt en hoe ik er controle over kon krijgen. Al gauw kwam
 ik erachter dat die rugzak een sterke invloed heeft op mijn manier
@@ -1283,13 +1353,6 @@ ontstond er een werk waarbij verschillende media samenwerken voor
 een krachtig beeld  <sup><font size="2">30</font></sup>.
 <br><br>
 
-<figure id="figuur38">
-  <img  src="../go-theses-17-Laura-de-Rijk/afbeeldingen/fig38_sagmeister.jpeg" />
-  <figcaption> Fig 37-38 Jessica
-Walsh. Aizone, 2011.
-</figcaption>
-</figure>
-
 
 <div class= "voetnoot"><b>30</b>. Robert Klanten, Anna Sinofzik.
 High Touch, Tactile design and visual
@@ -1306,13 +1369,12 @@ hedendaagse hybride ontwerper zijn grafische foto’s. Dit zijn foto’s
 waarbij ik het zelf altijd moeilijk vind te plaatsen bij een discipline. Het
 wordt fotografie genoemd, of is door een fotograaf uitgevoerd maar
 
-<figure id="figuur39">
-  <img  src="../go-theses-17-Laura-de-Rijk/afbeeldingen/fig39_robert.jpeg" />
-  <figcaption> Fig. 39 Geometric
-Homocide, 2009
+<figure id="figuur38">
+  <img  src="../go-theses-17-Laura-de-Rijk/afbeeldingen/fig38_sagmeister.jpeg" />
+  <figcaption> Fig 37-38 Jessica
+Walsh. Aizone, 2011.
 </figcaption>
 </figure>
-
 
 het oogt grafisch. Het werk van <i> Geometric homocide </i><FONT COLOR="blue" >[Fig. 39]</FONT> toont
 een portret van een persoon opgebouwd uit geometrische papieren
@@ -1328,11 +1390,10 @@ waarom ik dit soort foto’s grafisch vind, maar nu wordt het duidelijk.
 De scheidingslijn tussen deze twee disciplines is door mijn vorige
 studie en de kennis van deze studie zo flexibel geworden dat hij is
 
-<figure id="figuur40">
-  <img  src="../go-theses-17-Laura-de-Rijk/afbeeldingen/fig40_kleiner.jpeg"  />
-  <figcaption> Fig. 40
-HomeMade is best
-for IKEA, 2011
+<figure id="figuur39">
+  <img  src="../go-theses-17-Laura-de-Rijk/afbeeldingen/fig39_robert.jpeg" />
+  <figcaption> Fig. 39 Geometric
+Homocide, 2009
 </figcaption>
 </figure>
 
@@ -1343,6 +1404,14 @@ studie wordt toegepast bij visueel grafisch werk en is een krachtbron
 om dit soort werk op een andere manier te kunnen bekijken. Het is
 altijd fascinerend om naar te kijken. Het werk van Carl Kleiner <sup><font size="2">32</font></sup> <FONT COLOR="blue" >[Fig. 40]</FONT>
 
+<figure id="figuur40">
+  <img  src="../go-theses-17-Laura-de-Rijk/afbeeldingen/fig40_kleiner.jpeg"  />
+  <figcaption> Fig. 40
+HomeMade is best
+for IKEA, 2011
+</figcaption>
+</figure>
+
 <div class= "voetnoot"><b>32</b>. Carl Kleiner website <br>
 <a class="one" href="http://www.carlkleiner.com">[URL]</a>
 </div>
@@ -1352,7 +1421,24 @@ en bij het werk van Simon Wald-Lasowski <sup><font size="2">33</font></sup> voor
 
 <div class= "voetnoot"><b>32</b>. Simon Wald-Lasowski website <br>
 <a class="one" href="http://simonwaldlasowski.com">[URL]</a>
+</div> 
+
+of NRC NEXT <FONT COLOR="blue" >[Fig. 41]</FONT> en het werk cubes <FONT COLOR="blue" >[Fig. 42]</FONT> van Lenert en
+Sander voor de Volkskrant <sup><font size="2">34</font></sup> . Je voelt dat er zowel fotografische als
+
+
+<div class= "voetnoot"><b>32</b>. Lenert en Sander, Cubes <br>
+<a class="one" href="http://lernertandsander.com/cubes/">[URL]</a>
 </div>
+
+
+grafische kennis aanwezig is. Als ik naar hun werk kijk zeg ik gelijk:
+Dit is fotografisch werk. Het zijn toegepaste foto’s met als doel een
+reclamecampagne of cover, en uitgedacht tot de details in compositie,
+medium en materiaal. Het zijn voorstellingen van lijnen en vlakken. Je
+ziet foto's met hele bewuste keuzes en een duidelijke communicatie.
+Zij gebruiken fotografie als krachtbron om het visueel over te brengen,
+maar zijn ook grafisch ontwerper door hun manier van communicatie.
 
 <figure id="figuur41">
   <img src="../go-theses-17-Laura-de-Rijk/afbeeldingen/fig41_simon.jpeg" />
@@ -1362,13 +1448,6 @@ NEXT, 2012.
 </figcaption>
 </figure>
 
-of NRC NEXT <FONT COLOR="blue" >[Fig. 41]</FONT> en het werk cubes <FONT COLOR="blue" >[Fig. 42]</FONT> van Lenert en
-Sander voor de Volkskrant <sup><font size="2">34</font></sup> . Je voelt dat er zowel fotografische als
-
-<div class= "voetnoot"><b>32</b>. Lenert en Sander, Cubes <br>
-<a class="one" href="http://lernertandsander.com/cubes/">[URL]</a>
-</div>
-
 <figure id="figuur42">
   <img  src="../go-theses-17-Laura-de-Rijk/afbeeldingen/fig42_lenertsander.jpeg" />
   <figcaption> Fig. 42
@@ -1377,13 +1456,6 @@ Volkskrant 2013
 </figcaption>
 </figure>
 
-grafische kennis aanwezig is. Als ik naar hun werk kijk zeg ik gelijk:
-Dit is fotografisch werk. Het zijn toegepaste foto’s met als doel een
-reclamecampagne of cover, en uitgedacht tot de details in compositie,
-medium en materiaal. Het zijn voorstellingen van lijnen en vlakken. Je
-ziet foto's met hele bewuste keuzes en een duidelijke communicatie.
-Zij gebruiken fotografie als krachtbron om het visueel over te brengen,
-maar zijn ook grafisch ontwerper door hun manier van communicatie.
 Juist doordat de grens tussen deze twee krachtige disciplines zo
 flexibel is in deze tijd kunnen we nog wel even doorpraten en
 voorbeelden van kunstenaars benoemen die allemaal even inspirerend

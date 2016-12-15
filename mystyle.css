@@ -4,67 +4,6 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i');
 @import url('https://fonts.googleapis.com/css?family=Vollkorn:400,400i,700,700i');
 
-/* PRINTOPTIES */
-
-@media print {
-
-  img {
-    display: none !important;
-  }
-  * {
-    background-image: none !important;
-  }
- figcaption {
-    display: none !important;
-  }
-  
-  ul {
-    display: none !important;
-  }
-  
-      .left {
-    display: none !important;
-  }
-  
-     a {
-    display: none !important;
-  }
-  
-      .middle {
-    float: none !important;
-    width: none !important;
-    margin-left: 60px;
-  }
-  
-  
-}
-
-@media print {
-  body {
-    /* IE4-8 and 9 (deprecated). */
-    filter: Gray();
-    /* SVG version for IE10, Chrome 17, FF3.5, 
-       Safari 5.2 and Opera 11.6 */
-    filter: url('#grayscale'); 
-    /* CSS3 filter, at the moment Webkit only. Prefix it for
-       future implementations */
-    -webkit-filter: grayscale(100%); 
-    filter: grayscale(100%); /* future-proof */
-  }
-}
-
-@page { size: auto;  margin: 100mm; }
-
-
-/* FORCEREN OM EEN PAGINA AF TE BREKEN BIJ KOPTITELS */
-
-@media print {
-    @media print {
-    .koptitel {page-break-before: always;}  
-}
-
-}
-
 /* CURSOR TRY-OUT */
 
 .noIbar {
@@ -1267,7 +1206,7 @@ img:hover {
 }
 
 #figuur37 {
-	left: 200px;
+	left: 100px;
 	position: absolute;
 }
 
