@@ -54,7 +54,7 @@ h1 {
     text-align: center;
     font-family: 'Vollkorn', serif;
     font-size: 320px;
-    margin: 50px 0px 0px 0px; /* Top, Right, Bottom, Left */
+    margin: 100px 0px 0px 0px; /* Top, Right, Bottom, Left */
     -webkit-transform:rotate(10deg);
         transform: rotate(10deg);
 }
@@ -440,6 +440,10 @@ img:hover {
 
 /* START AFBEELDINGEN HOOFDSTUK 3 */
 
+figure.voorgrond {
+    opacity: 0.8;
+}
+
 #figuur1 {
 	left: 1150px;
 	position: absolute;
@@ -451,14 +455,13 @@ img:hover {
 
 }
 
-#figuur1:hover{
+#figuur1.voorgrond {
     width:380px;
     height:450px;
     left: 400px;
     position: absolute;  
-    opacity: 0.8;
-           -webkit-transform:rotate(50deg);
-        transform: rotate(50deg);
+   -webkit-transform:rotate(50deg);
+    transform: rotate(50deg);
 }
 
 #figuur2 {
@@ -596,8 +599,8 @@ img:hover {
 }
 
 #figuur8 img {
-	width: 150px;
-	height: 190px;
+	width: 100px;
+	height: 140px;
 }
 
 #figuur8:hover{
@@ -612,7 +615,7 @@ img:hover {
 }
 
 #figuur9 {
-	left: 1100px;
+	left: 100px;
 	position: absolute;
 }
 
@@ -640,8 +643,8 @@ img:hover {
 }
 
 #figuur10 img {
-	width: 150px;
-	height: 190px;
+	width: 100px;
+	height: 140px;
 }
 
 #figuur10:hover{
@@ -848,7 +851,7 @@ img:hover {
 }
 
 #figuur20 {
-	left: 1100px;
+	left: 50px;
 	position: absolute;
 }
 
@@ -869,7 +872,7 @@ img:hover {
 }
 
 #figuur21 {
-	left: 1300px;
+	left: 100px;
 	position: absolute;
 }
 
