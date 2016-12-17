@@ -451,10 +451,9 @@ img:hover {
 }
 
 #figuur1.voorgrond {
-    width:780px;
-    height:850px;
-    left: 300px;
-    position: absolute;  
+    width: 780px;
+    height: 850px;
+    left: 200px; 
    -webkit-transform:rotate(50deg);
     transform: rotate(50deg);
 }
@@ -470,7 +469,7 @@ img:hover {
 
 }
 
-#figuur2:hover{
+#figuur2.voorgrond{
     left: 500px;
 	width: 360px;
 	height: 260px;
@@ -479,7 +478,6 @@ img:hover {
     opacity: 0.8;
            -webkit-transform:rotate(20deg);
         transform: rotate(20deg);
-
 }
 
 #figuur3 {
@@ -492,7 +490,7 @@ img:hover {
 	height: 150px;
 }
 
-#figuur3:hover {
+#figuur3.voorgrond {
 	left: 600px;
 	width: 490px;
 	height: 330px;
@@ -512,7 +510,7 @@ img:hover {
 	height:180px;
 }
 
-#figuur4:hover{
+#figuur4.voorgrond{
     width:360px;
     height:260px;
     left: 400px;
@@ -533,7 +531,7 @@ img:hover {
 	height: 250px;
 }
 
-#figuur5:hover{
+#figuur5.voorgrond{
     left: 500px;
 	width: 390px;
 	height: 500px;
@@ -555,7 +553,7 @@ img:hover {
 
 }
 
-#figuur6:hover{
+#figuur6.voorgrond{
     left: 390px;
 	width: 390px;
 	height: 500px;
@@ -577,7 +575,7 @@ img:hover {
 	height: 190px;
 }
 
-#figuur7:hover{
+#figuur7.voorgrond{
     left: 390px;
 	width: 390px;
 	height: 500px;
@@ -598,7 +596,7 @@ img:hover {
 	height: 140px;
 }
 
-#figuur8:hover{
+#figuur8.voorgrond{
     left: 390px;
 	width: 390px;
 	height: 500px;
@@ -620,7 +618,7 @@ img:hover {
 
 }
 
-#figuur9:hover{
+#figuur9.voorgrond{
     left: 390px;
 	width: 390px;
 	height: 500px;
@@ -642,7 +640,7 @@ img:hover {
 	height: 140px;
 }
 
-#figuur10:hover{
+#figuur10.voorgrond{
     left: 390px;
 	width: 390px;
 	height: 500px;
@@ -663,7 +661,7 @@ img:hover {
 	height: 100px;
 }
 
-#figuur11:hover{
+#figuur11.voorgrond{
     left: 390px;
 	width: 490px;
 	height: 500px;
@@ -685,7 +683,7 @@ img:hover {
 	height: 170px;
 }
 
-#figuur12:hover{
+#figuur12.voorgrond{
     left: 290px;
 	width: 390px;
 	height: 500px;
@@ -706,7 +704,7 @@ img:hover {
 	height: 170px;
 }
 
-#figuur13:hover{
+#figuur13.voorgrond{
     left: 290px;
 	width: 390px;
 	height: 500px;
@@ -728,7 +726,7 @@ img:hover {
 	height: 100px;
 }
 
-#figuur14:hover{
+#figuur14.voorgrond{
     left: 240px;
 	padding-left: 0px;
 	position: absolute;
@@ -748,7 +746,7 @@ img:hover {
 
 }
 
-#figuur15:hover{
+#figuur15.voorgrond{
     left: 240px;
 	width: 150px;
 	height: 500px;
@@ -772,7 +770,7 @@ img:hover {
 	height: 100px;
 }
 
-#figuur16:hover{
+#figuur16.voorgrond{
     left: 240px;
 	padding-left: 0px;
     opacity: 0.8;
@@ -790,7 +788,7 @@ img:hover {
 	height: 220px;
 }
 
-#figuur17:hover{
+#figuur17.voorgrond{
     left: 240px;
 	width: 150px;
 	height: 220px;
@@ -813,7 +811,7 @@ img:hover {
 	height: 80px;
 }
 
-#figuur18:hover{
+#figuur18.voorgrond{
     left: 240px;
 	width: 400px;
 	height: 480px;
@@ -834,7 +832,7 @@ img:hover {
 	height: 80px;
 }
 
-#figuur19:hover{
+#figuur19.voorgrond{
     left: 240px;
 	width: 100px;
 	height: 80px;
@@ -855,7 +853,7 @@ img:hover {
 	height: 140px;
 }
 
-#figuur20:hover{
+#figuur20.voorgrond{
     left: 240px;
 	width: 400px;
 	height: 490px;
@@ -876,7 +874,7 @@ img:hover {
 	height:140px;
 }
 
-#figuur21:hover{
+#figuur21.voorgrond{
     left: 240px;
 	width: 440px;
 	height: 500px;
@@ -897,7 +895,7 @@ img:hover {
 	height:140px;
 }
 
-#figuur22:hover{
+#figuur22.voorgrond{
     left: 240px;
 	width: 440px;
 	height: 500px;
@@ -919,7 +917,7 @@ img:hover {
 
 }
 
-#figuur23:hover{
+#figuur23.voorgrond{
     left: 240px;
 	width: 500px;
 	height: 340px;
@@ -940,7 +938,7 @@ img:hover {
 	height:100px;
 }
 
-#figuur24:hover{
+#figuur24.voorgrond{
     left: 240px;
 	width: 100px;
 	height: 140px;
@@ -961,7 +959,7 @@ img:hover {
 	height:100px;
 }
 
-#figuur25:hover{
+#figuur25.voorgrond{
     left: 240px;
 	width: 100px;
 	height: 140px;
@@ -982,7 +980,7 @@ img:hover {
 	height:100px;
 }
 
-#figuur26:hover{
+#figuur26.voorgrond{
     left: 240px;
 	width: 500px;
 	height: 540px;
@@ -1003,7 +1001,7 @@ img:hover {
 	height:140px;
 }
 
-#figuur27:hover{
+#figuur27.voorgrond{
     left: 240px;
 	width: 450px;
 	height: 540px;
@@ -1024,7 +1022,7 @@ img:hover {
 	height:110px;
 }
 
-#figuur28:hover{
+#figuur28.voorgrond{
     left: 240px;
 	width: 140px;
 	height: 100px;
@@ -1045,7 +1043,7 @@ img:hover {
 	height:110px;
 }
 
-#figuur29:hover{
+#figuur29.voorgrond{
     left: 240px;
 	width: 140px;
 	height: 100px;
@@ -1066,7 +1064,7 @@ img:hover {
 	height:110px;
 }
 
-#figuur30:hover{
+#figuur30.voorgrond{
     left: 240px;
 	width: 140px;
 	height: 100px;
@@ -1087,7 +1085,7 @@ img:hover {
 	height:140px;
 }
 
-#figuur31:hover{
+#figuur31.voorgrond{
     left: 240px;
 	width: 100px;
 	height: 140px;
@@ -1108,7 +1106,7 @@ img:hover {
 	height:140px;
 }
 
-#figuur32:hover{
+#figuur32.voorgrond{
     left: 240px;
 	width: 100px;
 	height: 140px;
@@ -1129,7 +1127,7 @@ img:hover {
 	height:140px;
 }
 
-#figuur33:hover{
+#figuur33.voorgrond{
     left: 240px;
 	width: 100px;
 	height: 140px;
@@ -1150,7 +1148,7 @@ img:hover {
 	height:140px;
 }
 
-#figuur34:hover{
+#figuur34.voorgrond{
     left: 240px;
 	width: 90px;
 	height: 140px;
@@ -1171,7 +1169,7 @@ img:hover {
 	height:140px;
 }
 
-#figuur35:hover{
+#figuur35.voorgrond{
     left: 240px;
 	width: 90px;
 	height: 140px;
@@ -1192,7 +1190,7 @@ img:hover {
 	height:140px;
 }
 
-#figuur36:hover{
+#figuur36.voorgrond{
     left: 240px;
 	width: 90px;
 	height: 140px;
@@ -1213,7 +1211,7 @@ img:hover {
 	height:90px;
 }
 
-#figuur37:hover{
+#figuur37.voorgrond{
     left: 240px;
 	width: 140px;
 	height: 90px;
@@ -1234,7 +1232,7 @@ img:hover {
 	height:90px;
 }
 
-#figuur38:hover{
+#figuur38.voorgrond{
     left: 240px;
 	width: 90px;
 	height: 140px;
@@ -1255,7 +1253,7 @@ img:hover {
 	height:90px;
 }
 
-#figuur39:hover{
+#figuur39.voorgrond{
     left: 240px;
 	width: 90px;
 	height: 140px;
@@ -1277,7 +1275,7 @@ img:hover {
 	height:90px;
 }
 
-#figuur40:hover{
+#figuur40.voorgrond{
     left: 240px;
 	width: 90px;
 	height: 140px;
@@ -1298,7 +1296,7 @@ img:hover {
 	height:140px;
 }
 
-#figuur41:hover{
+#figuur41.voorgrond{
     left: 240px;
 	width: 90px;
 	height: 140px;
@@ -1319,7 +1317,7 @@ img:hover {
 	height:90px;
 }
 
-#figuur42:hover{
+#figuur42.voorgrond{
     left: 240px;
 	width: 90px;
 	height: 130px;
