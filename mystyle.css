@@ -443,12 +443,16 @@ figure.voorgrond {
 	height: 180px;
 }
 
-#figuur1.voorgrond {
-    width: 780px;
-    height: 850px;
-    left: 200px; 
-   -webkit-transform:rotate(50deg);
-    transform: rotate(50deg);
+#figuur1.voorgrond  {
+ 	left: 350px;
+	position: absolute;
+}
+
+#figuur1.voorgrond img {
+    width: 400px;
+    height: 560px; 
+   -webkit-transform:rotate(-50deg);
+    transform: rotate(-50deg);
 }
 
 #figuur2 {
@@ -464,10 +468,13 @@ figure.voorgrond {
 
 #figuur2.voorgrond{
     left: 500px;
-	width: 360px;
-	height: 260px;
-	padding-left: 0px;
 	position: absolute;
+}
+
+#figuur2.voorgrond img{
+    left: 800px;
+	width: 390px;
+	height: 300px;
     opacity: 0.8;
            -webkit-transform:rotate(20deg);
         transform: rotate(20deg);
@@ -1319,6 +1326,20 @@ figure.voorgrond {
     opacity: 0.8;
            -webkit-transform:rotate(20deg);
         transform: rotate(20deg);
+}
+
+#backtotop{
+padding:10px;
+text-align:center;
+color:hotpink;
+}
+
+#backtotop a{
+color:blue;
+}
+
+#backtotop a:hover{
+color:hotpink;
 }
 
 </style>
