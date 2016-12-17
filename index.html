@@ -62,9 +62,50 @@
   }
   
   div.bronnen {
-  height: auto;
+  left: 800px;
   }
   
+    div.middle {
+  width: 60%;
+  }
+
+
+	div.bronnen {
+	height: auto;
+	border: none;
+}
+  
+ /* VOORPAGINA TITEL GROTER */ 
+  
+ h1 {
+  -webkit-transform:rotate(55deg);
+    transform: rotate(55deg);
+    font-size: 500px;
+    height: auto;
+  }
+  
+  div.slide-up  {
+  padding: 100px;
+  margin-top: 200px;
+     height:1000px;
+  }
+  
+    div.gegevens  {
+   margin: 20px 90px 10px 35px;
+  }
+  
+  
+  /* FORCEREN OM EEN PAGINA AF TE BREKEN BIJ KOPTITELS */
+  
+  @media print {
+    .koptitel {page-break-before: always;}
+    div.hoofdstuk2-2 {page-break-before: always;}
+    div.hoofdstuk2-3 {page-break-before: always;}
+    div.hoofdstuk2-4 {page-break-before: always;}
+    div.hoofdstuk3-1 {page-break-before: always;}
+    div.hoofdstuk3-2 {page-break-before: always;}
+    div.hoofdstuk3-3 {page-break-before: always;}
+    div.hoofdstuk3-4 {page-break-before: always;}
   
 }
 
@@ -82,20 +123,6 @@
   }
 }
 
-@page { size: auto;  margin: 100mm; }
-
-
-/* FORCEREN OM EEN PAGINA AF TE BREKEN BIJ KOPTITELS */
-
-@media print {
-    @media print {
-    .koptitel {page-break-before: always;}  
-}
-
-}
-
-/* HOOGTE AANPASSEN VAN BRONNENBLOK */
-
 </style>
 
 
@@ -108,15 +135,12 @@
 
 <header>
 <div class="noIbar">
-
 <div class="gegevens"> LAURA DE RIJK - GRAFISCH ONTWERP - KABK </div>
+</div>
+</header>
 
 <div class="slide-up">
 <h1>1+1=3</h1></div>
-
-
-</div>
-</header>
 
 <div class="noIbar">
 
