@@ -414,23 +414,38 @@ div.dankwoord {
     padding-right: 40px;
 }
 
-img {
+/* img {
     -webkit-filter: grayscale(100%); 
     filter: grayscale(100%);
     cursor: crosshair;
 }
 
-img:hover {
+ figuur1.voorgrond img {
     -webkit-filter: grayscale(0%); 
     filter: grayscale(0%);
     cursor: crosshair;
 }
 
+*/
 
 /* START AFBEELDINGEN HOOFDSTUK 3 */
 
 figure.voorgrond {
     opacity: 0.8;
+    cursor: crosshair;
+
+}
+
+figure.voorgrond img{
+	 -webkit-filter: grayscale(0%); 
+    filter: grayscale(0%);
+    cursor: crosshair;
+}
+
+figure img {
+	-webkit-filter: grayscale(100%); 
+    filter: grayscale(100%);
+    cursor: crosshair;
 }
 
 #figuur1 {
@@ -441,6 +456,7 @@ figure.voorgrond {
 #figuur1 img{
 	width: 140px;
 	height: 180px;
+
 }
 
 #figuur1.voorgrond  {
@@ -453,6 +469,7 @@ figure.voorgrond {
     height: 560px; 
    -webkit-transform:rotate(-50deg);
     transform: rotate(-50deg);
+
 }
 
 #figuur2 {
