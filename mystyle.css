@@ -440,10 +440,6 @@ img:hover {
 
 /* START AFBEELDINGEN HOOFDSTUK 3 */
 
-figure.voorgrond {
-    opacity: 0.8;
-}
-
 #figuur1 {
 	left: 1150px;
 	position: absolute;
@@ -455,9 +451,9 @@ figure.voorgrond {
 }
 
 #figuur1.voorgrond {
-    width:380px;
-    height:450px;
-    left: 400px;
+    width:780px;
+    height:850px;
+    left: 300px;
     position: absolute;  
    -webkit-transform:rotate(50deg);
     transform: rotate(50deg);
