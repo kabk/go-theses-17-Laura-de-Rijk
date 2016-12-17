@@ -7,7 +7,7 @@
 /* CURSOR TRY-OUT */
 
 .noIbar {
-cursor:default;
+cursor: default;
 }
 
 
@@ -417,13 +417,13 @@ div.dankwoord {
 img {
     -webkit-filter: grayscale(100%); 
     filter: grayscale(100%);
-    cursor: cell;
+    cursor: crosshair;
 }
 
 img:hover {
     -webkit-filter: grayscale(0%); 
     filter: grayscale(0%);
-    cursor: cell;
+    cursor: crosshair;
 }
 
 
