@@ -424,21 +424,12 @@ img:hover {
     filter: grayscale(0%);
 }
 
-/* img {
-    -webkit-filter: blur(2px);
-    filter: blur(2px);
-}
-
-img:hover {
-    -webkit-filter: blur(0px); 
-    filter: blur(0px);
-}
-
-*/
-
-/* Foto's plaatsen op allerlei diverse plekken */
 
 /* START AFBEELDINGEN HOOFDSTUK 3 */
+
+figure.voorgrond {
+    opacity: 0.8;
+}
 
 #figuur1 {
 	left: 1150px;
