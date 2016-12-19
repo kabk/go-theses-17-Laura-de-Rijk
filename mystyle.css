@@ -48,13 +48,31 @@ header {
    /* border-style: solid;
     border-color: blue; */
     }
+    
+    /* ANIMATIE TEKST */
+
 
 h1 {
     color: blue;
     text-align: center;
     font-family: 'Vollkorn', serif;
+    font-style: 400;
     font-size: 320px;
-    margin: 100px 0px 0px 0px; /* Top, Right, Bottom, Left */
+    margin: 500px 0px 500px 0px; /* Top, Right, Bottom, Left */
+    -webkit-transform:rotate(10deg);
+        transform: rotate(10deg);
+}
+
+@import url(http://fonts.googleapis.com/css?family=Montserrat:700);
+
+svg{
+  width:60%;
+  color: blue;
+    text-align: center;
+    font-family: 'Verdana', serif;
+    font-size: 20px;
+    margin: 150px 0px 0px 280px; /* Top, Right, Bottom, Left */
+    position: absolute;
     -webkit-transform:rotate(10deg);
         transform: rotate(10deg);
 }
@@ -90,8 +108,9 @@ div.koptitel {
     font-size: 34px;
     letter-spacing: 0px;
     color: blue;
-    padding-bottom: 15px;
+    padding-bottom: 25px;
     padding-top: 80px;
+    margin-top: 20px;
         -webkit-transform:rotate(-5deg);
         transform: rotate(-5deg);
     
