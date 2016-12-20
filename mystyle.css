@@ -1475,13 +1475,13 @@ flicker {
 
 .buttons-coll {
   width: 90%;
-  margin: 50px auto;
+  margin: 10px auto;
   text-align: center;
 }
 
 .btn-4 {
-  width: 130px;
-  height: 40px;
+  width: 170px;
+  height: 60px;
   line-height: 42px;
   padding: 0;
   border: none;
@@ -1529,5 +1529,29 @@ flicker {
 }
 .btn-4 span:hover:before {height: 100%;}
 .btn-4 span:hover:after {width: 100%;}
+
+/* PRINT KNOP EN DOWNLOAD KNOP */
+
+.btn-1 {border: 1px solid blue;}
+.btn-1:hover {
+  background: blue;
+  color: #ffffff;
+}
+.btn-1:active {top: 2px;}
+
+.custom-btn {
+  padding: 10px 25px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  background: transparent;
+  outline: none !important;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+}
+
+
+
 
 </style>

@@ -22,6 +22,20 @@
 /* PRINTOPTIES */
 
 @media print {
+  body {
+    /* IE4-8 and 9 (deprecated). */
+    filter: Gray();
+    /* SVG version for IE10, Chrome 17, FF3.5, 
+       Safari 5.2 and Opera 11.6 */
+    filter: url('#grayscale'); 
+    /* CSS3 filter, at the moment Webkit only. Prefix it for
+       future implementations */
+    -webkit-filter: grayscale(100%); 
+    filter: grayscale(100%); /* future-proof */
+  }
+}
+
+@media print {
 
   img {
     display: none !important;
@@ -68,6 +82,24 @@
 	height: auto;
 	border: none;
 }
+
+.custom-btn btn-1 {
+display: none !important;
+}
+
+.buttons-coll {
+display: none !important;
+}
+
+.rail, dot {
+display: none !important;
+}
+
+.dot {
+display: none !important;
+}
+
+
   
  /* VOORPAGINA TITEL GROTER */ 
   
@@ -100,20 +132,6 @@
     div.hoofdstuk3-3 {page-break-before: always;}
     div.hoofdstuk3-4 {page-break-before: always;}
   
-}
-
-@media print {
-  body {
-    /* IE4-8 and 9 (deprecated). */
-    filter: Gray();
-    /* SVG version for IE10, Chrome 17, FF3.5, 
-       Safari 5.2 and Opera 11.6 */
-    filter: url('#grayscale'); 
-    /* CSS3 filter, at the moment Webkit only. Prefix it for
-       future implementations */
-    -webkit-filter: grayscale(100%); 
-    filter: grayscale(100%); /* future-proof */
-  }
 }
 
 .noIbar {
@@ -196,7 +214,6 @@ cursor: default;
   <img src="../go-theses-17-Laura-de-Rijk/afbeeldingen/witblok.jpg" alt="hausmann" width="160" height="200">
   <figcaption> </figcaption>
 </figure>
-
 	
 </div>
 
@@ -241,9 +258,11 @@ hedendaagse kunst. Wat kan ik meegeven aan de lezer van mijn scriptie
 over de positie van de hybride ontwerper?
 
  </div>
- <br><br>
-<center> <a href="#" onclick="window.print();return false;"> Print text </a> + <a href="LauradeRijk_031216_2_Thesisdraft.pdf" target="_top">Download Images</a> </center> 
-<br><br>
+
+<div class="buttons-coll">
+  <button class="custom-btn btn-1"><a href="#" onclick="window.print();return false;"> PRINT TEKST</a> </button>
+  </div><div class="buttons-coll"><button class="custom-btn btn-1"><a href="LauradeRijk_031216_2_Thesisdraft.pdf" target="_top"> PRINT COVER </a> </button>
+  </div>
 
 <section id="hoofdstuk1">
 
