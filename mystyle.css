@@ -1498,7 +1498,7 @@ flicker {
   content: "";
   right: 0;
   top: 0;
-  background: blue;
+  background: white;
   transition: all 0.3s ease;
 }
 .btn-4:before {
