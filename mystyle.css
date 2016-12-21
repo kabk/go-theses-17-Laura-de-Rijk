@@ -450,41 +450,47 @@ div.dankwoord {
 
 /* START AFBEELDINGEN HOOFDSTUK 3 */
 
-figure.voorgrond {
-    opacity: 0.8;
+figure img {
+    opacity: 0.95;
     cursor: crosshair;
-
 }
 
 figure.voorgrond img{
-	 -webkit-filter: grayscale(0%); 
-    filter: grayscale(0%);
+	 -webkit-filter: grayscale(100%); 
+    filter: grayscale(100%);
     cursor: crosshair;
+           -webkit-transform:rotate(0deg);
+    transform: rotate(0deg);
 }
 
 figure img {
-	-webkit-filter: grayscale(100%); 
-    filter: grayscale(100%);
+	-webkit-filter: grayscale(0%); 
+    filter: grayscale(0%);
     cursor: crosshair;
+       -webkit-transform:rotate(0deg);
+    transform: rotate(0deg);
 }
 
-#figuur1 {
+#figuur1.voorgrond {
 	left: 1150px;
 	position: absolute;
+	
 }
 
-#figuur1 img{
+#figuur1.voorgrond img{
 	width: 140px;
 	height: 180px;
-
+       -webkit-transform:rotate(0deg);
+    transform: rotate(0deg);
 }
 
-#figuur1.voorgrond  {
+#figuur1  {
  	left: 350px;
 	position: absolute;
+	
 }
 
-#figuur1.voorgrond img {
+#figuur1 img {
     width: 400px;
     height: 560px; 
    -webkit-transform:rotate(-50deg);
@@ -492,23 +498,24 @@ figure img {
 
 }
 
-#figuur2 {
+#figuur2.voorgrond {
 	left: 60px;
 	position: absolute;
 }
 
-#figuur2 img {
+#figuur2.voorgrond img {
 	width: 190px;
 	height: 130px;
-
+       -webkit-transform:rotate(0deg);
+    transform: rotate(0deg);
 }
 
-#figuur2.voorgrond{
+#figuur2 {
     left: 500px;
 	position: absolute;
 }
 
-#figuur2.voorgrond img{
+#figuur2 img{
     left: 800px;
 	width: 390px;
 	height: 300px;
@@ -517,312 +524,393 @@ figure img {
         transform: rotate(20deg);
 }
 
-#figuur3 {
+#figuur3.voorgrond {
 	left: 60px;
 	position: absolute;
 }
 
-#figuur3 img {
+#figuur3.voorgrond img {
 	width: 210px;
 	height: 150px;
+	 -webkit-transform:rotate(0deg);
+    transform: rotate(0deg);
 }
 
-#figuur3.voorgrond {
+#figuur3 {
 	left: 600px;
 	position: absolute;
 }
 
-#figuur3.voorgrond img {
+#figuur3 img {
 	width: 310px;
 	height: 250px;
 	-webkit-transform:rotate(50deg);
         transform: rotate(50deg);
 }
 
-#figuur4 {
+#figuur4.voorgrond {
 	left: 1100px;
 	position: absolute;
 }
 
-#figuur4 img{
+#figuur4.voorgrond img{
 	width:230px;
 	height:180px;
+	 	-webkit-transform:rotate(0deg);
+    transform: rotate(0deg);
 }
 
-#figuur4.voorgrond{
+#figuur4 {
     left: 100px;
     position: absolute;  
 
 }
 
-#figuur4.voorgrond img {
+#figuur4 img {
 	width:560px;
     height:460px;
     -webkit-transform:rotate(-20deg);
         transform: rotate(-20deg);
 }
 
+/* FIGUUR 5 */
 
-#figuur5 {
+#figuur5.voorgrond {
 	left: 60px;
 	position: absolute
+	    -webkit-transform:rotate(0deg);
+        transform: rotate(0deg);
 }
 
-#figuur5 img{
+#figuur5.voorgrond img{
 	width: 190px;
 	height: 250px;
 }
 
-#figuur5.voorgrond{
-    left: 500px;
-	width: 390px;
-	height: 500px;
-	padding-left: 0px;
+#figuur5 {
+    left: 700px;
 	position: absolute;
-    opacity: 0.8;
-           -webkit-transform:rotate(20deg);
-        transform: rotate(20deg);
+	           -webkit-transform:rotate(-40deg);
+        transform: rotate(-40deg);
 }
 
-#figuur6 {
+#figuur5 img {
+	width: 360px;
+    height:450px;
+}
+
+/* FIGUUR 6 */
+
+#figuur6.voorgrond {
 	left: 1100px;
-	position: absolute
+	position: absolute;
+		 -webkit-transform:rotate(0deg);
+        transform: rotate(0deg);
 }
 
-#figuur6 img {
+#figuur6.voorgrond img {
 	width: 250px;
 	height: 170px;
 
 }
 
-#figuur6.voorgrond{
+#figuur6 {
     left: 390px;
-	width: 390px;
-	height: 500px;
-	padding-left: 0px;
 	position: absolute;
-    opacity: 0.8;
            -webkit-transform:rotate(20deg);
         transform: rotate(20deg);
-
 }
 
-#figuur7 {
+#figuur6 img{
+	width: 390px;
+	height: 280px;
+}
+
+/* FIGUUR 7 */
+
+#figuur7.voorgrond {
 	left: 100px;
 	position: absolute;
+		-webkit-transform:rotate(0deg);
+        transform: rotate(0deg);
 }
 
-#figuur7 img {
+#figuur7.voorgrond img {
 	width: 150px;
 	height: 190px;
 }
 
-#figuur7.voorgrond{
+#figuur7 {
     left: 390px;
-	width: 390px;
-	height: 500px;
-	padding-left: 0px;
 	position: absolute;
-    opacity: 0.8;
            -webkit-transform:rotate(-20deg);
         transform: rotate(-20deg);
 }
 
-#figuur8 {
-	left: 1100px;
-	position: absolute;
+#figuur7 img{
+	width: 290px;
+	height: 350px;
 }
 
-#figuur8 img {
+/* FIGUUR 8 */
+
+#figuur8.voorgrond {
+	left: 1100px;
+	position: absolute;
+			-webkit-transform:rotate(0deg);
+        transform: rotate(0deg);
+}
+
+#figuur8.voorgrond img {
 	width: 100px;
 	height: 140px;
 }
 
-#figuur8.voorgrond{
-    left: 390px;
-	width: 390px;
-	height: 500px;
-	padding-left: 0px;
+#figuur8 {
+    left: 590px;
 	position: absolute;
-    opacity: 0.8;
            -webkit-transform:rotate(20deg);
         transform: rotate(20deg);
+}
+
+#figuur8 img{
+	width: 390px;
+	height: 500px;
+}
+
+/* FIGUUR 9 */
+
+#figuur9.voorgrond {
+	left: 100px;
+	position: absolute;
+				-webkit-transform:rotate(0deg);
+        transform: rotate(0deg);
+}
+
+#figuur9.voorgrond img{
+	width: 150px;
+	height: 190px;
+	position: absolute;
 }
 
 #figuur9 {
-	left: 100px;
+    left: 390px;
 	position: absolute;
+           -webkit-transform:rotate(-20deg);
+        transform: rotate(-20deg);
 }
 
 #figuur9 img{
-	width: 150px;
-	height: 190px;
-
-}
-
-#figuur9.voorgrond{
-    left: 390px;
 	width: 390px;
 	height: 500px;
-	padding-left: 0px;
-	position: absolute;
-    opacity: 0.8;
-           -webkit-transform:rotate(20deg);
-        transform: rotate(20deg);
 }
 
+/* FIGUUR 10 */
 
-#figuur10 {
+#figuur10.voorgrond {
 	left: 1100px;
 	position: absolute;
+					-webkit-transform:rotate(0deg);
+        transform: rotate(0deg);
+}
+
+#figuur10.voorgrond img {
+	width: 100px;
+	height: 140px;
+	position: absolute;
+}
+
+#figuur10 {
+    left: 390px;
+           -webkit-transform:rotate(20deg);
+        transform: rotate(20deg);
 }
 
 #figuur10 img {
-	width: 100px;
-	height: 140px;
-}
-
-#figuur10.voorgrond{
-    left: 390px;
-	width: 390px;
-	height: 500px;
-	padding-left: 0px;
+	width: 200px;
+	height: 310px;
 	position: absolute;
-    opacity: 0.8;
-           -webkit-transform:rotate(20deg);
-        transform: rotate(20deg);
 }
 
-#figuur11 {
+/* FIGUUR 11 */
+
+#figuur11.voorgrond {
 	left: 100px;
 	position: absolute;
+						-webkit-transform:rotate(0deg);
+        transform: rotate(0deg);
 }
 
-#figuur11 img {
+#figuur11.voorgrond img {
 	width: 135px;
 	height: 100px;
 }
 
-#figuur11.voorgrond{
-    left: 390px;
-	width: 490px;
-	height: 500px;
-	padding-left: 0px;
+#figuur11 {
+    left: 790px;
 	position: absolute;
-    opacity: 0.8;
            -webkit-transform:rotate(20deg);
         transform: rotate(20deg);
+
+}
+
+#figuur11 img {
+	width: 440px;
+	height: 300px;
+}
+
+/* FIGUUR 12 */
+
+#figuur12.voorgrond {
+	left: 1100px;
+	position: absolute;
+	-webkit-transform:rotate(0deg);
+        transform: rotate(0deg);
+}
+
+#figuur12.voorgrond img {
+	width: 100px;
+	height: 160px;
 
 }
 
 #figuur12 {
-	left: 1100px;
-	position: absolute;
-}
-
-#figuur12 img {
-	width: 100px;
-	height: 170px;
-}
-
-#figuur12.voorgrond{
     left: 290px;
-	width: 390px;
-	height: 500px;
-	padding-left: 0px;
 	position: absolute;
     opacity: 0.8;
            -webkit-transform:rotate(20deg);
         transform: rotate(20deg);
+}
+#figuur12 img {
+	width: 390px;
+	height: 500px;
+}
+
+/* FIGUUR 13 */
+
+
+#figuur13.voorgrond {
+	left: 1220px;
+	position: absolute;
+		-webkit-transform:rotate(0deg);
+        transform: rotate(0deg);
+}
+
+#figuur13.voorgrond img {
+	width: 100px;
+	height: 160px;
 }
 
 #figuur13 {
-	left: 1220px;
+    left: 690px;
 	position: absolute;
+           -webkit-transform:rotate(75deg);
+        transform: rotate(75deg);
 }
 
 #figuur13 img {
-	width: 100px;
-	height: 170px;
+	width: 290px;
+	height: 400px;
 }
 
-#figuur13.voorgrond{
-    left: 290px;
-	width: 390px;
-	height: 500px;
-	padding-left: 0px;
-	position: absolute;
-    opacity: 0.8;
-           -webkit-transform:rotate(20deg);
-        transform: rotate(20deg);
+/* FIGUUR 14 */
 
+#figuur14.voorgrond {
+	left: 1100px;
+	position: absolute;
+			-webkit-transform:rotate(0deg);
+        transform: rotate(0deg);
+}
+
+#figuur14.voorgrond img {
+	width: 150px;
+	height: 100px;
 }
 
 #figuur14 {
-	left: 1100px;
+    left: 40px;
 	position: absolute;
+           -webkit-transform:rotate(-40deg);
+        transform: rotate(-40deg);
 }
 
 #figuur14 img {
-	width: 150px;
-	height: 100px;
+	width: 450px;
+	height: 300px;
 }
 
-#figuur14.voorgrond{
-    left: 240px;
-	padding-left: 0px;
+/* FIGUUR 15 */
+
+#figuur15.voorgrond {
+	left: 1100px;
 	position: absolute;
-    opacity: 0.8;
-           -webkit-transform:rotate(20deg);
-        transform: rotate(20deg);
+		-webkit-transform:rotate(0deg);
+        transform: rotate(0deg);
+}
+
+#figuur15.voorgrond img {
+	width: 220px;
+	height: 150px;
+
 }
 
 #figuur15 {
-	left: 1100px;
-	position: absolute;
-}
-
-#figuur15 img {
-	width: 220px;
-	height: 150px;
-
-}
-
-#figuur15.voorgrond{
     left: 240px;
-	width: 150px;
-	height: 500px;
-	padding-left: 0px;
 	position: absolute;
-    opacity: 0.8;
            -webkit-transform:rotate(20deg);
         transform: rotate(20deg);
 }
 
-#figuur16 {
-	left: 1100px;
-	width: 220px;
-	height: 150px;
-	padding-left: 0px;
-	position: absolute;
+#figuur15 img {
+	width: 300px;
+	height: 200px;
 }
 
-#figuur16 img {
+/* FIGUUR 16 */
+
+#figuur16.voorgrond {
+	left: 1100px;
+	position: absolute;
+			-webkit-transform:rotate(0deg);
+        transform: rotate(0deg);
+}
+
+#figuur16.voorgrond img {
 	width: 150px;
 	height: 100px;
 }
 
-#figuur16.voorgrond{
-    left: 240px;
-	padding-left: 0px;
-    opacity: 0.8;
-           -webkit-transform:rotate(20deg);
-        transform: rotate(20deg);
+#figuur16 {
+    left: 540px;
+           -webkit-transform:rotate(-20deg);
+        transform: rotate(-20deg);
+        	position: absolute;
+}
+
+#figuur16 img {
+	width: 350px;
+	height: 200px;
+}
+
+/* FIGUUR 17 */
+
+#figuur17.voorgrond {
+	left: 1150px;
+	position: absolute;
+		-webkit-transform:rotate(0deg);
+        transform: rotate(0deg);
+}
+
+#figuur17.voorgrond img {
+	width: 150px;
+	height: 220px;
 }
 
 #figuur17 {
-	left: 1150px;
+    left: 740px;
 	position: absolute;
+           -webkit-transform:rotate(20deg);
+        transform: rotate(20deg);
 }
 
 #figuur17 img {
@@ -830,54 +918,48 @@ figure img {
 	height: 220px;
 }
 
-#figuur17.voorgrond{
-    left: 240px;
-	width: 150px;
-	height: 220px;
-	padding-left: 0px;
-	position: absolute;
-    opacity: 0.8;
-           -webkit-transform:rotate(20deg);
-        transform: rotate(20deg);
-}
-
 /* START AFBEELDINGEN HOOFDSTUK 3 */
 
-#figuur18 {
+#figuur18.voorgrond {
 	left: 1200px;
 	position: absolute;
+			-webkit-transform:rotate(0deg);
+        transform: rotate(0deg);
 }
 
-#figuur18 img {
+#figuur18.voorgrond img {
 	width: 100px;
 	height: 80px;
 }
 
-#figuur18.voorgrond{
+#figuur18 {
     left: 240px;
-	width: 400px;
-	height: 480px;
-	padding-left: 0px;
 	position: absolute;
-    opacity: 0.8;
            -webkit-transform:rotate(70deg);
         transform: rotate(70deg);
 }
 
-#figuur19 {
+#figuur18 img {
+	width: 400px;
+	height: 280px;
+}
+
+/* FIGUUR 19 */
+
+#figuur19.voorgrond {
 	left: 1200px;
 	position: absolute;
+				-webkit-transform:rotate(0deg);
+        transform: rotate(0deg);
 }
 
-#figuur19 img {
+#figuur19.voorgrond img {
 	width: 100px;
 	height: 80px;
 }
 
-#figuur19.voorgrond{
+#figuur19 {
     left: 240px;
-	width: 100px;
-	height: 80px;
 	padding-left: 0px;
 	position: absolute;
     opacity: 0.8;
@@ -885,489 +967,608 @@ figure img {
         transform: rotate(20deg);
 }
 
-#figuur20 {
-	left: 50px;
-	position: absolute;
+#figuur19 img {
+	width: 380px;
+	height: 280px;
 }
 
-#figuur20 img {
+/* FIGUUR 20 */
+
+#figuur20.voorgrond {
+	left: 50px;
+	position: absolute;
+					-webkit-transform:rotate(0deg);
+        transform: rotate(0deg);
+}
+
+#figuur20.voorgrond img {
 	width: 100px;
 	height: 140px;
 }
 
-#figuur20.voorgrond{
+#figuur20 {
     left: 240px;
-	width: 400px;
-	height: 490px;
-	padding-left: 0px;
 	position: absolute;
-    opacity: 0.8;
-           -webkit-transform:rotate(180deg);
+           -webkit-transform:rotate(10deg);
         transform: rotate(10deg);
 }
 
-#figuur21 {
+#figuur20 img {
+	width: 280px;
+	height: 390px;
+}
+
+/* FIGUUR 21 */
+
+#figuur21.voorgrond {
 	left: 100px;
 	position: absolute;
+		-webkit-transform:rotate(0deg);
+        transform: rotate(0deg);
+}
+
+#figuur21.voorgrond img {
+	width: 100px;
+	height:140px;
+}
+
+#figuur21 {
+    left: 140px;
+	position: absolute;
+        -webkit-transform:rotate(-20deg);
+        transform: rotate(-20deg);
 }
 
 #figuur21 img {
-	width: 100px;
-	height:140px;
+	width: 240px;
+	height: 300px;
 }
 
-#figuur21.voorgrond{
-    left: 240px;
-	width: 440px;
-	height: 500px;
-	padding-left: 0px;
+/* FIGUUR 22 */
+
+#figuur22.voorgrond {
+	left: 1150px;
 	position: absolute;
-    opacity: 0.8;
-           -webkit-transform:rotate(-80deg);
-        transform: rotate(-80deg);
+			-webkit-transform:rotate(0deg);
+        transform: rotate(0deg);
+}
+
+#figuur22.voorgrond img {
+	width: 100px;
+	height:140px;
 }
 
 #figuur22 {
-	left: 1150px;
-	position: absolute;
-}
-
-#figuur22 img {
-	width: 100px;
-	height:140px;
-}
-
-#figuur22.voorgrond{
-    left: 240px;
-	width: 440px;
-	height: 500px;
+    left: 740px;
 	padding-left: 0px;
 	position: absolute;
-    opacity: 0.8;
            -webkit-transform:rotate(20deg);
         transform: rotate(20deg);
 }
 
-#figuur23 {
-	left: 1100px;
-	position: absolute;
+#figuur22 img {
+	width: 240px;
+	height: 300px;
 }
 
-#figuur23 img {
+/* FIGUUR 23 */
+
+#figuur23.voorgrond {
+	left: 1100px;
+	position: absolute;
+				-webkit-transform:rotate(0deg);
+        transform: rotate(0deg);
+}
+
+#figuur23.voorgrond img {
 	width: 180px;
 	height:140px;
 
 }
 
-#figuur23.voorgrond{
-    left: 240px;
-	width: 500px;
-	height: 340px;
-	padding-left: 0px;
+#figuur23 {
+    left: 640px;
 	position: absolute;
-    opacity: 0.8;
            -webkit-transform:rotate(-20deg);
         transform: rotate(-20deg);
+}
+
+#figuur23 img {
+	width: 200px;
+	height: 140px;
+}
+
+/* FIGUUR 24 */
+
+#figuur24.voorgrond {
+	left: 1100px;
+	position: absolute;
+		-webkit-transform:rotate(0deg);
+        transform: rotate(0deg);
+}
+
+#figuur24.voorgrond img {
+	width: 140px;
+	height:100px;
 }
 
 #figuur24 {
-	left: 1100px;
+    left: 490px;
 	position: absolute;
+           -webkit-transform:rotate(20deg);
+        transform: rotate(20deg);
 }
 
 #figuur24 img {
-	width: 140px;
-	height:100px;
+	width: 200px;
+	height: 140px;
 }
 
-#figuur24.voorgrond{
-    left: 240px;
-	width: 100px;
-	height: 140px;
-	padding-left: 0px;
+/*FIGUUR 25 */
+
+#figuur25.voorgrond {
+	left: 1250px;
 	position: absolute;
-    opacity: 0.8;
-           -webkit-transform:rotate(20deg);
-        transform: rotate(20deg);
+		-webkit-transform:rotate(0deg);
+        transform: rotate(0deg);
+}
+
+#figuur25.voorgrond img{
+	width: 140px;
+	height:100px;
 }
 
 #figuur25 {
-	left: 1250px;
+    left: 440px;
 	position: absolute;
-}
-
-#figuur25 img{
-	width: 140px;
-	height:100px;
-}
-
-#figuur25.voorgrond{
-    left: 240px;
-	width: 100px;
-	height: 140px;
-	padding-left: 0px;
-	position: absolute;
-    opacity: 0.8;
-           -webkit-transform:rotate(20deg);
-        transform: rotate(20deg);
-}
-
-#figuur26 {
-	left: 1200px;
-	position: absolute;
-}
-
-#figuur26 img {
-	width: 140px;
-	height:100px;
-}
-
-#figuur26.voorgrond{
-    left: 240px;
-	width: 500px;
-	height: 540px;
-	padding-left: 0px;
-	position: absolute;
-    opacity: 0.8;
-           -webkit-transform:rotate(20deg);
-        transform: rotate(20deg);
-}
-
-#figuur27 {
-	left: 1100px;
-	position: absolute;
-}
-
-#figuur27 img{
-	width: 100px;
-	height:140px;
-}
-
-#figuur27.voorgrond{
-    left: 240px;
-	width: 450px;
-	height: 540px;
-	padding-left: 0px;
-	position: absolute;
-    opacity: 0.8;
            -webkit-transform:rotate(-20deg);
         transform: rotate(-20deg);
 }
 
-#figuur28 {
+#figuur25 img {
+	width: 400px;
+	height: 200px;
+}
+
+/* FIGUUR 26 */
+
+#figuur26.voorgrond {
 	left: 1200px;
 	position: absolute;
+			-webkit-transform:rotate(0deg);
+        transform: rotate(0deg);
+}
+
+#figuur26.voorgrond img {
+	width: 140px;
+	height:100px;
+}
+
+#figuur26 {
+    left: 240px;
+	position: absolute;
+           -webkit-transform:rotate(20deg);
+        transform: rotate(20deg);
+}
+
+#figuur26 img {
+	width: 500px;
+	height: 340px;
+}
+
+/* FIGUUR 27 */
+
+#figuur27.voorgrond {
+	left: 1100px;
+	position: absolute;
+		-webkit-transform:rotate(0deg);
+        transform: rotate(0deg);
+}
+
+#figuur27.voorgrond img{
+	width: 100px;
+	height:140px;
+}
+
+#figuur27 {
+    left: 840px;
+	position: absolute;
+           -webkit-transform:rotate(-20deg);
+        transform: rotate(-20deg);
+}
+
+#figuur27 img {
+	width: 400px;
+	height: 480px;
+}
+
+/* FIGUUR 28 */
+
+#figuur28.voorgrond {
+	left: 1200px;
+	position: absolute;
+		-webkit-transform:rotate(0deg);
+        transform: rotate(0deg);
+}
+
+#figuur28.voorgrond img {
+	width: 140px;
+	height:110px;
+}
+
+#figuur28 {
+    left: 1140px;
+	position: absolute;
+           -webkit-transform:rotate(20deg);
+        transform: rotate(20deg);
 }
 
 #figuur28 img {
-	width: 140px;
-	height:110px;
+	width: 240px;
+	height: 170px;
 }
 
-#figuur28.voorgrond{
-    left: 240px;
-	width: 140px;
-	height: 100px;
-	padding-left: 0px;
+/* FIGUUR 29 */
+
+#figuur29.voorgrond {
+	left: 1200px;
 	position: absolute;
-    opacity: 0.8;
-           -webkit-transform:rotate(20deg);
-        transform: rotate(20deg);
+		-webkit-transform:rotate(0deg);
+        transform: rotate(0deg);
+}
+
+#figuur29.voorgrond img {
+	width: 140px;
+	height:110px;
 }
 
 #figuur29 {
-	left: 1200px;
+    left: 90px;
 	position: absolute;
+           -webkit-transform:rotate(20deg);
+        transform: rotate(20deg);
 }
 
 #figuur29 img {
-	width: 140px;
-	height:110px;
+	width: 200px;
+	height: 160px;
 }
 
-#figuur29.voorgrond{
-    left: 240px;
-	width: 140px;
-	height: 100px;
-	padding-left: 0px;
+/* FIGUUR 30 */
+
+#figuur30.voorgrond {
+	left: 1200px;
 	position: absolute;
-    opacity: 0.8;
-           -webkit-transform:rotate(20deg);
-        transform: rotate(20deg);
+		-webkit-transform:rotate(0deg);
+        transform: rotate(0deg);
+}
+
+#figuur30.voorgrond img{
+	width: 140px;
+	height:110px;
 }
 
 #figuur30 {
+    left: 240px;
+	position: absolute;
+           -webkit-transform:rotate(-20deg);
+        transform: rotate(-20deg);
+}
+
+#figuur30 img {
+	width: 200px;
+	height: 160px;
+}
+
+/* FIGUUR 31 */
+
+#figuur31.voorgrond {
 	left: 1200px;
 	position: absolute;
+			-webkit-transform:rotate(0deg);
+        transform: rotate(0deg);
 }
 
-#figuur30 img{
-	width: 140px;
-	height:110px;
-}
-
-#figuur30.voorgrond{
-    left: 240px;
-	width: 140px;
-	height: 100px;
-	padding-left: 0px;
-	position: absolute;
-    opacity: 0.8;
-           -webkit-transform:rotate(20deg);
-        transform: rotate(20deg);
+#figuur31.voorgrond img {
+	width: 100px;
+	height:140px;
 }
 
 #figuur31 {
-	left: 1200px;
+    left: 940px;
 	position: absolute;
+           -webkit-transform:rotate(20deg);
+        transform: rotate(20deg);
 }
 
 #figuur31 img {
-	width: 100px;
-	height:140px;
+	width: 170px;
+	height: 240px;
 }
 
-#figuur31.voorgrond{
-    left: 240px;
-	width: 100px;
-	height: 140px;
-	padding-left: 0px;
+/* FIGUUR 32 */
+
+#figuur32.voorgrond {
+	left: 1200px;
 	position: absolute;
-    opacity: 0.8;
-           -webkit-transform:rotate(20deg);
-        transform: rotate(20deg);
+		-webkit-transform:rotate(0deg);
+        transform: rotate(0deg);
+}
+
+#figuur32.voorgrond img {
+	width: 100px;
+	height:140px;
 }
 
 #figuur32 {
-	left: 1200px;
+    left: 240px;
 	position: absolute;
+           -webkit-transform:rotate(-20deg);
+        transform: rotate(-20deg);
 }
 
 #figuur32 img {
+	width: 200px;
+	height: 340px;
+}
+
+/* FIGUUR 33 */
+
+#figuur33.voorgrond {
+	left: 1200px;
+	position: absolute;
+		-webkit-transform:rotate(0deg);
+        transform: rotate(0deg);
+}
+
+#figuur33.voorgrond img {
 	width: 100px;
 	height:140px;
 }
 
-#figuur32.voorgrond{
+#figuur33 {
     left: 240px;
-	width: 100px;
-	height: 140px;
-	padding-left: 0px;
 	position: absolute;
-    opacity: 0.8;
            -webkit-transform:rotate(20deg);
         transform: rotate(20deg);
-}
-
-#figuur33 {
-	left: 1200px;
-	position: absolute;
 }
 
 #figuur33 img {
 	width: 100px;
-	height:140px;
+	height: 140px;
 }
 
-#figuur33.voorgrond{
-    left: 240px;
-	width: 100px;
-	height: 140px;
-	padding-left: 0px;
+/* FIGUUR 34 */
+
+#figuur34.voorgrond {
+	left: 1200px;
 	position: absolute;
-    opacity: 0.8;
-           -webkit-transform:rotate(20deg);
-        transform: rotate(20deg);
+		-webkit-transform:rotate(0deg);
+        transform: rotate(0deg);
+}
+
+#figuur34.voorgrond img {
+	width: 90px;
+	height:140px;
 }
 
 #figuur34 {
-	left: 1200px;
+    left: 940px;
 	position: absolute;
+           -webkit-transform:rotate(20deg);
+        transform: rotate(20deg);
 }
 
 #figuur34 img {
-	width: 90px;
-	height:140px;
+	width: 250px;
+	height: 340px;
 }
 
-#figuur34.voorgrond{
-    left: 240px;
-	width: 90px;
-	height: 140px;
-	padding-left: 0px;
+/* FIGUUR 35 */
+
+#figuur35.voorgrond {
+	left: 1200px;
 	position: absolute;
-    opacity: 0.8;
-           -webkit-transform:rotate(20deg);
-        transform: rotate(20deg);
+			-webkit-transform:rotate(0deg);
+        transform: rotate(0deg);
+}
+
+#figuur35.voorgrond img {
+	width: 90px;
+	height:140px;
 }
 
 #figuur35 {
-	left: 1200px;
+    left: 740px;
 	position: absolute;
+           -webkit-transform:rotate(-30deg);
+        transform: rotate(-30deg);
 }
 
 #figuur35 img {
-	width: 90px;
-	height:140px;
+	width: 220px;
+	height: 300px;
 }
 
-#figuur35.voorgrond{
-    left: 240px;
+/* FIGUUR 36 */
+
+#figuur36.voorgrond {
+	left: 1200px;
+	position: absolute;	
+			-webkit-transform:rotate(0deg);
+        transform: rotate(0deg);
+}
+
+#figuur36.voorgrond img {
 	width: 90px;
-	height: 140px;
-	padding-left: 0px;
-	position: absolute;
-    opacity: 0.8;
-           -webkit-transform:rotate(20deg);
-        transform: rotate(20deg);
+	height:140px;
 }
 
 #figuur36 {
-	left: 1200px;
+    left: 580px;
 	position: absolute;
+           -webkit-transform:rotate(20deg);
+        transform: rotate(20deg);
 }
 
 #figuur36 img {
-	width: 90px;
-	height:140px;
+	width: 160px;
+	height: 240px;
 }
 
-#figuur36.voorgrond{
-    left: 240px;
-	width: 90px;
-	height: 140px;
-	padding-left: 0px;
+/* FIGUUR 37 */
+
+#figuur37.voorgrond {
+	left: 100px;
 	position: absolute;
-    opacity: 0.8;
-           -webkit-transform:rotate(20deg);
-        transform: rotate(20deg);
+		-webkit-transform:rotate(0deg);
+        transform: rotate(0deg);
+}
+
+#figuur37.voorgrond img {
+	width: 140px;
+	height:90px;
 }
 
 #figuur37 {
-	left: 100px;
+    left: 240px;
 	position: absolute;
+           -webkit-transform:rotate(20deg);
+        transform: rotate(20deg);
 }
 
 #figuur37 img {
-	width: 140px;
-	height:90px;
+	width: 150px;
+	height: 120px;
 }
 
-#figuur37.voorgrond{
-    left: 240px;
-	width: 140px;
-	height: 90px;
-	padding-left: 0px;
+/* FIGUUR 38 */
+
+#figuur38.voorgrond {
+	left: 100px;
 	position: absolute;
-    opacity: 0.8;
-           -webkit-transform:rotate(20deg);
-        transform: rotate(20deg);
+			-webkit-transform:rotate(0deg);
+        transform: rotate(0deg);
+}
+
+#figuur38.voorgrond img {
+	width: 140px;
+	height:90px;
 }
 
 #figuur38 {
+    left: 240px;
+	position: absolute;
+           -webkit-transform:rotate(-20deg);
+        transform: rotate(-20deg);
+}
+#figuur38 img {
+width: 190px;
+	height: 140px;
+}
+
+/* FIGUUR 39 */
+
+#figuur39.voorgrond {
 	left: 100px;
 	position: absolute;
+			-webkit-transform:rotate(0deg);
+        transform: rotate(0deg);
 }
 
-#figuur38 img {
+#figuur39.voorgrond img {
 	width: 140px;
 	height:90px;
-}
-
-#figuur38.voorgrond{
-    left: 240px;
-	width: 90px;
-	height: 140px;
-	padding-left: 0px;
-	position: absolute;
-    opacity: 0.8;
-           -webkit-transform:rotate(20deg);
-        transform: rotate(20deg);
 }
 
 #figuur39 {
-	left: 100px;
+    left: 40px;
 	position: absolute;
+           -webkit-transform:rotate(20deg);
+        transform: rotate(20deg);
 }
 
 #figuur39 img {
-	width: 140px;
-	height:90px;
+	width: 320px;
+	height: 240px;
 }
 
-#figuur39.voorgrond{
-    left: 240px;
-	width: 90px;
-	height: 140px;
-	padding-left: 0px;
+/* FIGUUR 40 */
+
+#figuur40.voorgrond {
+	left: 100px;
 	position: absolute;
-    opacity: 0.8;
-           -webkit-transform:rotate(20deg);
-        transform: rotate(20deg);
+		-webkit-transform:rotate(0deg);
+        transform: rotate(0deg);
+}
+
+#figuur40.voorgrond img {
+	width: 140px;
+	height:90px;
 }
 
 #figuur40 {
-	left: 100px;
+    left: 1040px;
 	position: absolute;
+           -webkit-transform:rotate(-20deg);
+        transform: rotate(-20deg);
 }
-
 
 #figuur40 img {
-	width: 140px;
-	height:90px;
-}
-
-#figuur40.voorgrond{
-    left: 240px;
-	width: 90px;
+	width: 200px;
 	height: 140px;
-	padding-left: 0px;
-	position: absolute;
-    opacity: 0.8;
-           -webkit-transform:rotate(20deg);
-        transform: rotate(20deg);
 }
 
-#figuur41 {
+/* FIGUUR 41 */
+
+#figuur41.voorgrond {
 	left: 100px;
 	position: absolute;
+		-webkit-transform:rotate(0deg);
+        transform: rotate(0deg);
 }
 
-#figuur41 img {
+#figuur41.voorgrond img {
 	width: 90px;
 	height:140px;
 }
 
-#figuur41.voorgrond{
-    left: 240px;
-	width: 90px;
-	height: 140px;
-	padding-left: 0px;
+#figuur41 {
+    left: 890px;
 	position: absolute;
-    opacity: 0.8;
-           -webkit-transform:rotate(20deg);
-        transform: rotate(20deg);
+           -webkit-transform:rotate(-20deg);
+        transform: rotate(-20deg);
 }
 
-#figuur42 {
+#figuur41 img {
+	width: 190px;
+	height: 240px;
+}
+
+/* FIGUUR 42 */
+
+#figuur42.voorgrond {
 	left: 1150px;
 	position: absolute;
+		-webkit-transform:rotate(0deg);
+        transform: rotate(0deg);
 }
 
-#figuur42 img {
+#figuur42.voorgrond img {
 	width: 130px;
 	height:90px;
 }
 
-#figuur42.voorgrond{
-    left: 240px;
-	width: 90px;
-	height: 130px;
-	padding-left: 0px;
+#figuur42 {
+    left: 1040px;
 	position: absolute;
-    opacity: 0.8;
-           -webkit-transform:rotate(20deg);
-        transform: rotate(20deg);
+           -webkit-transform:rotate(30deg);
+        transform: rotate(30deg);
+}
+
+#figuur42 img {
+	width: 200px;
+	height: 130px;
 }
 
 #backtotop{
