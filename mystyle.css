@@ -54,31 +54,36 @@ header {
 
 h1 {
     color: blue;
-    text-align: center;
     font-family: 'Vollkorn', serif;
     font-style: 400;
     font-size: 320px;
-    margin: 500px 0px 500px 0px; /* Top, Right, Bottom, Left */
-    -webkit-transform:rotate(10deg);
-        transform: rotate(10deg);
+    position:relative;
+    left: 270px;
+    
+    margin-bottom: 0px;
+    margin-top: 0px;
+    padding-top: 0px;
+    padding-bottom:0px;
 }
 
 /* TEKST ANIMATIE */
 
 
-svg{
+/* svg{
   width:60%;
   color: blue;
     text-align: center;
     font-family: 'Verdana', serif;
     font-size: 20px;
-    margin: 150px 0px 0px 280px; /* Top, Right, Bottom, Left */
+    margin: 150px 0px 0px 280px; 
     position: absolute;
     -webkit-transform:rotate(10deg);
         transform: rotate(10deg);
 }
 
-/* FUN MET INSLIDE TITEL */
+*/
+
+/* FUN MET INSLIDE TITEL 
 
 div.slide-up {
   height:420px;
@@ -100,6 +105,7 @@ div.slide-up h1 {
     height: 100%;
   }
 }
+*/
 
 /* EIND FUN */
 
@@ -110,7 +116,7 @@ div.koptitel {
     letter-spacing: 0px;
     color: blue;
     position: absolute;
-    left: 140px;
+    left: 90px;
         -webkit-transform:rotate(-90deg);
         transform: rotate(-90deg);
 }
@@ -190,7 +196,7 @@ div.subtekst {
 a {
     color: blue;
     text-decoration: none;
-    font-family: verdana;
+    font-family:  'Open Sans', sans-serif;
     font-size: 10px;
     letter-spacing: 2px
 }
@@ -205,7 +211,7 @@ a:hover {
 
 a.one:link {
 	color:blue;
-	font-family: verdana;
+	font-family: 'Open Sans', sans-serif;
     font-size: 8px;
 	}
 	
@@ -222,10 +228,10 @@ cursor: cell;
 
 div.gegevens {
 color: blue;
-    font-family: verdana;
+    font-family:  'Open Sans', sans-serif;
     font-size: 10px;
     letter-spacing: 2px;
-    margin: 20px 90px 100px 35px; /* Top, Right, Bottom, Left */
+    margin: 20px 90px 0px 35px; /* Top, Right, Bottom, Left */
     position: absolute;
 
 }
@@ -324,7 +330,8 @@ div.inleiding {
     font-family: 'Open Sans', sans-serif;
     font-weight: 300;
     font-size: 18px;
-    padding: 50px;
+    padding: 5px;
+    margin-top: 5px;
 
 }
 
@@ -1655,7 +1662,7 @@ rail, dot {
 rail {
   animation: rail 7s ease-in-out infinite;
   position: absolute;
-  top: 50%;
+  top: 20%;
   left: 70%;
   margin: -50px;
 }
@@ -1686,7 +1693,7 @@ rail:last-child {
   animation-duration: 5s;
 }
 
-flicker {
+/* flicker {
   display: block;
   position: fixed;
   top: 0;
@@ -1697,6 +1704,8 @@ flicker {
   opacity: .2;
   animation: flickr 46s ease infinite;
 }
+
+*/
 
 @keyframes rail {
   0% {
@@ -1729,6 +1738,7 @@ flicker {
     opacity: .3;
   }
 }
+
 
 /* BUTTON ONDERAAN */
 
