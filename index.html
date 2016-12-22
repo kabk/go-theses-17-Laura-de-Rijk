@@ -3,6 +3,7 @@
 <head>
 
 <link rel="stylesheet" type="text/css" href="mystyle.css">
+<link rel="stylesheet" type="text/css" href="print.css" media="print" />
 
 <meta charset="utf-8">
 
@@ -20,20 +21,6 @@
 
 <style>
 /* PRINTOPTIES */
-
-@media print {
-  body {
-    /* IE4-8 and 9 (deprecated). */
-    filter: Gray();
-    /* SVG version for IE10, Chrome 17, FF3.5, 
-       Safari 5.2 and Opera 11.6 */
-    filter: url('#grayscale'); 
-    /* CSS3 filter, at the moment Webkit only. Prefix it for
-       future implementations */
-    -webkit-filter: grayscale(100%); 
-    filter: grayscale(100%); /* future-proof */
-  }
-}
 
 @media print {
 
@@ -59,31 +46,7 @@
     display: none !important;
   }
   
-      .middle {
-    float: none !important;
-    width: none !important;
-    margin-left: 60px;
-  }
-  
-  .middle div.voetnoot {
-  left: 800px;
-  }
-  
-  div.bronnen {
-  left: 800px;
-  }
-  
-    div.middle {
-  width: 60%;
-  }
-
-
-	div.bronnen {
-	height: auto;
-	border: none;
-}
-
-.custom-btn btn-1 {
+  .custom-btn btn-1 {
 display: none !important;
 }
 
@@ -99,15 +62,38 @@ display: none !important;
 display: none !important;
 }
 
+      .middle {
+    float: none !important;
+    width: none !important;
+    margin-left: 60px;
+  }
+  
+  .middle div.voetnoot {
+  left: 800px;
+  }
+  
+  div.bronnen {
+  left: 500px;
+  }
+  
+    div.middle {
+  width: 60%;
+  }
 
+	div.bronnen {
+	height: auto;
+	border: none;
+}
   
  /* VOORPAGINA TITEL GROTER */ 
   
  h1 {
-  -webkit-transform:rotate(55deg);
-    transform: rotate(55deg);
-    font-size: 500px;
+  -webkit-transform:rotate(90deg);
+    transform: rotate(90deg);
+    font-size: 400px;
     height: auto;
+    margin-top: 0px;
+    color: black;
   }
   
   div.slide-up  {
@@ -118,13 +104,14 @@ display: none !important;
   
     div.gegevens  {
    margin: 20px 90px 10px 35px;
+   color: black;
   }
   
   
   /* FORCEREN OM EEN PAGINA AF TE BREKEN BIJ KOPTITELS */
   
   @media print {
-    .koptitel {page-break-before: always;}
+    .subtekst {page-break-before: always;}
     div.hoofdstuk2-2 {page-break-before: always;}
     div.hoofdstuk2-3 {page-break-before: always;}
     div.hoofdstuk2-4 {page-break-before: always;}
@@ -138,8 +125,23 @@ display: none !important;
 cursor: default;
 }
 
-</style>
+/* PRINT BLACK AND WHITE */
 
+@media print {
+  body {
+    /* IE4-8 and 9 (deprecated). */
+    filter: Gray();
+    /* SVG version for IE10, Chrome 17, FF3.5, 
+       Safari 5.2 and Opera 11.6 */
+    filter: url('#grayscale'); 
+    /* CSS3 filter, at the moment Webkit only. Prefix it for
+       future implementations */
+    -webkit-filter: grayscale(100%); 
+    filter: grayscale(100%); /* future-proof */
+  }
+}
+
+</style>
 
 <body>
 <div id="top"></div>
@@ -182,27 +184,27 @@ cursor: default;
 
 <nav class="navigation">
   <ul class="mainmenu">
-    <li><a class="scroll"	href="#inleiding">INLEIDING</a></li>
-    <li><a class="scroll"	href="#hoofdstuk1">1|MENGVORM VAN DISCIPLINES</a></li>
+    <li><a class=scroll	href="#inleiding">INLEIDING</a></li>
+    <li><a class=scroll	href="#hoofdstuk1">1|MENGVORM VAN DISCIPLINES</a></li>
     
-    <li><a class="scroll"	href="#hoofdstuk2"> 2|HET HYBRIDE VERLEDEN</a>
+    <li><a class=scroll	href="#hoofdstuk2"> 2|HET HYBRIDE VERLEDEN</a>
       <ul class="submenu">
-        <li><a class="scroll"	href="#hoofdstuk 2.1">2.1 Dada & Constructivisme</a></li>
-        <li><a class="scroll"	href="#hoofdstuk 2.2">2.2 Nieuwe fotografie & typografie</a></li>
-        <li><a class="scroll"	href="#hoofdstuk 2.3">2.3 Zwitserse school</a></li>
-        <li><a class="scroll"	href="#hoofdstuk 2.4">2.4 De Meester</a></li>
+        <li><a class=scroll	href="#hoofdstuk2-1">2.1 Dada & Constructivisme</a></li>
+        <li><a class=scroll	href="#hoofdstuk2-2">2.2 Nieuwe fotografie & typografie</a></li>
+        <li><a class=scroll	href="#hoofdstuk2-3">2.3 Zwitserse school</a></li>
+        <li><a class=scroll	href="#hoofdstuk2-4">2.4 De Meester</a></li>
       </ul>
     </li>
-    <li><a class="scroll" href="#hoofdstuk3"> 3|HEDENDAAGS HYBRIDE</a>
+    <li><a class=scroll href="#hoofdstuk3"> 3|HEDENDAAGS HYBRIDE</a>
       <ul class="submenu">
-        <li><a class="scroll"	href="#hoofdstuk 3.1">3.1 Valkuilen & samensmeltingen</a></li>
-        <li><a class="scroll"	href="#hoofdstuk 3.2">3.2 Wikipedia ontwerpers</a></li>
-        <li><a class="scroll"	href="#hoofdstuk 3.3">3.3 Invloed 'fotografisch oog'</a></li>
-        <li><a class="scroll"	href="#hoofdstuk 3.4">3.4 Grafische fotografie</a></li>
+        <li><a class=scroll	href="#hoofdstuk3-1">3.1 Valkuilen & samensmeltingen</a></li>
+        <li><a class=scroll	href="#hoofdstuk3-2">3.2 Wikipedia ontwerpers</a></li>
+        <li><a class=scroll	href="#hoofdstuk3-3">3.3 Invloed 'fotografisch oog'</a></li>
+        <li><a class=scroll	href="#hoofdstuk3-4">3.4 Grafische fotografie</a></li>
       </ul>
     </li>
-    <li><a class="scroll"	href="#conclusie">CONCLUSIE</a></li>
-    <li><a class="scroll"	href="#bronnen">BRONNEN</a></li>
+    <li><a class=scroll	href="#conclusie">CONCLUSIE</a></li>
+    <li><a class=scroll	href="#bronnen">BRONNEN</a></li>
   </ul>
 </nav>
 
@@ -222,7 +224,6 @@ cursor: default;
 <!-- CONTENT EN TEKST --!>
 
 
-<A NAME="inleiding">
 <br><br>
 
 <div class="middle">
@@ -267,6 +268,7 @@ over de positie van de hybride ontwerper?
   </div><div class="buttons-coll"><button class="custom-btn btn-1"><a href="1+1=3_test.pdf" target="_top"> PRINT COVER </a> </button>
   </div>
 
+<a name="hoofdstuk1"></a>
 <section id="hoofdstuk1">
  	    
 <div class= "subtekst"> Je bent een grafisch ontwerper, fotograaf of een beeldend
@@ -427,6 +429,7 @@ vervormingen van de disciplines.
   </section>
 
 <a name="hoofdstuk2"></a>
+<section id="hoofdstuk2">
 
 
 <div class= "subtekst"> Een beknopt onderzoek in het verleden. In welke
@@ -434,6 +437,8 @@ stromingen werden fotografie en grafisch ontwerp op
 krachtige manieren samengebracht? Bij elke stroming
 komen enkele kunstenaars aan bod en hun werk. </div>
 
+ </section>
+ <section id="hoofdstuk2-1">
 <a name="hoofdstuk 2.1"></a>
 
 <div class= "hoofdstuk2-1"> <FONT COLOR="blue" >2.1 |</FONT> Tijdens de Dada periode <i>(1916-1920)</i> ontwikkelde enkele
@@ -522,6 +527,8 @@ The Results of the First Five-Year Plan,"<br>
 results-of-the-first-five-year-plan/">[URL]</a>
 </div> 
 
+ </section>
+<section id="hoofdstuk2-2">
 <a name="hoofdstuk 2.2"></a>
 
 <div class= "hoofdstuk2-2"> <FONT COLOR="blue" >2.2 |</FONT> De nieuwe typografie en de nieuwe fotografie ontwikkelde zich in
@@ -773,7 +780,8 @@ voor de eindcompositie van het werk.
 </div>
 
 </div>
-
+ </section>
+ <section id="hoofdstuk2-3">
 <a name="hoofdstuk 2.3"></a>
 
 <div class= "hoofdstuk2-3"><FONT COLOR="blue" >2.3 |</FONT>  De Zwitserse stijl, ook wel de internationale typografische stijl
@@ -827,6 +835,8 @@ Graphic Design. blz. 282-283<br>
 
 
 </div>
+</section>
+<section id="hoofdstuk2-4">
 
 <a name="hoofdstuk 2.4"></a>
 
@@ -931,10 +941,10 @@ vooruitkijken naar de hybride ontwerpers van deze tijd in het volgende
 hoofdstuk van mijn scriptie. Wie zijn de hybride ontwerpers van nu? En
 wat is de relatie van Fotografie in Grafisch ontwerp?
 </div>
+</section>
 
 <a name="hoofdstuk3"></a>
-
-
+<section id="hoofdstuk3">
 
 <div class= "subtekst"> Hoe worden deze twee krachtbronnen tegenwoordig
 aangedreven door de ontwerper? Wie zijn de hybride
@@ -944,6 +954,8 @@ van de disciplines zijn allang niet meer hetzelfde als in
 het verleden. Het postmedium denken is steeds meer de
 realiteit, het medium doet er niet meer toe. </div>
 
+</section>
+<section id="hoofdstuk3-1">
 <a name="hoofdstuk 3.1"></a>
 
 <div class= "hoofdstuk3-1"><FONT COLOR="blue" >3.1 Valkuilen & verwachtingen | </FONT> De opleidingen van nu, zoals op
@@ -1277,6 +1289,8 @@ veel betere kwaliteit te behalen is als fotograaf. De foto komt wel los uit
 zijn container door het gebruik in andere media, maar het is belangrijk
 dat het op de juiste manier gebruikt wordt en met respect.
 </div>
+</section>
+<section id="hoofdstuk3-2">
 
 <a name="hoofdstuk 3.2"></a>
 <br><br>
@@ -1324,7 +1338,8 @@ bekende grafisch ontwerper maar laat wel zien dat hij zijn manier van
 kijken goed kan toepassen op andere vlakken. Hoe zou bijvoorbeeld
 een gebouw of een film eruit hebben gezien ontworpen door Picasso?
 </div>
-
+</section>
+<section id="hoofdstuk3-3">
 <a name="hoofdstuk 3.3"></a>
 <br><br>
 <div class= "hoofdstuk3-3"><FONT COLOR="blue" >3.3 Invloed 'fotografisch oog'</FONT> | Na mijn studie fotografie op de
@@ -1432,7 +1447,9 @@ exporations. Gestalten 2012. blz.
 </div>
 
 </div>
+</section>
 
+<section id="hoofdstuk3-4">
 <a name="hoofdstuk 3.4"></a>
 
 <div class= "hoofdstuk3-4"><FONT COLOR="blue" >3.4 Grafische fotografie | </FONT> Een ander punt wat ik wil uitlichten bij de
@@ -1534,9 +1551,9 @@ en fascinerend zijn om naar te kijken. Zij zijn enkel een klein stukje van
 die enorme massa wat zich hybride beweegt in deze tijd. Zij geven een
 duidelijk overzicht van ontwikkelingen en samensmeltingen.
 </div>
-
+</section>
+<section id="conclusie">
 <a name="conclusie"></a>
-
 
 <div class= "conclusie"> Ik ben een hybride ontwerper met twee krachtbronnen die mij
 aandrijven en invloed hebben op elkaar. Fotografie en Grafisch ontwerp
@@ -1581,7 +1598,8 @@ trekken in diverse media. </div>
 
 
 <button class="custom-btn btn-4"><span><a href="#top">BACK TO TOP</a></span></button>
-
+</section>
+<section id="bronnen">
 <a name="bronnen"></a>
 
 <div class= "koptitel5"> Bronnen & Dankwoord </div>
@@ -1699,6 +1717,7 @@ zijn in mijn scriptie.
 
 <script src="jquery-3.1.1.js"></script>
 <script src="scripts.js"></script>
+<script src=scroll.min.js></script>
 
 </body>
 </html>
