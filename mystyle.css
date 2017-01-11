@@ -35,7 +35,7 @@ header {
   
   }
   
-  .middle{float:left; width:55%;
+  .middle{float:left; width:48%;
   height: 100%;
   /* border-style: solid;
     border-color: blue; */
@@ -62,7 +62,7 @@ h1 {
     position:relative;
     left: 270px;
     
-    margin-bottom: 0px;
+    margin-bottom: -20px;
     margin-top: 0px;
     padding-top: 0px;
     padding-bottom:0px;
@@ -72,46 +72,6 @@ div.subtekst {
 padding-top: 10px;
 }
 
-/* TEKST ANIMATIE */
-
-
-/* svg{
-  width:60%;
-  color: blue;
-    text-align: center;
-    font-family: 'Verdana', serif;
-    font-size: 20px;
-    margin: 150px 0px 0px 280px; 
-    position: absolute;
-}
-
-*/
-
-/* FUN MET INSLIDE TITEL 
-
-div.slide-up {
-  height:420px;
-  overflow:hidden;
-}
-div.slide-up h1 {
-  animation: 5s slide-up;
-  margin-top:0%;
-}
-
-@keyframes slide-up {
-  from {
-    margin-top: 100%;
-    height: 300%; 
-  }
-
-  to {
-    margin-top: 0%;
-    height: 100%;
-  }
-}
-*/
-
-/* EIND FUN */
 
 div.koptitel {
 	font-family: 'Vollkorn', serif;
@@ -214,9 +174,9 @@ a:hover {
 /* Link 2 - Voor Voetnoot URL's */
 
 a.one:link {
-	color:blue;
+	color:black;
 	font-family: 'Open Sans', sans-serif;
-    font-size: 8px;
+    font-size: 10px;
 	}
 	
 	
@@ -235,7 +195,7 @@ color: black;
     font-family:  'Open Sans', sans-serif;
     font-size: 10px;
     letter-spacing: 0px;
-    margin: 20px 90px 0px 35px; /* Top, Right, Bottom, Left */
+    margin: 20px 90px 0px 25px; /* Top, Right, Bottom, Left */
     position: absolute;
 
 }
@@ -244,7 +204,7 @@ color: black;
 div.figuur {
 	color: blue;
     font-family: 'Open Sans', sans-serif;
-    font-size: 15px;
+    font-size: 10px;
 }
 
 div.titels {
@@ -333,8 +293,9 @@ div.inleiding {
     color: black;
     font-family: 'Open Sans', sans-serif;
     font-weight: 300;
-    font-size: 16px;
+    font-size: 15px;
     padding-left: 50px;
+    padding-bottom: 100px;
     margin-top: 5px;
 
 }
@@ -343,7 +304,7 @@ div.hoofdstuk1 {
     color: black;
     font-family: 'Open Sans', sans-serif;
     font-weight: 300;
-    font-size: 16px;
+    font-size: 15px;
     padding-left: 50px;
 
 }
@@ -352,7 +313,7 @@ div.hoofdstuk2 {
     color: black;
     font-family: 'Open Sans', sans-serif;
     font-weight: 300;
-    font-size: 16px;
+    font-size: 15px;
     padding-left: 50px;
 
 }
@@ -361,7 +322,7 @@ div.hoofdstuk2-1 {
     color: black;
     font-family: 'Open Sans', sans-serif;
     font-weight: 300;
-    font-size: 16px;
+    font-size: 15px;
     padding-left: 50px;
 
 }
@@ -370,7 +331,7 @@ div.hoofdstuk2-2 {
     color: black;
     font-family: 'Open Sans', sans-serif;
     font-weight: 300;
-    font-size: 16px;
+    font-size: 15px;
     padding-left: 50px;
 
 }
@@ -379,7 +340,7 @@ div.hoofdstuk2-3 {
     color: black;
     font-family: 'Open Sans', sans-serif;
     font-weight: 300;
-    font-size: 16px;
+    font-size: 15px;
     padding-left: 50px;
 
 
@@ -389,7 +350,7 @@ div.hoofdstuk2-4 {
     color: black;
     font-family: 'Open Sans', sans-serif;
     font-weight: 300;
-    font-size: 16px;
+    font-size: 15px;
     padding-left: 50px;
 
 }
@@ -399,7 +360,7 @@ div.hoofdstuk3 {
     color: black;
     font-family: 'Open Sans', sans-serif;
     font-weight: 300;
-    font-size: 16px;
+    font-size: 15px;
     padding-left: 50px;
 
 }
@@ -408,7 +369,7 @@ div.hoofdstuk3-1 {
     color: black;
     font-family: 'Open Sans', sans-serif;
     font-weight: 300;
-    font-size: 16px;
+    font-size: 15px;
     padding-left: 50px;
    
 
@@ -418,7 +379,7 @@ div.hoofdstuk3-2 {
     color: black;
     font-family: 'Open Sans', sans-serif;
     font-weight: 300;
-    font-size: 16px;
+    font-size: 15px;
     padding-left: 50px;
 
 }
@@ -427,7 +388,7 @@ div.hoofdstuk3-3 {
     color: black;
     font-family: 'Open Sans', sans-serif;
     font-weight: 300;
-    font-size: 16px;
+    font-size: 15px;
     padding-left: 50px;
 
 }
@@ -436,7 +397,7 @@ div.conclusie {
     color: black;
     font-family: 'Open Sans', sans-serif;
     font-weight: 300;
-    font-size: 16px;
+    font-size: 15px;
     padding-left: 50px;
 
 }
@@ -530,10 +491,17 @@ figure img {
     transform: rotate(0deg);
 }
 
-/* FIGUUR 0 DA VINCI */
+
+/* FIGUUR X WITBLOK */
+
+#figuurx {
+	opacity: 0.1;
+}
+
+/* FIGUUR 1 DA VINCI */
 
 #figuur1.voorgrond {
-	left: 1100px;
+	left: 1020px;
 	position: absolute;
 	
 }
@@ -559,10 +527,10 @@ figure img {
 
 }
 
-/* FIGUUR x PICASSO */
+/* FIGUUR 2 PICASSO */
 
 #figuur2.voorgrond {
-	left: 1100px;
+	left: 1020px;
 	position: absolute;
 	
 }
@@ -591,7 +559,7 @@ figure img {
 /* FIGUUR 3 HAUSMANN */
 
 #figuur3.voorgrond {
-	left: 1100px;
+	left: 1020px;
 	position: absolute;
 	
 }
@@ -653,8 +621,8 @@ figure img {
 }
 
 #figuur5.voorgrond img {
-	width: 210px;
-	height: 150px;
+	width: 190px;
+	height: 130px;
 	 -webkit-transform:rotate(0deg);
     transform: rotate(0deg);
 }
@@ -674,13 +642,13 @@ figure img {
 /* FIGUUR 6 SCHUITEMA2 */
 
 #figuur6.voorgrond {
-	left: 1100px;
+	left: 1020px;
 	position: absolute;
 }
 
 #figuur6.voorgrond img{
-	width:230px;
-	height:180px;
+	width:200px;
+	height:140px;
 	 	-webkit-transform:rotate(0deg);
     transform: rotate(0deg);
 }
@@ -701,15 +669,15 @@ figure img {
 /* FIGUUR 7 SCHUITEMA3 */
 
 #figuur7.voorgrond {
-	left: 60px;
+	left: 80px;
 	position: absolute
 	    -webkit-transform:rotate(0deg);
         transform: rotate(0deg);
 }
 
 #figuur7.voorgrond img{
-	width: 190px;
-	height: 250px;
+	width: 140px;
+	height: 180px;
 }
 
 #figuur7 {
@@ -720,22 +688,22 @@ figure img {
 }
 
 #figuur7 img {
-	width: 360px;
+	width: 310px;
     height:450px;
 }
 
 /* FIGUUR 8 SCHUITEMA4 */
 
 #figuur8.voorgrond {
-	left: 1100px;
+	left: 1020px;
 	position: absolute;
 		 -webkit-transform:rotate(0deg);
         transform: rotate(0deg);
 }
 
 #figuur8.voorgrond img {
-	width: 250px;
-	height: 170px;
+	width: 200px;
+	height: 140px;
 
 }
 
@@ -754,15 +722,15 @@ figure img {
 /* FIGUUR 9 PIET ZWART1 */
 
 #figuur9.voorgrond {
-	left: 100px;
+	left: 80px;
 	position: absolute;
 		-webkit-transform:rotate(0deg);
         transform: rotate(0deg);
 }
 
 #figuur9.voorgrond img {
-	width: 150px;
-	height: 190px;
+	width: 140px;
+	height: 180px;
 }
 
 #figuur9 {
@@ -780,15 +748,15 @@ figure img {
 /* FIGUUR 10 PIET ZWART2 */
 
 #figuur10.voorgrond {
-	left: 1100px;
+	left: 80px;
 	position: absolute;
 			-webkit-transform:rotate(0deg);
         transform: rotate(0deg);
 }
 
 #figuur10.voorgrond img {
-	width: 100px;
-	height: 140px;
+	width: 140px;
+	height: 180px;
 }
 
 #figuur10 {
@@ -806,16 +774,15 @@ figure img {
 /* FIGUUR 11 PIET ZWART3 */
 
 #figuur11.voorgrond {
-	left: 100px;
+	left: 80px;
 	position: absolute;
 				-webkit-transform:rotate(0deg);
         transform: rotate(0deg);
 }
 
 #figuur11.voorgrond img{
-	width: 150px;
-	height: 190px;
-	position: absolute;
+	width: 140px;
+	height: 180px;
 }
 
 #figuur11 {
@@ -833,15 +800,15 @@ figure img {
 /* FIGUUR 12 PIET ZWART4 */
 
 #figuur12.voorgrond {
-	left: 1100px;
+	left: 1020px;
 	position: absolute;
 					-webkit-transform:rotate(0deg);
         transform: rotate(0deg);
 }
 
 #figuur12.voorgrond img {
-	width: 100px;
-	height: 140px;
+	width: 140px;
+	height: 180px;
 }
 
 #figuur12 {
@@ -859,15 +826,15 @@ figure img {
 /* FIGUUR 13 PIET ZWART5 */
 
 #figuur13.voorgrond {
-	left: 100px;
+	left: 60px;
 	position: absolute;
 						-webkit-transform:rotate(0deg);
         transform: rotate(0deg);
 }
 
 #figuur13.voorgrond img {
-	width: 135px;
-	height: 100px;
+	width: 180px;
+	height: 140px;
 }
 
 #figuur13 {
@@ -886,15 +853,15 @@ figure img {
 /* FIGUUR 14 BROCKMANN1 */
 
 #figuur14.voorgrond {
-	left: 1100px;
+	left: 80px;
 	position: absolute;
 	-webkit-transform:rotate(0deg);
         transform: rotate(0deg);
 }
 
 #figuur14.voorgrond img {
-	width: 100px;
-	height: 160px;
+	width: 150px;
+	height: 210px;
 
 }
 
@@ -914,15 +881,15 @@ figure img {
 
 
 #figuur15.voorgrond {
-	left: 1220px;
+	left: 1020px;
 	position: absolute;
 		-webkit-transform:rotate(0deg);
         transform: rotate(0deg);
 }
 
 #figuur15.voorgrond img {
-	width: 100px;
-	height: 160px;
+	width: 150px;
+	height: 210px;
 }
 
 #figuur15 {
@@ -940,15 +907,15 @@ figure img {
 /* FIGUUR 16 BAUMGARTNER1 */
 
 #figuur16.voorgrond {
-	left: 1100px;
+	left: 1020px;
 	position: absolute;
 			-webkit-transform:rotate(0deg);
         transform: rotate(0deg);
 }
 
 #figuur16.voorgrond img {
-	width: 150px;
-	height: 100px;
+	width: 180px;
+	height: 120px;
 }
 
 #figuur16 {
@@ -966,15 +933,15 @@ figure img {
 /* FIGUUR 17 BAUMGARTNER2 */
 
 #figuur17.voorgrond {
-	left: 1100px;
+	left: 50px;
 	position: absolute;
 		-webkit-transform:rotate(0deg);
         transform: rotate(0deg);
 }
 
 #figuur17.voorgrond img {
-	width: 220px;
-	height: 150px;
+	width: 180px;
+	height: 120px;
 
 }
 
@@ -993,15 +960,15 @@ figure img {
 /* FIGUUR 18 BAUMGARTNER3 */
 
 #figuur18.voorgrond {
-	left: 1100px;
+	left: 1020px;
 	position: absolute;
 			-webkit-transform:rotate(0deg);
         transform: rotate(0deg);
 }
 
 #figuur18.voorgrond img {
-	width: 150px;
-	height: 100px;
+	width: 180px;
+	height: 120px;
 }
 
 #figuur18 {
@@ -1019,7 +986,7 @@ figure img {
 /* FIGUUR 19 BAUMGARTNER4 */
 
 #figuur19.voorgrond {
-	left: 1150px;
+	left: 80px;
 	position: absolute;
 		-webkit-transform:rotate(0deg);
         transform: rotate(0deg);
@@ -1047,15 +1014,15 @@ figure img {
 /* FIGUUR 20 FLORENT PORZA1 */
 
 #figuur20.voorgrond {
-	left: 1200px;
+	left: 1020px;
 	position: absolute;
 			-webkit-transform:rotate(0deg);
         transform: rotate(0deg);
 }
 
 #figuur20.voorgrond img {
-	width: 100px;
-	height: 80px;
+	width: 180px;
+	height: 120px;
 }
 
 #figuur20 {
@@ -1073,15 +1040,15 @@ figure img {
 /* FIGUUR 21 FLORENT PORZA2 */
 
 #figuur21.voorgrond {
-	left: 1200px;
+	left: 1020px;
 	position: absolute;
 				-webkit-transform:rotate(0deg);
         transform: rotate(0deg);
 }
 
 #figuur21.voorgrond img {
-	width: 100px;
-	height: 80px;
+	width: 180px;
+	height: 150px;
 }
 
 #figuur21 {
@@ -1788,7 +1755,7 @@ rail:last-child {
 
  */
 
-/* BUTTON ONDERAAN */
+/* BUTTON ONDERAAN OM NAAR TOP TE GAAN */
 
 .buttons-coll {
   width: 90%;
@@ -1851,7 +1818,7 @@ rail:last-child {
 
 .btn-1 {border: 1px solid blue;}
 .btn-1:hover {
-  background: blue;
+  background: none;
   color: #ffffff;
 }
 .btn-1:active {top: 2px;}
