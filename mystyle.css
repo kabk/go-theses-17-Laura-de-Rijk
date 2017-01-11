@@ -1068,15 +1068,15 @@ figure img {
 /* FIGUUR 22 SARAH1 */
 
 #figuur22.voorgrond {
-	left: 50px;
+	left: 80px;
 	position: absolute;
 					-webkit-transform:rotate(0deg);
         transform: rotate(0deg);
 }
 
 #figuur22.voorgrond img {
-	width: 100px;
-	height: 140px;
+	width: 150px;
+	height: 200px;
 }
 
 #figuur22 {
@@ -1094,15 +1094,15 @@ figure img {
 /* FIGUUR 23 SARAH2 */
 
 #figuur23.voorgrond {
-	left: 100px;
+	left: 80px;
 	position: absolute;
 		-webkit-transform:rotate(0deg);
         transform: rotate(0deg);
 }
 
 #figuur23.voorgrond img {
-	width: 100px;
-	height:140px;
+	width: 150px;
+	height:200px;
 }
 
 #figuur23 {
@@ -1120,15 +1120,15 @@ figure img {
 /* FIGUUR 24 SARAH3 */
 
 #figuur24.voorgrond {
-	left: 1150px;
+	left: 1020px;
 	position: absolute;
 			-webkit-transform:rotate(0deg);
         transform: rotate(0deg);
 }
 
 #figuur24.voorgrond img {
-	width: 100px;
-	height:140px;
+	width: 150px;
+	height:200px;
 }
 
 #figuur24 {
@@ -1147,7 +1147,7 @@ figure img {
 /* FIGUUR 25 SARAH3 */
 
 #figuur25.voorgrond {
-	left: 1100px;
+	left: 1020px;
 	position: absolute;
 				-webkit-transform:rotate(0deg);
         transform: rotate(0deg);
@@ -1155,7 +1155,7 @@ figure img {
 
 #figuur25.voorgrond img {
 	width: 180px;
-	height:140px;
+	height:120px;
 
 }
 
@@ -1175,15 +1175,15 @@ figure img {
 /* FIGUUR 26 ANTON CORBIJN */
 
 #figuur26.voorgrond {
-	left: 1200px;
+	left: 1020px;
 	position: absolute;
 		-webkit-transform:rotate(0deg);
         transform: rotate(0deg);
 }
 
 #figuur26.voorgrond img {
-	width: 100px;
-	height:140px;
+	width: 130px;
+	height:210px;
 }
 
 #figuur26 {
@@ -1202,15 +1202,15 @@ figure img {
 /* FIGUUR 27  EVA1 */
 
 #figuur27.voorgrond {
-	left: 1100px;
+	left: 80px;
 	position: absolute;
 		-webkit-transform:rotate(0deg);
         transform: rotate(0deg);
 }
 
 #figuur27.voorgrond img {
-	width: 140px;
-	height:100px;
+	width: 180px;
+	height:120px;
 }
 
 #figuur27 {
@@ -1228,15 +1228,15 @@ figure img {
 /*FIGUUR 25 EVA2 */
 
 #figuur28.voorgrond {
-	left: 1250px;
+	left: 80px;
 	position: absolute;
 		-webkit-transform:rotate(0deg);
         transform: rotate(0deg);
 }
 
 #figuur28.voorgrond img{
-	width: 140px;
-	height:100px;
+	width: 180px;
+	height:120px;
 }
 
 #figuur28 {
@@ -1254,15 +1254,15 @@ figure img {
 /* FIGUUR 29 EVA3 */
 
 #figuur29.voorgrond {
-	left: 1200px;
+	left: 1020px;
 	position: absolute;
 			-webkit-transform:rotate(0deg);
         transform: rotate(0deg);
 }
 
 #figuur29.voorgrond img {
-	width: 140px;
-	height:100px;
+	width: 180px;
+	height:120px;
 }
 
 #figuur29 {
@@ -1277,18 +1277,45 @@ figure img {
 	height: 340px;
 }
 
+/* FIGUUR 30 DAUBAL */
+
+#figuur30.voorgrond {
+	left: 1020px;
+	position: absolute;
+			-webkit-transform:rotate(0deg);
+        transform: rotate(0deg);
+}
+
+#figuur30.voorgrond img {
+	width: 120px;
+	height:180px;
+}
+
+#figuur30 {
+    left: 940px;
+	position: absolute;
+           -webkit-transform:rotate(20deg);
+        transform: rotate(20deg);
+}
+
+#figuur30 img {
+	width: 170px;
+	height: 240px;
+}
+
+
 /* FIGUUR 31 JAAP1 */
 
 #figuur31.voorgrond {
-	left: 1100px;
+	left: 80px;
 	position: absolute;
 		-webkit-transform:rotate(0deg);
         transform: rotate(0deg);
 }
 
 #figuur31.voorgrond img{
-	width: 100px;
-	height:140px;
+	width: 120px;
+	height:180px;
 }
 
 #figuur31 {
@@ -1306,15 +1333,15 @@ figure img {
 /* FIGUUR 32 JAAP2 */
 
 #figuur32.voorgrond {
-	left: 1200px;
+	left: 1020px;
 	position: absolute;
 		-webkit-transform:rotate(0deg);
         transform: rotate(0deg);
 }
 
 #figuur32.voorgrond img {
-	width: 140px;
-	height:110px;
+	width: 180px;
+	height:120px;
 }
 
 #figuur32 {
@@ -1332,15 +1359,15 @@ figure img {
 /* FIGUUR 33 ERIK1 */
 
 #figuur33.voorgrond {
-	left: 1200px;
+	left: 1020px;
 	position: absolute;
 		-webkit-transform:rotate(0deg);
         transform: rotate(0deg);
 }
 
 #figuur33.voorgrond img {
-	width: 140px;
-	height:110px;
+	width: 120px;
+	height:180px;
 }
 
 #figuur33 {
@@ -1358,7 +1385,7 @@ figure img {
 /* FIGUUR 34 ERIK2 */
 
 #figuur34.voorgrond {
-	left: 1200px;
+	left: 1020px;
 	position: absolute;
 		-webkit-transform:rotate(0deg);
         transform: rotate(0deg);
@@ -1385,7 +1412,7 @@ figure img {
 /* FIGUUR 35 KESSELS */
 
 #figuur35.voorgrond {
-	left: 1200px;
+	left: 80px;
 	position: absolute;
 		-webkit-transform:rotate(0deg);
         transform: rotate(0deg);
@@ -1407,34 +1434,6 @@ figure img {
 	width: 200px;
 	height: 160px;
 }
-
-
-/* FIGUUR 30 DAUBAL */
-
-#figuur30.voorgrond {
-	left: 1200px;
-	position: absolute;
-			-webkit-transform:rotate(0deg);
-        transform: rotate(0deg);
-}
-
-#figuur30.voorgrond img {
-	width: 100px;
-	height:140px;
-}
-
-#figuur30 {
-    left: 940px;
-	position: absolute;
-           -webkit-transform:rotate(20deg);
-        transform: rotate(20deg);
-}
-
-#figuur30 img {
-	width: 170px;
-	height: 240px;
-}
-
 
 
 /* FIGUUR 33 */
@@ -1466,15 +1465,15 @@ figure img {
 /* FIGUUR 36 REITSMA1 */
 
 #figuur36.voorgrond {
-	left: 1200px;
+	left: 80px;
 	position: absolute;
 		-webkit-transform:rotate(0deg);
         transform: rotate(0deg);
 }
 
 #figuur36.voorgrond img {
-	width: 90px;
-	height:140px;
+	width: 120px;
+	height:180px;
 }
 
 #figuur36 {
@@ -1492,15 +1491,15 @@ figure img {
 /* FIGUUR 37 REITSMA2 */
 
 #figuur37.voorgrond {
-	left: 1200px;
+	left: 1020px;
 	position: absolute;
 			-webkit-transform:rotate(0deg);
         transform: rotate(0deg);
 }
 
 #figuur37.voorgrond img {
-	width: 90px;
-	height:140px;
+	width: 120px;
+	height:180px;
 }
 
 #figuur37 {
@@ -1518,15 +1517,15 @@ figure img {
 /* FIGUUR 38 REITSMA3 */
 
 #figuur38.voorgrond {
-	left: 1200px;
+	left: 1020px;
 	position: absolute;	
 			-webkit-transform:rotate(0deg);
         transform: rotate(0deg);
 }
 
 #figuur38.voorgrond img {
-	width: 90px;
-	height:140px;
+	width: 120px;
+	height:180px;
 }
 
 #figuur38 {
@@ -1571,15 +1570,15 @@ figure img {
 /* FIGUUR 39 KLEINER */
 
 #figuur39.voorgrond {
-	left: 100px;
+	left: 80px;
 	position: absolute;
 		-webkit-transform:rotate(0deg);
         transform: rotate(0deg);
 }
 
 #figuur39.voorgrond img {
-	width: 140px;
-	height:90px;
+	width: 180px;
+	height:120px;
 }
 
 #figuur39 {
@@ -1611,7 +1610,7 @@ figure img {
 }
 
 #figuur40 {
-    left: 1040px;
+    left: 1020px;
 	position: absolute;
            -webkit-transform:rotate(30deg);
         transform: rotate(30deg);
@@ -1625,15 +1624,15 @@ figure img {
 /* FIGUUR 41 SIMON */
 
 #figuur41.voorgrond {
-	left: 100px;
+	left: 80px;
 	position: absolute;
 		-webkit-transform:rotate(0deg);
         transform: rotate(0deg);
 }
 
 #figuur41.voorgrond img {
-	width: 90px;
-	height:140px;
+	width: 120px;
+	height:180px;
 }
 
 #figuur41 {
