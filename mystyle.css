@@ -120,7 +120,7 @@ div.koptitel {
     letter-spacing: 0px;
     color: blue;
     position: absolute;
-    left: 90px;
+    left: 140px;
         -webkit-transform:rotate(-90deg);
         transform: rotate(-90deg);
 }
@@ -198,15 +198,15 @@ div.subtekst {
 /* Link 1 - Voor Menu */
 
 a {
-    color: blue;
+    color: black;
     text-decoration: none;
     font-family:  'Open Sans', sans-serif;
     font-size: 10px;
-    letter-spacing: 2px
+    letter-spacing: 0px
 }
 
 a:hover {
-    color: hotpink;
+    color: blue;
     cursor: cell;
  }
 }
@@ -231,10 +231,10 @@ cursor: cell;
 
 
 div.gegevens {
-color: blue;
+color: black;
     font-family:  'Open Sans', sans-serif;
     font-size: 10px;
-    letter-spacing: 2px;
+    letter-spacing: 0px;
     margin: 20px 90px 0px 35px; /* Top, Right, Bottom, Left */
     position: absolute;
 
@@ -334,7 +334,7 @@ div.inleiding {
     font-family: 'Open Sans', sans-serif;
     font-weight: 300;
     font-size: 18px;
-    padding: 5px;
+    padding-left: 50px;
     margin-top: 5px;
 
 }
@@ -432,23 +432,12 @@ div.hoofdstuk3-3 {
 
 }
 
-div.hoofdstuk3-4 {
-    color: black;
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 300;
-    font-size: 17px;
-    padding-left: 50px;
-
-}
-
-
 div.conclusie {
     color: black;
     font-family: 'Open Sans', sans-serif;
     font-weight: 300;
     font-size: 17px;
     padding-left: 50px;
-    padding-top: 100px;
 
 }
 
@@ -488,19 +477,20 @@ div.dankwoord {
 /* in een blok zetten, en dan de positie in z'n geheel op absolute, of voor de tekst/caption */
 
  .middle figcaption {
-	font-family: verdana;
-    font-size: 7px;
+	font-family:  'Open Sans', sans-serif;;
+    font-size: 10px;
     letter-spacing: 2px;
     position: absolute;
 }
 
 .middle div.voetnoot {
 	position: absolute;
-	left: 1150px;
-	font-family: verdana;
-    font-size: 8px;
-    letter-spacing: 1px;
-    padding-right: 40px;
+	left: 1125px;
+	font-family:  'Open Sans', sans-serif;
+    font-size: 10px;
+    letter-spacing: 0px;
+    margin-right: 90px;
+    padding-right: 0px;
 }
 
 /* img {
@@ -1655,7 +1645,7 @@ color:hotpink;
 }
 
 
-/* TRYOUT CIRKELS */
+/* TRYOUT CIRKELS
 
 rail, dot {
   display: block;
@@ -1709,7 +1699,7 @@ rail:last-child {
   animation: flickr 46s ease infinite;
 }
 
-*/
+
 
 @keyframes rail {
   0% {
@@ -1743,6 +1733,7 @@ rail:last-child {
   }
 }
 
+ */
 
 /* BUTTON ONDERAAN */
 

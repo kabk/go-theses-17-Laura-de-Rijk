@@ -4,9 +4,7 @@
   img {
     display: none !important;
   }
-  * {
-    background-image: none !important;
-  }
+  
  figcaption {
     display: none !important;
   }
@@ -47,7 +45,7 @@ display: none !important;
   }
   
   .middle div.voetnoot {
-  left: 800px;
+  left: 650px;
   }
   
   div.bronnen {
@@ -55,7 +53,7 @@ display: none !important;
   }
   
     div.middle {
-  width: 60%;
+  width: 65%;
   }
 
 	div.bronnen {
@@ -93,12 +91,98 @@ display: none !important;
     div.hoofdstuk3-2 {page-break-before: always;}
     div.hoofdstuk3-3 {page-break-before: always;}
     div.hoofdstuk3-4 {page-break-before: always;}
+    .koptitel5 {page-break-before: always;}
+    .conclusie {page-break-before: always;}
   
 }
 
 .noIbar {
 cursor: default;
 }
+
+/* TEKST GROTER MAKEN BIJ PRINTEN */
+
+div.inleiding {
+	font-size: 16px;
+}
+
+div.hoofdstuk1 {
+	font-size: 16px;
+}
+
+div.hoofdstuk2 {
+	font-size: 16px;
+}
+
+div.hoofdstuk2-1 {
+	font-size: 16px;
+}
+
+div.hoofdstuk2-2 {
+	font-size: 16px;
+}
+
+div.hoofdstuk2-3 {
+	font-size: 16px;
+}
+
+div.hoofdstuk2-4 {
+	font-size: 16px;
+}
+
+div.hoofdstuk3 {
+	font-size: 16px;
+}
+
+div.hoofdstuk3-1 {
+	font-size: 16px;
+}
+
+div.hoofdstuk3-2 {
+	font-size: 16px;
+}
+
+div.hoofdstuk3-3 {
+	font-size: 16px;
+}
+
+div.hoofdstuk3-4 {
+	font-size: 16px;
+}
+
+div.conclusie {
+	font-size: 16px;
+}
+
+div.subtekst {
+	font-size: 18px;
+	padding-top: 3px;
+}
+
+/* POSITIE VAN TITELS VOOR PRINT */
+
+div.koptitel {
+	left: -100px;
+}
+
+div.koptitel1 {
+	left: -150px;
+}
+
+div.koptitel2 {
+	left: -120px;
+}
+
+div.koptitel3 {
+	left: -120px;
+}
+
+div.koptitel4 {
+	left: 0px;
+}
+
+
+
 
 /* PRINT BLACK AND WHITE */
 
@@ -113,5 +197,8 @@ cursor: default;
        future implementations */
     -webkit-filter: grayscale(100%); 
     filter: grayscale(100%); /* future-proof */
+  }
+  * {
+  	color: black !important;
   }
 }
