@@ -3,6 +3,7 @@
 /* LAYOUT */
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i');
 @import url('https://fonts.googleapis.com/css?family=Vollkorn:400,400i,700,700i');
+@import url('https://fonts.googleapis.com/css?family=Vollkorn:400i');
 
 /* CURSOR TRY-OUT */
 
@@ -144,11 +145,23 @@ div.koptitel5 {
     padding-top: 50px;
 }
 
+div.koptitel6 {
+	font-family: 'Vollkorn', serif;
+	font-weight: 300;
+    font-size: 34px;
+    letter-spacing: 0px;
+    color: blue;
+    position: absolute;
+    left: 230px;
+        -webkit-transform:rotate(-90deg);
+        transform: rotate(-90deg);
+}
+
 
 div.subtekst {
     color: black;
     font-family: 'Open Sans', sans-serif;
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 400;
     padding-bottom: 35px;
     padding-top: 100px;
@@ -417,6 +430,16 @@ div.bronnen {
 
 }
 
+div.abstract {
+    color: black;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    font-size: 15px;
+    padding-left: 50px;
+    padding-bottom: 100px;
+
+}
+
 
 /*
 div.dankwoord {
@@ -442,6 +465,7 @@ div.dankwoord {
     font-size: 10px;
     letter-spacing: 0px;
     position: absolute;
+        opacity: 1;
 }
 
 .middle div.voetnoot {
@@ -1549,31 +1573,6 @@ figure img {
 }
 
 
-/* FIGUUR 42 ROBERT */
-
-#figuur42.voorgrond {
-	left: 100px;
-	position: absolute;
-			-webkit-transform:rotate(0deg);
-        transform: rotate(0deg);
-}
-
-#figuur42.voorgrond img {
-	width: 140px;
-	height:90px;
-}
-
-#figuur42 {
-    left: 40px;
-	position: absolute;
-           -webkit-transform:rotate(20deg);
-        transform: rotate(20deg);
-}
-
-#figuur42 img {
-	width: 320px;
-	height: 240px;
-}
 
 /* FIGUUR 39 KLEINER */
 
@@ -1604,15 +1603,15 @@ figure img {
 /* FIGUUR 40 LENERT & SANDER */
 
 #figuur40.voorgrond {
-	left: 1150px;
+	left: 1020px;
 	position: absolute;
 		-webkit-transform:rotate(0deg);
         transform: rotate(0deg);
 }
 
 #figuur40.voorgrond img {
-	width: 130px;
-	height:90px;
+	width: 200px;
+	height: 170px;
 }
 
 #figuur40 {
@@ -1651,6 +1650,32 @@ figure img {
 #figuur41 img {
 	width: 250px;
 	height: 340px;
+}
+
+/* FIGUUR 42 ROBERT */
+
+#figuur42.voorgrond {
+	left: 100px;
+	position: absolute;
+			-webkit-transform:rotate(0deg);
+        transform: rotate(0deg);
+}
+
+#figuur42.voorgrond img {
+	width: 140px;
+	height:90px;
+}
+
+#figuur42 {
+    left: 40px;
+	position: absolute;
+           -webkit-transform:rotate(20deg);
+        transform: rotate(20deg);
+}
+
+#figuur42 img {
+	width: 320px;
+	height: 240px;
 }
 
 /*EINDE AFBEELDINGEN*/
