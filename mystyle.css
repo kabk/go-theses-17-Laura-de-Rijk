@@ -1329,8 +1329,8 @@ figure img {
 #figuur30 {
     left: 140px;
 	position: absolute;
-           -webkit-transform:rotate(30deg);
-        transform: rotate(30deg);
+           -webkit-transform:rotate(10deg);
+        transform: rotate(10deg);
 }
 
 #figuur30 img {
@@ -1354,7 +1354,7 @@ figure img {
 }
 
 #figuur31 {
-    left: 840px;
+    left: 440px;
 	position: absolute;
            -webkit-transform:rotate(-20deg);
         transform: rotate(-20deg);
@@ -1380,29 +1380,29 @@ figure img {
 }
 
 #figuur32 {
-    left: 1140px;
+    left: 740px;
 	position: absolute;
            -webkit-transform:rotate(20deg);
         transform: rotate(20deg);
 }
 
 #figuur32 img {
-	width: 240px;
-	height: 170px;
+	width: 340px;
+	height: 270px;
 }
 
 /* FIGUUR 33 ERIK1 */
 
 #figuur33.voorgrond {
-	left: 1020px;
+	left: 80px;
 	position: absolute;
 		-webkit-transform:rotate(0deg);
         transform: rotate(0deg);
 }
 
 #figuur33.voorgrond img {
-	width: 120px;
-	height:180px;
+	width: 180px;
+	height:120px;
 }
 
 #figuur33 {
@@ -1413,8 +1413,8 @@ figure img {
 }
 
 #figuur33 img {
-	width: 200px;
-	height: 160px;
+	width: 180px;
+	height: 120px;
 }
 
 /* FIGUUR 34 ERIK2 */
@@ -1427,8 +1427,8 @@ figure img {
 }
 
 #figuur34.voorgrond img{
-	width: 140px;
-	height:110px;
+	width: 180px;
+	height:120px;
 }
 
 #figuur34 {
@@ -1459,42 +1459,15 @@ figure img {
 }
 
 #figuur35 {
-    left: 240px;
+    left: 340px;
 	position: absolute;
-           -webkit-transform:rotate(-20deg);
-        transform: rotate(-20deg);
+           -webkit-transform:rotate(-10deg);
+        transform: rotate(-10deg);
 }
 
 #figuur35 img {
-	width: 200px;
-	height: 160px;
-}
-
-
-/* FIGUUR 33 */
-
-#figuur33.voorgrond {
-	left: 1200px;
-	position: absolute;
-		-webkit-transform:rotate(0deg);
-        transform: rotate(0deg);
-}
-
-#figuur33.voorgrond img {
-	width: 100px;
-	height:140px;
-}
-
-#figuur33 {
-    left: 240px;
-	position: absolute;
-           -webkit-transform:rotate(20deg);
-        transform: rotate(20deg);
-}
-
-#figuur33 img {
-	width: 100px;
-	height: 140px;
+	width: 400px;
+	height: 320px;
 }
 
 /* FIGUUR 36 REITSMA1 */
@@ -1512,7 +1485,7 @@ figure img {
 }
 
 #figuur36 {
-    left: 940px;
+    left: 840px;
 	position: absolute;
            -webkit-transform:rotate(20deg);
         transform: rotate(20deg);
@@ -1538,7 +1511,7 @@ figure img {
 }
 
 #figuur37 {
-    left: 740px;
+    left: 440px;
 	position: absolute;
            -webkit-transform:rotate(-30deg);
         transform: rotate(-30deg);
@@ -1564,15 +1537,15 @@ figure img {
 }
 
 #figuur38 {
-    left: 580px;
+    left: 280px;
 	position: absolute;
            -webkit-transform:rotate(20deg);
         transform: rotate(20deg);
 }
 
 #figuur38 img {
-	width: 160px;
-	height: 240px;
+	width: 180px;
+	height: 260px;
 }
 
 
@@ -1624,8 +1597,8 @@ figure img {
 }
 
 #figuur39 img {
-	width: 200px;
-	height: 140px;
+	width: 260px;
+	height: 200px;
 }
 
 /* FIGUUR 40 LENERT & SANDER */
@@ -1643,15 +1616,15 @@ figure img {
 }
 
 #figuur40 {
-    left: 1020px;
+    left: 820px;
 	position: absolute;
            -webkit-transform:rotate(30deg);
         transform: rotate(30deg);
 }
 
 #figuur40 img {
-	width: 200px;
-	height: 130px;
+	width: 350px;
+	height: 280px;
 }
 
 /* FIGUUR 41 SIMON */
@@ -1669,15 +1642,15 @@ figure img {
 }
 
 #figuur41 {
-    left: 890px;
+    left: 690px;
 	position: absolute;
            -webkit-transform:rotate(-20deg);
         transform: rotate(-20deg);
 }
 
 #figuur41 img {
-	width: 190px;
-	height: 240px;
+	width: 250px;
+	height: 340px;
 }
 
 /*EINDE AFBEELDINGEN*/
