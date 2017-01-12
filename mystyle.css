@@ -1,9 +1,9 @@
 <style>
 
 /* LAYOUT */
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i');
+/* @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i'); 
 @import url('https://fonts.googleapis.com/css?family=Vollkorn:400,400i,700,700i');
-@import url('https://fonts.googleapis.com/css?family=Vollkorn:400i');
+@import url('https://fonts.googleapis.com/css?family=Vollkorn:400i'); */
 
 /* CURSOR TRY-OUT */
 
@@ -62,6 +62,7 @@ h1 {
     font-size: 320px;
     position:relative;
     left: 270px;
+    src: url(Vollkorn-Medium.otf);
     
     margin-bottom: -20px;
     margin-top: 0px;
@@ -76,6 +77,7 @@ padding-top: 10px;
 
 div.koptitel {
 	font-family: 'Vollkorn', serif;
+	 src: url(Vollkorn-Medium.otf);
 	font-weight: 300;
     font-size: 34px;
     letter-spacing: 0px;
@@ -88,6 +90,7 @@ div.koptitel {
 
 div.koptitel1 {
 	font-family: 'Vollkorn', serif;
+	 src: url(Vollkorn-Medium.otf);
 	font-weight: 300;
     font-size: 34px;
     letter-spacing: 0px;
@@ -101,6 +104,7 @@ div.koptitel1 {
 
 div.koptitel2 {
 	font-family: 'Vollkorn', serif;
+	 src: url(Vollkorn-Medium.otf);
 	font-weight: 300;
     font-size: 34px;
     letter-spacing: 0px;
@@ -113,6 +117,7 @@ div.koptitel2 {
 
 div.koptitel3 {
 	font-family: 'Vollkorn', serif;
+	 src: url(Vollkorn-Medium.otf);
 	font-weight: 300;
     font-size: 34px;
     letter-spacing: 0px;
@@ -125,6 +130,7 @@ div.koptitel3 {
 
 div.koptitel4 {
 	font-family: 'Vollkorn', serif;
+	 src: url(Vollkorn-Medium.otf);
 	font-weight: 300;
     font-size: 34px;
     letter-spacing: 0px;
@@ -136,17 +142,31 @@ div.koptitel4 {
 }
 
 div.koptitel5 {
-	font-family: 'Vollkorn', serif;
+
+font-family: 'Vollkorn', serif;
+	 src: url(Vollkorn-Medium.otf);
+	font-weight: 300;
+    font-size: 34px;
+    letter-spacing: 0px;
+    color: blue;
+    position: absolute;
+    left: 140px;
+        -webkit-transform:rotate(-90deg);
+        transform: rotate(-90deg);
+
+	/* font-family: 'Vollkorn', serif;
+	 src: url(Vollkorn-Medium.otf);
 	font-weight: 300;
     font-size: 34px;
     letter-spacing: 0px;
     color: blue;
     left: 90px;
-    padding-top: 50px;
+    padding-top: 50px; */
 }
 
 div.koptitel6 {
 	font-family: 'Vollkorn', serif;
+	 src: url(Vollkorn-Medium.otf);
 	font-weight: 300;
     font-size: 34px;
     letter-spacing: 0px;
@@ -161,6 +181,7 @@ div.koptitel6 {
 div.subtekst {
     color: black;
     font-family: 'Open Sans', sans-serif;
+    src: url(OpenSans-Regular.ttf);
     font-size: 16px;
     font-weight: 400;
     padding-bottom: 35px;
@@ -174,6 +195,7 @@ a {
     color: black;
     text-decoration: none;
     font-family:  'Open Sans', sans-serif;
+    src: url(OpenSans-Regular.ttf);
     font-size: 10px;
     letter-spacing: 0px
 }
@@ -189,6 +211,7 @@ a:hover {
 a.one:link {
 	color:black;
 	font-family: 'Open Sans', sans-serif;
+	src: url(OpenSans-Regular.ttf);
     font-size: 10px;
 	}
 	
@@ -206,6 +229,7 @@ cursor: cell;
 div.gegevens {
 color: black;
     font-family:  'Open Sans', sans-serif;
+    src: url(OpenSans-Regular.ttf);
     font-size: 10px;
     letter-spacing: 0px;
     margin: 20px 90px 0px 25px; /* Top, Right, Bottom, Left */
@@ -217,6 +241,7 @@ color: black;
 div.figuur {
 	color: blue;
     font-family: 'Open Sans', sans-serif;
+    src: url(OpenSans-Regular.ttf);
     font-size: 10px;
 }
 
@@ -310,6 +335,7 @@ div.inleiding {
     padding-left: 50px;
     padding-bottom: 100px;
     margin-top: 5px;
+    src: url(fonts/OpenSans-Regular.ttf);
 
 }
 
@@ -319,7 +345,7 @@ div.hoofdstuk1 {
     font-weight: 300;
     font-size: 15px;
     padding-left: 50px;
-
+	src: url(fonts/OpenSans-Regular.ttf);
 }
 
 div.hoofdstuk2 {
@@ -328,7 +354,7 @@ div.hoofdstuk2 {
     font-weight: 300;
     font-size: 15px;
     padding-left: 50px;
-
+	src: url(fonts/OpenSans-Regular.ttf);
 }
 
 div.hoofdstuk2-1 {
@@ -337,7 +363,7 @@ div.hoofdstuk2-1 {
     font-weight: 300;
     font-size: 15px;
     padding-left: 50px;
-
+	src: url(fonts/OpenSans-Regular.ttf);
 }
 
 div.hoofdstuk2-2 {
@@ -346,7 +372,7 @@ div.hoofdstuk2-2 {
     font-weight: 300;
     font-size: 15px;
     padding-left: 50px;
-
+	src: url(fonts/OpenSans-Regular.ttf);
 }
 
 div.hoofdstuk2-3 {
@@ -355,7 +381,7 @@ div.hoofdstuk2-3 {
     font-weight: 300;
     font-size: 15px;
     padding-left: 50px;
-
+	src: url(fonts/OpenSans-Regular.ttf);
 
 }
 
@@ -365,7 +391,7 @@ div.hoofdstuk2-4 {
     font-weight: 300;
     font-size: 15px;
     padding-left: 50px;
-
+	src: url(fonts/OpenSans-Regular.ttf);
 }
 
 
@@ -375,7 +401,7 @@ div.hoofdstuk3 {
     font-weight: 300;
     font-size: 15px;
     padding-left: 50px;
-
+	src: url(fonts/OpenSans-Regular.ttf);
 }
 
 div.hoofdstuk3-1 {
@@ -384,7 +410,7 @@ div.hoofdstuk3-1 {
     font-weight: 300;
     font-size: 15px;
     padding-left: 50px;
-   
+   	src: url(fonts/OpenSans-Regular.ttf);
 
 }
 
@@ -394,7 +420,7 @@ div.hoofdstuk3-2 {
     font-weight: 300;
     font-size: 15px;
     padding-left: 50px;
-
+	src: url(fonts/OpenSans-Regular.ttf);
 }
 
 div.hoofdstuk3-3 {
@@ -403,7 +429,7 @@ div.hoofdstuk3-3 {
     font-weight: 300;
     font-size: 15px;
     padding-left: 50px;
-
+	src: url(fonts/OpenSans-Regular.ttf);
 }
 
 div.conclusie {
@@ -412,11 +438,19 @@ div.conclusie {
     font-weight: 300;
     font-size: 15px;
     padding-left: 50px;
-
+	src: url(fonts/OpenSans-Regular.ttf);
 }
 
 div.bronnen {
-   background-color: #FFFFFF;
+
+color: black;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    font-size: 10px;
+    padding-left: 50px;
+	src: url(fonts/OpenSans-Regular.ttf);
+
+  /* background-color: #FFFFFF;
    height: 300px;
    overflow: scroll;
     color: black;
@@ -427,7 +461,7 @@ div.bronnen {
     margin-bottom: 40px;
     padding-left: 40px;
     padding-top: 20px;
-
+	src: url(fonts/OpenSans-Regular.ttf); */
 }
 
 div.abstract {
@@ -462,6 +496,7 @@ div.dankwoord {
 
  .middle figcaption {
 	font-family:  'Open Sans', sans-serif;
+	src: url(OpenSans-Regular.ttf);
     font-size: 10px;
     letter-spacing: 0px;
     position: absolute;
@@ -472,6 +507,7 @@ div.dankwoord {
 	position: absolute;
 	left: 1150px;
 	font-family:  'Open Sans', sans-serif;
+	src: url(OpenSans-Regular.ttf);
     font-size: 10px;
     letter-spacing: 0px;
     margin-right: 90px;

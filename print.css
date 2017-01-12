@@ -95,6 +95,7 @@ display: none !important;
     div.hoofdstuk3-3 {page-break-before: always;}
     div.hoofdstuk3-4 {page-break-before: always;}
     .koptitel5 {page-break-before: always;}
+    div.bronnen {page-break-before: always;}
 
   
 }
@@ -182,6 +183,10 @@ div.koptitel3 {
 
 div.koptitel4 {
 	left: 0px;
+}
+
+div.koptitel5 {
+	left: -100px;
 }
 
 div.koptitel6 {
