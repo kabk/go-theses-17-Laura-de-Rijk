@@ -11,6 +11,9 @@
 cursor: default;
 }
 
+/* MOBIELE TELEFOON */
+
+
 
 /* BODY */
 
@@ -68,6 +71,9 @@ h1 {
     margin-top: 0px;
     padding-top: 0px;
     padding-bottom:0px;
+    
+	opacity: 0;
+	display: none;
 }
 
 div.subtekst {
@@ -349,6 +355,7 @@ div.inleiding {
     font-size: 15px;
     padding-left: 50px;
     padding-bottom: 300px;
+    padding-top: 150px;
     margin-top: 5px;
     src: url(fonts/OpenSans-Regular.ttf);
 
@@ -523,7 +530,7 @@ div.dankwoord {
 	left: 1150px;
 	font-family:  'Open Sans', sans-serif;
 	src: url(OpenSans-Regular.ttf);
-    font-size: 10px;
+    font-size: 60%;
     letter-spacing: 0px;
     margin-right: 90px;
     padding-right: 0px;
@@ -548,6 +555,9 @@ div.dankwoord {
 figure img {
     opacity: 0.95;
     cursor: crosshair;
+    max-width:100%
+    height:auto
+    width: auto\9; 
 }
 
 figure.voorgrond img{
@@ -556,6 +566,9 @@ figure.voorgrond img{
     cursor: crosshair;
            -webkit-transform:rotate(0deg);
     transform: rotate(0deg);
+        max-width:100%
+    height:auto
+    width: auto\9;
 }
 
 figure img {
@@ -564,6 +577,9 @@ figure img {
     cursor: crosshair;
        -webkit-transform:rotate(0deg);
     transform: rotate(0deg);
+        max-width:100%
+    height:auto
+    width: auto\9;
 }
 
 
@@ -573,6 +589,39 @@ figure img {
 	opacity: 0.1;
 }
 
+/* FIGUUR T Titel */
+
+#figuurT.voorgrond {
+	left: -300px;
+	 position:relative;
+	       -webkit-transform:rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-filter: grayscale(0%); 
+    filter: grayscale(0%);
+	
+}
+
+#figuurT.voorgrond img{
+	width: 1200px;
+	height: 300px;
+
+}
+
+#figuurT  {
+ 	left: 0px;
+	position: absolute;
+	   -webkit-transform:rotate(30deg);
+    transform: rotate(30deg);
+    padding-top: 150px;
+}
+
+#figuurT img {
+    width: 1200px;
+    height: 300px; 
+
+}
+
+
 /* FIGUUR 1 DA VINCI */
 
 #figuur1.voorgrond {
@@ -580,12 +629,14 @@ figure img {
 	position: absolute;
 	       -webkit-transform:rotate(0deg);
     transform: rotate(0deg);
+
 	
 }
 
 #figuur1.voorgrond img{
 	width: 140px;
 	height: 180px;
+
 
 }
 
@@ -594,12 +645,14 @@ figure img {
 	position: absolute;
 	   -webkit-transform:rotate(-30deg);
     transform: rotate(-30deg);
+
 	
 }
 
 #figuur1 img {
     width: 400px;
-    height: 560px; 
+    height: 560px;
+
 
 }
 
@@ -610,12 +663,18 @@ figure img {
 	position: absolute;
 	       -webkit-transform:rotate(0deg);
     transform: rotate(0deg);
+        max-width:100%
+    height:auto
+    width: auto\9;
 	
 }
 
 #figuur2.voorgrond img{
 	width: 140px;
 	height: 180px;
+	    max-width:100%
+    height:auto
+    width: auto\9;
 
 }
 
@@ -624,12 +683,18 @@ figure img {
 	position: absolute;
 	   -webkit-transform:rotate(20deg);
     transform: rotate(20deg);
+        max-width:100%
+    height:auto
+    width: auto\9;
 	
 }
 
 #figuur2 img {
     width: 250px;
     height: 380px; 
+        max-width:100%
+    height:auto
+    width: auto\9;
 
 
 }
